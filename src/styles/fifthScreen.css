@@ -1,0 +1,60 @@
+.fifthScreen {
+
+}
+
+.fifthScreen-bg {
+
+}
+
+.fifthScreen-outer{
+
+}
+
+.fifthScreen-inner {
+    overflow: hidden;
+
+}
+
+.fifthScreen-masksCatalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1%;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-masksCatalog {
+        margin: 0;
+    }
+}
+
+.fifthScreen-maskItem {
+    padding: 1%;
+    flex: 1 1 33.3333%;
+    max-width: 33.3333%;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-maskItem {
+        padding: 0;
+        flex: 1 1 100%;
+        max-width: 100%; 
+    }
+}
+
+
+.fifthScreen-maskItemInner {
+    border: 1px solid #DFDFDF;
+    padding: 10%;
+    text-align: left;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-maskItem:not(:last-child) .fifthScreen-maskItemInner  {
+        border-bottom: none;
+    }
+
+    .fifthScreen-maskItemInner {
+        padding: 5%;
+    }
+
+}

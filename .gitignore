@@ -1,0 +1,9 @@
+.cache
+
+_public
+__public
+_build
+node_modules
+.prettierrc
+settings.json
+

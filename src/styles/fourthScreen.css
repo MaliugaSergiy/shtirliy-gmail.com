@@ -1,0 +1,84 @@
+.fourthScreen {
+    height: 840px;
+    min-height: 100vh;
+
+   position: relative;
+}
+
+.fourthScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-image: url(../assets/images/back_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media (max-width:1560px) {
+    .fourthScreen-bg  {
+      background-size: cover;
+    }
+}
+
+.fourthScreen-outer {
+    height: 100%;
+    position: relative;
+    color: #1E1E1E;
+}
+
+.fourthScreen-inner{
+    display: flex;
+    /* height: 100%; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+.fourthScreen-column {
+max-width: 364px;
+}
+
+.fourthScreen-columnTitle {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+}
+
+.fourthScreen-columnDescriptions {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 42px;
+}
+
+.fourthScreen-columnSamples {
+    overflow: hidden;
+
+}
+
+.fourthScreen-samples{
+    margin: -8px;
+    display: flex;
+}
+
+.fourthScreen-sample {
+    padding: 8px;
+}
+
+.fourthScreen-sample::before {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: coral;
+}

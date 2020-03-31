@@ -1,0 +1,69 @@
+.MixitLogo {
+  text-align: center;
+  position: relative;
+  padding-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .MixitLogo {
+    padding-top: 0;
+  }
+}
+
+.MixitLogo-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MixitLogo-link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.MixitLogo-image {
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.MixitLogo-image svg {
+  vertical-align: top;
+  height: 100%;
+}
+
+@media (max-width: 840px) {
+  .MixitLogo-image {
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .MixitLogo-image {
+    height: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MixitLogo-image {
+    height: 20px;
+  }
+}
+
+.MixitLogo-text {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9899a3;
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .MixitLogo-text {
+    display: none;
+  }
+}

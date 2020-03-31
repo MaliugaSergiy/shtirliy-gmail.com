@@ -1,0 +1,78 @@
+.genDirScreen {
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(max-width:840px) {
+    .genDirScreen {
+        height: auto;
+    }
+}
+
+.genDirScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-image: url(../assets/images/gen_dir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-bg  {
+        display: none;
+    }
+}
+
+.genDirScreen-outer {
+    height: 100%;
+    position: relative;
+
+}
+
+.genDirScreen-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+    /* overflow: hidden; */
+}
+
+.genDirScreen-mobilePhoto{
+    margin-bottom: 8px;
+    display: none;
+    background-image: url(../assets/images/gen_dir_mob.jpg);
+    background-size: cover;
+    flex-grow: 1;
+    width: calc(100% + 32px);
+    padding-top: 121%;
+            margin: 0 -16px;
+            margin-bottom: 16px;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-mobilePhoto  {
+        display: block;
+    }
+}
+
+.genDirScreen-info {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-info {
+        font-size: 10px;
+        text-align: right;
+    }
+}
+
+.genDirScreen-position {
+
+}
+
+.genDirScreen-name {
+
+}

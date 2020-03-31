@@ -1,0 +1,70 @@
+.secondScreen {
+    height: 780px;
+    /* min-height: 100vh; */
+    color: #fff;
+   position: relative;
+}
+
+.secondScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background: url(../assets/images/back_2.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #B7DC9A 0%, #70B13D 100%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 350px 600px, cover, cover;
+}
+
+.secondScreen-outer {
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.secondScreen-inner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.secondScreen-column {
+    max-width: 370px;
+}
+
+.secondScreen-columnTitle {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+}
+
+.secondScreen-columnDescrHolder {overflow: hidden;}
+
+.secondScreen-columnDescr {
+    margin: -8px;
+}
+
+.secondScreen-columnDescrItem {
+   padding: 8px; 
+   font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.secondScreen-columnDescrItem::before {
+    content: "";
+    display: block;
+    margin-right: 24px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}

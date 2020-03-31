@@ -1,0 +1,28 @@
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.container--gaps-small {
+  padding: 0 16px;
+}
+
+.container--fullHeight {
+  height: 100%;
+}
+
+.container--noMobile {
+
+}
+
+@media(max-width:840px) {
+  .container--noMobile {
+    padding: 0;
+  }
+}
+
+.container--small {
+  max-width: 860px;
+}

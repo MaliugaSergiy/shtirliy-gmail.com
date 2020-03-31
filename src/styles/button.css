@@ -1,0 +1,29 @@
+.button {
+    padding: 22px 48px;
+    background-color: #fff;
+    color: #1E1E1E;
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.25;
+    /* width: auto; */
+}
+
+@media(max-width: 840px) {
+    .button {
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 18px 40px;
+    }
+}
+
+.button--theme-dark {
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.button--theme-pink {
+    background-color: #FC2F6C;
+    color: #fff;
+}

@@ -1,0 +1,76 @@
+.lastScreen {
+position: relative;
+}
+
+.lastScreen-bg{
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: #F0F0F0;
+}
+
+.lastScreen-outer {
+position: relative;
+}
+
+.lastScreen-inner {
+
+}
+
+.lastScreen-info {
+    display: flex;
+}
+
+.lastScreen-infoColumn {
+    flex-grow: 1;
+}
+
+.lastScreen-title {
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+.lastScreen-title b {
+    font-weight: 800;
+}
+
+.lastScreen-description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+
+@media (max-width: 840px) {
+
+    .lastScreen-info {
+        flex-direction: column;
+    }
+
+    .lastScreen-title {
+        font-size: 28px;
+    }
+
+    .lastScreen-description {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.lastScreen-fillOutApplication {
+    display: inline-block;
+}
+
+@media (max-width: 840px) {
+    .lastScreen-fillOutApplication {
+        display: block;
+        max-width: 200px;
+        margin: auto;
+    }
+}
+
+.lastScreen-production {}
+
+.lastScreen-goToMainSite{
+    display: inline-block;
+}

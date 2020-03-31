@@ -1,0 +1,4 @@
+export default function wrapElement(el, wrapper) {
+  el.parentNode.insertBefore(wrapper, el);
+  wrapper.appendChild(el);
+}

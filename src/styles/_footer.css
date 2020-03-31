@@ -1,0 +1,131 @@
+.footer {
+  background-color: #231F20;
+  /* margin-bottom: 500px;   */
+}
+
+.footer-holder {
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+.footer-grid {
+  display: flex;
+  margin: -8px;
+}
+
+@media (max-width: 840px) {
+  .footer-grid {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-gridItem {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.footer-gridItem--left {
+  padding-top: 24px;
+  color: #a6a7aa;
+  font-size: 14px;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem--left {
+    text-align: center;
+    order: 2;
+  }
+}
+
+.footer-gridItem--center {}
+
+@media (max-width: 840px) {
+  .footer-gridItem--center {
+    order: 1;
+    border-top: 1px solid rgba(166, 167, 170, 0.14);
+    border-bottom: 1px solid rgba(166, 167, 170, 0.14);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.footer-gridItem--right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem--right {
+    justify-content: center;
+  }
+}
+
+.footer-socials {}
+
+.footer-socials-title {
+  text-align: center;
+  color: #a6a7aa;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.footer-socials-links {
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-socials-linksHolder {
+  display: flex;
+  justify-content: center;
+  margin: -5px;
+}
+
+.footer-socialsLink {
+  padding: 5px;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  color: #a6a7aa;
+  border-top: 1px solid rgba(166, 167, 170, 0.14);
+}
+
+.footer-menu {
+  display: inline-block;
+}
+
+.footer-menuHolder {}
+
+.footer-menuItem {}
+
+@media (max-width: 840px) {
+  .footer-menuItem {
+    text-align: center;
+  }
+}
+
+.footer-menuLink {
+  font-size: 14px;
+  color: #a6a7aa;
+  text-decoration: none;
+  padding: 8px 0;
+  display: inline-block;
+  transition: 0.3s ease-out;
+}
+
+.footer-menuLink:hover {
+  /* color: #666668; */
+  text-decoration: underline;
+}

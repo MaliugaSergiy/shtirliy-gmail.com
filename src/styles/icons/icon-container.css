@@ -1,0 +1,67 @@
+.iconContainer {
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+    vertical-align: top;
+}
+
+.iconContainer--size-tiny {
+    height: 12px;
+    min-width: 12px;
+    font-size: 12px;
+}
+
+.iconContainer--size-xsmall {
+    height: 16px;
+    min-width: 16px;
+    font-size: 16px;
+}
+
+.iconContainer--size-small {
+    height: 24px;
+    min-width: 24px;
+    font-size: 24px;
+}
+
+.iconContainer--size-medium {
+    height: 32px;
+    min-width: 32px;
+    font-size: 32px;
+}
+
+.iconContainer--size-mediumPlus {
+    height: 36px;
+    min-width: 36px;
+    font-size: 36px;
+}
+
+.iconContainer--size-large {
+    height: 48px;
+    min-width: 48px;
+    font-size: 48px;
+}
+
+.iconContainer--size-xlarge {
+    height: 64px;
+    min-width: 64px;
+    font-size: 64px;
+}
+
+.iconContainer--size-xxlarge {
+    height: 70px;
+    min-width: 70px;
+    font-size: 70px;
+}
+
+.iconContainer--size-huge {
+    height: 128px;
+    min-width: 128px;
+    font-size: 128px;
+}
+
+.iconContainer--inline {
+    height: 1em;
+    min-width: 1em;
+    line-height: 1;
+    font-size: inherit;
+}

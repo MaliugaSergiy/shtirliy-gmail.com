@@ -1,0 +1,90 @@
+.firstScreen {
+    height: 720px;
+    min-height: 100vh;
+    color: #fff;
+   position: relative;
+}
+
+.firstScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: coral;
+    background-image: url(../assets/images/back_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.firstScreen-outer {
+    height: 100%;
+    position: relative;
+}
+
+.firstScreen-header {
+    flex-grow: 0.5;
+
+}
+
+.firstScreen-inner{
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.firstScreen-inner::before {
+    content: "";
+    flex-grow: 0.6;
+}
+
+.firstScreen-main {
+    max-width: 40vw;
+    flex-grow: 1;
+
+}
+
+.firstScreen-title {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 16px;
+}
+
+.firstScreen-descr {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+
+    margin-bottom: 32px;
+}
+
+.firstScreen-buttonsHolder {
+    overflow: hidden;
+}
+
+.firstScreen-buttons {
+    display: flex;
+    margin: -8px;
+}
+
+.firstScreen-button {
+    padding: 8px;
+}
+
+.firstScreen-footer{
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}

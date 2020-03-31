@@ -1,0 +1,26 @@
+.categoryInfo-features {
+
+}
+
+.categoryInfo {
+
+}
+
+.categoryInfo-mainHolder{
+    overflow: hidden;
+}
+
+.categoryInfo-main {
+   margin: -16px 0;
+}
+
+.categoryInfo-description{
+    padding: 16px 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.categoryInfo-additional{
+    padding: 16px 0;
+    font-size: 16px
+}

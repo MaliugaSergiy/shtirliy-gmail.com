@@ -1,0 +1,7 @@
+.icon {
+  display: inline-block;
+  height: 100%;
+  color: inherit;
+  stroke: currentColor;
+  vertical-align: top;
+}

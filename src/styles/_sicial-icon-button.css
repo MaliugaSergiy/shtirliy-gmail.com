@@ -1,0 +1,136 @@
+.Social_IconButton {
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 12px;
+  line-height: 24px;
+  color: inherit;
+  border: 1px solid #d1d6db;
+  background-color: transparent;
+  transition-property: color, background-color, border, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.isTabUsing .Social_IconButton:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(38, 31, 55, 0.4);
+}
+
+.Social_IconButton:hover {
+  background-color: #a6a7aa;
+  border: 1px solid #a6a7aa;
+  color: #262931;
+}
+
+.Social_IconButton:active {
+  background-color: #1b1d23;
+  border: 1px solid #1b1d23;
+  color: #fff;
+}
+
+.Social_IconButton--size-small {
+  border-radius: 20px;
+  padding: 11px;
+  line-height: 16px;
+}
+
+.Social_IconButton--name-vk {}
+
+.Social_IconButton--name-vk:hover {
+  background-color: #4e7cb0;
+  border-color: #4e7cb0;
+}
+
+.isTabUsing .Social_IconButton--name-vk:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(78, 124, 176, 0.4);
+}
+
+.Social_IconButton--name-youtube {}
+
+.Social_IconButton--name-youtube:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+.isTabUsing .Social_IconButton--name-youtube:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.4);
+}
+
+.Social_IconButton--name-instagram {}
+
+.Social_IconButton--name-instagram:hover {
+  background-color: #d10869;
+  border-color: #d10869;
+}
+
+.isTabUsing .Social_IconButton--name-instagram:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(209, 8, 105, 0.4);
+}
+
+.Social_IconButton--name-facebook {}
+
+.Social_IconButton--name-facebook:hover {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
+
+.isTabUsing .Social_IconButton--name-facebook:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(66, 103, 178, 0.5);
+}
+
+.Social_IconButton--name-android {}
+
+.Social_IconButton--name-android:hover {
+  background-color: #2b303b;
+  border-color: #2b303b;
+}
+
+.isTabUsing .Social_IconButton--name-android:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+}
+
+.Social_IconButton--name-apple:hover {
+  background-color: #2b303b;
+  border-color: #2b303b;
+}
+
+.isTabUsing .Social_IconButton--name-apple:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+}
+
+.IconYoutube {
+  display: block;
+  fill: currentColor;
+  stroke: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconInstagram {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconFacebook {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconVk {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}

@@ -1,0 +1,26 @@
+.seventhScreen {
+
+}
+
+.seventhScreen-outer{
+
+}
+
+.seventhScreen-inner{
+
+}
+
+.seventhScreen-columns {
+    column-count: 2;
+    column-gap: 8%;
+}
+
+@media (max-width:840px) {
+    .seventhScreen-columns {
+        column-count: 1;
+    }
+}
+
+.seventhScreen-paragraph:not(:last-child) {
+    margin-bottom: 18px;
+}

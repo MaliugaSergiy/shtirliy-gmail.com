@@ -1,0 +1,74 @@
+.section {
+  height: 100%;
+  padding: 65px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+}
+
+@media(max-width:840px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+
+.section-title {
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  max-width: 550px;
+  margin-bottom: 16px;
+}
+
+@media(max-width:840px) {
+  .section-title {
+    font-size: 30px;
+    max-width: 350px;
+    margin-bottom: 8px;
+  }
+}
+
+.section-title--small {
+  font-size: 34px;
+}
+
+@media(max-width:840px) {
+  .section-title--small {
+    font-size: 24px;
+  }
+}
+
+.section-description {
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 550px;
+  color: inherit;
+  margin-bottom: 36px;
+}
+
+@media(max-width:840px) {
+  .section-description {
+    font-size: 12px;
+    max-width: 350px;
+    margin-bottom: 16px;
+  }
+}
+
+
+
+.section-content {
+  margin-top: 36px;
+  flex-grow: 1;
+  width: 100%;
+}
