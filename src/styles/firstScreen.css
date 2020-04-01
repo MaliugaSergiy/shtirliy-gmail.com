@@ -7,7 +7,8 @@
 
 @media(max-width:840px) {
     .firstScreen {
-        height: 660px;
+        height: 800px;
+        min-height: auto;
     }
 }
 
@@ -25,6 +26,19 @@
 @media(max-width:1220px) {
     .firstScreen-bg {
         background-position: right -280px bottom,  center center;
+    }
+}
+@media(max-width:1100px) {
+    .firstScreen-bg {
+        background-position: right -100px bottom,  center center;
+        background-size: 450px 450px, contain;
+    }
+}
+
+@media(max-width:540px) {
+    .firstScreen-bg {
+        background-position: right -100px bottom,  center center;
+        background-size: 350px 350px, contain;
     }
 }
 
@@ -49,6 +63,25 @@
         background-position: right 320px bottom -70px;
     }
 }
+
+@media(max-width:1110px) {
+    .firstScreen-bg::before {
+        background-position: left 30px bottom -70px;
+        background-size: 323px 416px;
+    }
+}
+@media(max-width:620px) {
+    .firstScreen-bg::before {
+        background-position: left -30px  bottom -70px;
+    }
+}
+@media(max-width:540px) {
+    .firstScreen-bg::before {
+        background-position: left -35px bottom 10px;
+        background-size: 226px 291px;
+    }
+}
+
 
 
 
