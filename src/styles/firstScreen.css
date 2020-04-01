@@ -5,6 +5,12 @@
    position: relative;
 }
 
+@media(max-width:840px) {
+    .firstScreen {
+        height: 660px;
+    }
+}
+
 .firstScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
@@ -64,15 +70,42 @@
 
 }
 
+@media(max-width:1100px) {
+    .firstScreen-inner{
+        justify-content:flex-start;
+    }
+}
+
 .firstScreen-inner::before {
     content: "";
     flex-grow: 0.6;
 }
 
+@media(max-width:1100px) {
+    .firstScreen-inner::before{
+        flex-grow: 0.25;
+    }
+}
+
+@media(max-width:840px) {
+    .firstScreen-inner::before{
+        flex-grow: 0.1;
+    }
+}
+
 .firstScreen-main {
     max-width: 450px;
     flex-grow: 1;
+}
 
+@media(max-width:1100px) {
+    .firstScreen-main {
+        max-width: 580px;
+        text-align: center;
+        margin: 0 auto;
+        flex-grow: 0;
+        margin-bottom: 16px;
+    }
 }
 
 .firstScreen-title {
@@ -82,8 +115,14 @@
     font-size: 62px;
     line-height: 64px;
     letter-spacing: 0.03em;
-
     margin-bottom: 16px;
+}
+
+@media(max-width:740px) {
+    .firstScreen-title{
+        font-size: 8.2vw;
+        line-height: 8.3vw;;
+    }
 }
 
 .firstScreen-descr {
@@ -99,6 +138,12 @@
     margin-bottom: 32px;
 }
 
+@media(max-width:740px) {
+    .firstScreen-descr{
+        font-size: 18px;
+    }
+}
+
 .firstScreen-buttonsHolder {
     overflow: hidden;
 }
@@ -108,13 +153,54 @@
     margin: -8px;
 }
 
+@media(max-width:1100px) {
+    .firstScreen-buttons{
+        justify-content: center;
+    }
+}
+@media(max-width:540px) {
+    .firstScreen-buttons{
+        justify-content: center;
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
 .firstScreen-button {
     padding: 8px;
+    /* flex-basis: 50%; */
 }
+
+@media(max-width:1100px) {
+    .firstScreen-button{
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width:540px) {
+    .firstScreen-button{
+        padding: 4px;
+    }
+}
+
 
 .firstScreen-footer{
     font-family: "RF Dewi";
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media(max-width:1100px) {
+    .firstScreen-footer{
+        text-align: center;
+    }
+}
+
+@media(max-width:840px) {
+    .firstScreen-footer{
+        font-size: 10px;
+    }
 }

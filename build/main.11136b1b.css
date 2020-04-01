@@ -1033,6 +1033,12 @@ button {
    position: relative;
 }
 
+@media(max-width:840px) {
+    .firstScreen {
+        height: 660px;
+    }
+}
+
 .firstScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
@@ -1102,6 +1108,14 @@ button {
 
 }
 
+@media(max-width:1100px) {
+    .firstScreen-inner{
+        -webkit-box-pack:start;
+            -ms-flex-pack:start;
+                justify-content:flex-start;
+    }
+}
+
 .firstScreen-inner::before {
     content: "";
     -webkit-box-flex: 0.6;
@@ -1109,12 +1123,39 @@ button {
             flex-grow: 0.6;
 }
 
+@media(max-width:1100px) {
+    .firstScreen-inner::before{
+        -webkit-box-flex: 0.25;
+            -ms-flex-positive: 0.25;
+                flex-grow: 0.25;
+    }
+}
+
+@media(max-width:840px) {
+    .firstScreen-inner::before{
+        -webkit-box-flex: 0.1;
+            -ms-flex-positive: 0.1;
+                flex-grow: 0.1;
+    }
+}
+
 .firstScreen-main {
     max-width: 450px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+}
 
+@media(max-width:1100px) {
+    .firstScreen-main {
+        max-width: 580px;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        margin-bottom: 16px;
+    }
 }
 
 .firstScreen-title {
@@ -1124,8 +1165,14 @@ button {
     font-size: 62px;
     line-height: 64px;
     letter-spacing: 0.03em;
-
     margin-bottom: 16px;
+}
+
+@media(max-width:740px) {
+    .firstScreen-title{
+        font-size: 8.2vw;
+        line-height: 8.3vw;;
+    }
 }
 
 .firstScreen-descr {
@@ -1141,6 +1188,12 @@ button {
     margin-bottom: 32px;
 }
 
+@media(max-width:740px) {
+    .firstScreen-descr{
+        font-size: 18px;
+    }
+}
+
 .firstScreen-buttonsHolder {
     overflow: hidden;
 }
@@ -1152,16 +1205,66 @@ button {
     margin: -8px;
 }
 
+@media(max-width:1100px) {
+    .firstScreen-buttons{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+@media(max-width:540px) {
+    .firstScreen-buttons{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
 .firstScreen-button {
     padding: 8px;
+    /* flex-basis: 50%; */
 }
+
+@media(max-width:1100px) {
+    .firstScreen-button{
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    }
+}
+
+@media(max-width:540px) {
+    .firstScreen-button{
+        padding: 4px;
+    }
+}
+
 
 .firstScreen-footer{
     font-family: "RF Dewi";
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 12px;
 }
+
+@media(max-width:1100px) {
+    .firstScreen-footer{
+        text-align: center;
+    }
+}
+
+@media(max-width:840px) {
+    .firstScreen-footer{
+        font-size: 10px;
+    }
+}
+
 .secondScreen {
     height: 780px;
     /* min-height: 100vh; */
