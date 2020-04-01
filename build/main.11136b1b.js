@@ -259,7 +259,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\back_6.jpg":[["back_6.69f76684.jpg","../assets/images/back_6.jpg"],"../assets/images/back_6.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\masks.png":[["masks.0c543e41.png","../assets/images/masks.png"],"../assets/images/masks.png"],"./..\\assets\\images\\mask_mob.png":[["mask_mob.8bb915fb.png","../assets/images/mask_mob.png"],"../assets/images/mask_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
