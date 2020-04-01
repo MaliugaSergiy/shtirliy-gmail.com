@@ -16,7 +16,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 48px 16px;
     grid-template-rows: 36px 36px; 
+    grid-template-areas: ". . ." ". \xxx";
 }
+
+.xxx {
+    grid-area: \xxx
+}
+
 @media(max-width:720px) {
     .massMediaScreen-list {
         grid-template-columns: 1fr 1fr;

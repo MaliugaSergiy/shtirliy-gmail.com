@@ -1,0 +1,2425 @@
+.footer {
+  background-color: #231F20;
+  /* margin-bottom: 500px;   */
+}
+
+.footer-holder {
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+.footer-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -8px;
+}
+
+@media (max-width: 840px) {
+  .footer-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.footer-gridItem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  max-width: 33.333%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.footer-gridItem--left {
+  padding-top: 24px;
+  color: #a6a7aa;
+  font-size: 14px;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem--left {
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.footer-gridItem--center {}
+
+@media (max-width: 840px) {
+  .footer-gridItem--center {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-top: 1px solid rgba(166, 167, 170, 0.14);
+    border-bottom: 1px solid rgba(166, 167, 170, 0.14);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.footer-gridItem--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 840px) {
+  .footer-gridItem--right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer-socials {}
+
+.footer-socials-title {
+  text-align: center;
+  color: #a6a7aa;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.footer-socials-links {
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-socials-linksHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -5px;
+}
+
+.footer-socialsLink {
+  padding: 5px;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  color: #a6a7aa;
+  border-top: 1px solid rgba(166, 167, 170, 0.14);
+}
+
+.footer-menu {
+  display: inline-block;
+}
+
+.footer-menuHolder {}
+
+.footer-menuItem {}
+
+@media (max-width: 840px) {
+  .footer-menuItem {
+    text-align: center;
+  }
+}
+
+.footer-menuLink {
+  font-size: 14px;
+  color: #a6a7aa;
+  text-decoration: none;
+  padding: 8px 0;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.footer-menuLink:hover {
+  /* color: #666668; */
+  text-decoration: underline;
+}
+.Social_IconButton {
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 12px;
+  line-height: 24px;
+  color: inherit;
+  border: 1px solid #d1d6db;
+  background-color: transparent;
+  -webkit-transition-property: color, background-color, border, -webkit-box-shadow;
+  transition-property: color, background-color, border, -webkit-box-shadow;
+  transition-property: color, background-color, border, box-shadow;
+  transition-property: color, background-color, border, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.isTabUsing .Social_IconButton:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(38, 31, 55, 0.4);
+          box-shadow: 0 0 0 4px rgba(38, 31, 55, 0.4);
+}
+
+.Social_IconButton:hover {
+  background-color: #a6a7aa;
+  border: 1px solid #a6a7aa;
+  color: #262931;
+}
+
+.Social_IconButton:active {
+  background-color: #1b1d23;
+  border: 1px solid #1b1d23;
+  color: #fff;
+}
+
+.Social_IconButton--size-small {
+  border-radius: 20px;
+  padding: 11px;
+  line-height: 16px;
+}
+
+.Social_IconButton--name-vk {}
+
+.Social_IconButton--name-vk:hover {
+  background-color: #4e7cb0;
+  border-color: #4e7cb0;
+}
+
+.isTabUsing .Social_IconButton--name-vk:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(78, 124, 176, 0.4);
+          box-shadow: 0 0 0 4px rgba(78, 124, 176, 0.4);
+}
+
+.Social_IconButton--name-youtube {}
+
+.Social_IconButton--name-youtube:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+.isTabUsing .Social_IconButton--name-youtube:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.4);
+          box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.4);
+}
+
+.Social_IconButton--name-instagram {}
+
+.Social_IconButton--name-instagram:hover {
+  background-color: #d10869;
+  border-color: #d10869;
+}
+
+.isTabUsing .Social_IconButton--name-instagram:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(209, 8, 105, 0.4);
+          box-shadow: 0 0 0 4px rgba(209, 8, 105, 0.4);
+}
+
+.Social_IconButton--name-facebook {}
+
+.Social_IconButton--name-facebook:hover {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
+
+.isTabUsing .Social_IconButton--name-facebook:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(66, 103, 178, 0.5);
+          box-shadow: 0 0 0 4px rgba(66, 103, 178, 0.5);
+}
+
+.Social_IconButton--name-android {}
+
+.Social_IconButton--name-android:hover {
+  background-color: #2b303b;
+  border-color: #2b303b;
+}
+
+.isTabUsing .Social_IconButton--name-android:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+          box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+}
+
+.Social_IconButton--name-apple:hover {
+  background-color: #2b303b;
+  border-color: #2b303b;
+}
+
+.isTabUsing .Social_IconButton--name-apple:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+          box-shadow: 0 0 0 4px rgba(43, 48, 59, 0.5);
+}
+
+.IconYoutube {
+  display: block;
+  fill: currentColor;
+  stroke: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconInstagram {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconFacebook {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}
+
+.IconVk {
+  display: block;
+  fill: currentColor;
+  color: inherit;
+  height: 100%;
+}
+.MixitLogo {
+  text-align: center;
+  position: relative;
+  padding-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .MixitLogo {
+    padding-top: 0;
+  }
+}
+
+.MixitLogo-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MixitLogo-link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.MixitLogo-image {
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.MixitLogo-image svg {
+  vertical-align: top;
+  height: 100%;
+}
+
+@media (max-width: 840px) {
+  .MixitLogo-image {
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .MixitLogo-image {
+    height: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MixitLogo-image {
+    height: 20px;
+  }
+}
+
+.MixitLogo-text {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9899a3;
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .MixitLogo-text {
+    display: none;
+  }
+}
+
+.section {
+  height: 100%;
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+}
+
+@media(max-width:840px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+
+.section-title {
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  max-width: 550px;
+  margin-bottom: 16px;
+}
+
+@media(max-width:840px) {
+  .section-title {
+    font-size: 30px;
+    max-width: 350px;
+    margin-bottom: 8px;
+  }
+}
+
+.section-title--small {
+  font-size: 34px;
+}
+
+@media(max-width:840px) {
+  .section-title--small {
+    font-size: 24px;
+  }
+}
+
+.section-description {
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 550px;
+  color: inherit;
+  margin-bottom: 36px;
+}
+
+@media(max-width:840px) {
+  .section-description {
+    font-size: 12px;
+    max-width: 350px;
+    margin-bottom: 16px;
+  }
+}
+
+
+
+.section-content {
+  margin-top: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container--gaps-small {
+  padding: 0 16px;
+}
+
+.container--fullHeight {
+  height: 100%;
+}
+
+.container--noMobile {
+
+}
+
+@media(max-width:840px) {
+  .container--noMobile {
+    padding: 0;
+  }
+}
+
+.container--small {
+  max-width: 860px;
+}
+.iconContainer {
+  display: inline-block;
+  vertical-align: top;
+  height: 24px;
+  min-width: 24px;
+}
+
+.iconContainer--size-normal {
+}
+
+.iconContainer--size-small {
+  height: 18px;
+  min-width: 18px;
+}
+
+.iconContainer--size-large {
+  height: 64x;
+  min-width: 64px;
+}
+
+.icon {
+  display: inline-block;
+  height: 100%;
+  color: inherit;
+  stroke: currentColor;
+  vertical-align: top;
+}
+.page {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.page--navigationOpened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (min-width: 1281px) {
+  .page--navigationOpened {
+    /* height: auto;
+    overflow: auto; */
+  }
+}
+
+.page-header {
+  position: relative;
+  z-index: 100;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  /* position: fixed; */
+  width: 100%;
+
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+
+  width: auto;
+}
+
+.page--windowScrolled .page-header {
+  -webkit-box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+.page--isDrawerScrolled .page-header {
+  -webkit-box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+.page-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  /* padding-top: 90px; */
+  overflow: hidden;
+}
+
+.page--navigationOpened .page-main {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+@media (max-width: 1280px) {
+  .page-main {
+    display: block;
+  }
+}
+
+.page-banner {
+  margin-bottom: 32px;
+}
+
+.page-aside {
+  width: 84px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.page-asideHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  /* padding-top: 16px; */
+  z-index: 1;
+}
+
+.page-asideHeadeHolder {
+  margin: -8px;
+}
+
+.page-asideHeaderItem {
+  padding: 8px;
+  text-align: center;
+  margin-right: 16px;
+}
+
+@media (max-height: 1350px) {
+  .page-asideHeaderItem {
+    padding: 0;
+  }
+}
+
+.page-asideHolder {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page-asideContent {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 1560px) {
+  .page-aside {
+    width: 64px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .page-aside {
+    display: none;
+  }
+}
+
+.page-content {
+  /* padding: 0 84px; */
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.page--navigationOpened .page-content {
+  /* filter: blur(3px); */
+}
+
+@media (max-width: 1560px) {
+  .page-content {
+    /* padding: 0 64px; */
+  }
+}
+
+@media (max-width: 1280px) {
+  .page-content {
+    padding: 0;
+  }
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 48px;
+  line-height: 1.2;
+  font-size: 56px;
+  text-align: center;
+}
+
+.page-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.page-visualGrid {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.page-navigatorDraver {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.page--navigationOpened .page-navigatorDraver {
+  z-index: 98;
+  opacity: 1;
+}
+
+.page-navigatorDraverOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.page-navigatorDraverHolder {
+  position: fixed;
+  left: 0;
+  /* right: 0; */
+  width: 80%;
+  bottom: 0;
+  top: 0;
+  /* background-color: lightgreen; */
+  background-color: #fff;
+  /* opacity: 0; */
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  overflow: hidden;
+  padding-top: 90px;
+  -webkit-box-shadow: 3px 0px 13px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 0px 13px -5px rgba(0, 0, 0, 0.75);
+  z-index: 99;
+}
+
+@media (max-width: 640px) {
+  .page-navigatorDraverHolder {
+    padding-top: 83px;
+  }
+}
+
+.page--navigationOpened .page-navigatorDraverHolder {
+  /* opacity: 1; */
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media (min-width: 1281px) {
+  .page--navigationOpened .page-navigatorDraverHolder {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.navigationDrawer-productMenu {
+  margin-bottom: 24px;
+}
+
+.navigationDrawer-pageMenu {
+}
+
+.isModalOpened .page {
+  position: fixed;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.iconContainer {
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+    vertical-align: top;
+}
+
+.iconContainer--size-tiny {
+    height: 12px;
+    min-width: 12px;
+    font-size: 12px;
+}
+
+.iconContainer--size-xsmall {
+    height: 16px;
+    min-width: 16px;
+    font-size: 16px;
+}
+
+.iconContainer--size-small {
+    height: 24px;
+    min-width: 24px;
+    font-size: 24px;
+}
+
+.iconContainer--size-medium {
+    height: 32px;
+    min-width: 32px;
+    font-size: 32px;
+}
+
+.iconContainer--size-mediumPlus {
+    height: 36px;
+    min-width: 36px;
+    font-size: 36px;
+}
+
+.iconContainer--size-large {
+    height: 48px;
+    min-width: 48px;
+    font-size: 48px;
+}
+
+.iconContainer--size-xlarge {
+    height: 64px;
+    min-width: 64px;
+    font-size: 64px;
+}
+
+.iconContainer--size-xxlarge {
+    height: 70px;
+    min-width: 70px;
+    font-size: 70px;
+}
+
+.iconContainer--size-huge {
+    height: 128px;
+    min-width: 128px;
+    font-size: 128px;
+}
+
+.iconContainer--inline {
+    height: 1em;
+    min-width: 1em;
+    line-height: 1;
+    font-size: inherit;
+}
+.iconAngleArrowDown {
+    display: block;
+    fill: currentColor;
+    color: inherit;
+    width: auto;
+    height: 100%;
+}
+.iconAngleArrowUp {
+    display: block;
+    fill: currentColor;
+    color: inherit;
+    width: auto;
+    height: 100%;
+}
+.iconArrowRight {
+    display: block;
+    fill: currentColor;
+    color: inherit;
+    height: 100%;
+}
+.firstScreen {
+    height: 720px;
+    min-height: 100vh;
+    color: #fff;
+   position: relative;
+}
+
+.firstScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: coral;
+    background-image: url(/back_1.e938612c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.firstScreen-outer {
+    height: 100%;
+    position: relative;
+}
+
+.firstScreen-header {
+    -webkit-box-flex: 0.5;
+        -ms-flex-positive: 0.5;
+            flex-grow: 0.5;
+
+}
+
+.firstScreen-inner{
+    padding: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+
+}
+
+.firstScreen-inner::before {
+    content: "";
+    -webkit-box-flex: 0.6;
+        -ms-flex-positive: 0.6;
+            flex-grow: 0.6;
+}
+
+.firstScreen-main {
+    max-width: 40vw;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+
+}
+
+.firstScreen-title {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 16px;
+}
+
+.firstScreen-descr {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+
+    margin-bottom: 32px;
+}
+
+.firstScreen-buttonsHolder {
+    overflow: hidden;
+}
+
+.firstScreen-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -8px;
+}
+
+.firstScreen-button {
+    padding: 8px;
+}
+
+.firstScreen-footer{
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.secondScreen {
+    height: 780px;
+    /* min-height: 100vh; */
+    color: #fff;
+   position: relative;
+}
+
+.secondScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background: url(/back_2.85d0d6b3.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#B7DC9A), to(#70B13D));
+    background: url(/back_2.85d0d6b3.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #B7DC9A 0%, #70B13D 100%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 350px 600px, cover, cover;
+}
+
+.secondScreen-outer {
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.secondScreen-inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.secondScreen-column {
+    max-width: 370px;
+}
+
+.secondScreen-columnTitle {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+}
+
+.secondScreen-columnDescrHolder {overflow: hidden;}
+
+.secondScreen-columnDescr {
+    margin: -8px;
+}
+
+.secondScreen-columnDescrItem {
+   padding: 8px; 
+   font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.secondScreen-columnDescrItem::before {
+    content: "";
+    display: block;
+    margin-right: 24px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.fourthScreen {
+    height: 840px;
+    min-height: 100vh;
+
+   position: relative;
+}
+
+.fourthScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-image: url(/back_4.2e96fe52.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media (max-width:1560px) {
+    .fourthScreen-bg  {
+      background-size: cover;
+    }
+}
+
+.fourthScreen-outer {
+    height: 100%;
+    position: relative;
+    color: #1E1E1E;
+}
+
+.fourthScreen-inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* height: 100%; */
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin-top: 60px;
+}
+
+.fourthScreen-column {
+max-width: 364px;
+}
+
+.fourthScreen-columnTitle {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+}
+
+.fourthScreen-columnDescriptions {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 42px;
+}
+
+.fourthScreen-columnSamples {
+    overflow: hidden;
+
+}
+
+.fourthScreen-samples{
+    margin: -8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fourthScreen-sample {
+    padding: 8px;
+}
+
+.fourthScreen-sample::before {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: coral;
+}
+.fifthScreen {
+
+}
+
+.fifthScreen-bg {
+
+}
+
+.fifthScreen-outer{
+
+}
+
+.fifthScreen-inner {
+    overflow: hidden;
+
+}
+
+.fifthScreen-masksCatalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -1%;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-masksCatalog {
+        margin: 0;
+    }
+}
+
+.fifthScreen-maskItem {
+    padding: 1%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33.3333%;
+            flex: 1 1 33.3333%;
+    max-width: 33.3333%;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-maskItem {
+        padding: 0;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+        max-width: 100%; 
+    }
+}
+
+
+.fifthScreen-maskItemInner {
+    border: 1px solid #DFDFDF;
+    padding: 10%;
+    text-align: left;
+}
+
+@media(max-width:840px) {
+    .fifthScreen-maskItem:not(:last-child) .fifthScreen-maskItemInner  {
+        border-bottom: none;
+    }
+
+    .fifthScreen-maskItemInner {
+        padding: 5%;
+    }
+
+}
+.seventhScreen {
+
+}
+
+.seventhScreen-outer{
+
+}
+
+.seventhScreen-inner{
+
+}
+
+.seventhScreen-columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 8%;
+       -moz-column-gap: 8%;
+            column-gap: 8%;
+}
+
+@media (max-width:840px) {
+    .seventhScreen-columns {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+}
+
+.seventhScreen-paragraph:not(:last-child) {
+    margin-bottom: 18px;
+}
+.genDirScreen {
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(max-width:840px) {
+    .genDirScreen {
+        height: auto;
+    }
+}
+
+.genDirScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-image: url(/gen_dir.fe914ff1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-bg  {
+        display: none;
+    }
+}
+
+.genDirScreen-outer {
+    height: 100%;
+    position: relative;
+
+}
+
+.genDirScreen-inner{
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 40px;
+    /* overflow: hidden; */
+}
+
+.genDirScreen-mobilePhoto{
+    margin-bottom: 8px;
+    display: none;
+    background-image: url(/gen_dir_mob.124152a9.jpg);
+    background-size: cover;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: calc(100% + 32px);
+    padding-top: 121%;
+            margin: 0 -16px;
+            margin-bottom: 16px;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-mobilePhoto  {
+        display: block;
+    }
+}
+
+.genDirScreen-info {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media(max-width:840px) {
+    .genDirScreen-info {
+        font-size: 10px;
+        text-align: right;
+    }
+}
+
+.genDirScreen-position {
+
+}
+
+.genDirScreen-name {
+
+}
+.massMediaScreen {
+
+}
+
+.massMediaScreen-outer {
+
+}
+
+.massMediaScreen-inner{
+
+}
+
+.massMediaScreen-list {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px 16px;
+    grid-template-rows: 36px 36px; 
+    grid-template-areas: ". . ." ". \xxx";
+}
+
+.xxx {
+    grid-area: \xxx
+}
+
+@media(max-width:720px) {
+    .massMediaScreen-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 21px 21px 21px; 
+    }
+}
+
+.massMediaScreen-item {
+    /* background-color: coral; */
+    /* border: 1px solid; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.massMediaScreen-logo {
+height: 100%;
+}
+.lastScreen {
+position: relative;
+}
+
+.lastScreen-bg{
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: #F0F0F0;
+}
+
+.lastScreen-outer {
+position: relative;
+}
+
+.lastScreen-inner {
+
+}
+
+.lastScreen-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lastScreen-infoColumn {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.lastScreen-title {
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+.lastScreen-title b {
+    font-weight: 800;
+}
+
+.lastScreen-description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+
+@media (max-width: 840px) {
+
+    .lastScreen-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .lastScreen-title {
+        font-size: 28px;
+    }
+
+    .lastScreen-description {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.lastScreen-fillOutApplication {
+    display: inline-block;
+}
+
+@media (max-width: 840px) {
+    .lastScreen-fillOutApplication {
+        display: block;
+        max-width: 200px;
+        margin: auto;
+    }
+}
+
+.lastScreen-production {}
+
+.lastScreen-goToMainSite{
+    display: inline-block;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+    font-family: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+.button {
+    padding: 22px 48px;
+    background-color: #fff;
+    color: #1E1E1E;
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.25;
+    /* width: auto; */
+}
+
+@media(max-width: 840px) {
+    .button {
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 18px 40px;
+    }
+}
+
+.button--theme-dark {
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.button--theme-pink {
+    background-color: #FC2F6C;
+    color: #fff;
+}
+    .maskProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+@media(max-width:840px) { 
+    .maskProduct {
+        text-align: center;
+    }
+
+}
+
+.maskProduct-imageHolder{
+    position: relative;
+    padding-top: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+@media(max-width:840px) {
+    .maskProduct-imageHolder {
+        padding-top: 55%;
+    }
+}
+
+.maskProduct-image {
+    position: absolute;
+    left: 0;right: 0;left: 0;bottom: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-position: center center;
+       object-position: center center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    text-align: center;
+}
+
+.maskProduct-title {
+
+}
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Regular.69abd3f8.eot');
+    src: local('RF Dewi Condensed Regular'), local('RFDewiCondensed-Regular'),
+        url('/RFDewiCondensed-Regular.69abd3f8.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Regular.903932aa.woff2') format('woff2'),
+        url('/RFDewiCondensed-Regular.e3766dea.woff') format('woff'),
+        url('/RFDewiCondensed-Regular.49a287f4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Black.4d6adb44.eot');
+    src: local('RF Dewi Expanded Black'), local('RFDewiExpanded-Black'),
+        url('/RFDewiExpanded-Black.4d6adb44.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Black.dff890c0.woff2') format('woff2'),
+        url('/RFDewiExpanded-Black.40dcba3f.woff') format('woff'),
+        url('/RFDewiExpanded-Black.ab38b27c.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Ultralight.8fe98a4d.eot');
+    src: local('RF Dewi Ultralight'), local('RFDewi-Ultralight'),
+        url('/RFDewi-Ultralight.8fe98a4d.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Ultralight.4b024b78.woff2') format('woff2'),
+        url('/RFDewi-Ultralight.39d0607f.woff') format('woff'),
+        url('/RFDewi-Ultralight.8f39a77b.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Ultrabold.90d0d270.eot');
+    src: local('RF Dewi Ultrabold'), local('RFDewi-Ultrabold'),
+        url('/RFDewi-Ultrabold.90d0d270.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Ultrabold.ab42fcb3.woff2') format('woff2'),
+        url('/RFDewi-Ultrabold.002809ac.woff') format('woff'),
+        url('/RFDewi-Ultrabold.2cb97609.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Black.82a8f805.eot');
+    src: local('RF Dewi Black'), local('RFDewi-Black'),
+        url('/RFDewi-Black.82a8f805.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Black.597781a6.woff2') format('woff2'),
+        url('/RFDewi-Black.5c754c5a.woff') format('woff'),
+        url('/RFDewi-Black.53aedcda.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Ultrabold.086ee7f4.eot');
+    src: local('RF Dewi Condensed Ultrabold'), local('RFDewiCondensed-Ultrabold'),
+        url('/RFDewiCondensed-Ultrabold.086ee7f4.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Ultrabold.fb5748ef.woff2') format('woff2'),
+        url('/RFDewiCondensed-Ultrabold.ba22dd87.woff') format('woff'),
+        url('/RFDewiCondensed-Ultrabold.1a6bd483.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Ultrabold.cc73c8ee.eot');
+    src: local('RF Dewi Expanded Ultrabold'), local('RFDewiExpanded-Ultrabold'),
+        url('/RFDewiExpanded-Ultrabold.cc73c8ee.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Ultrabold.793d0dbd.woff2') format('woff2'),
+        url('/RFDewiExpanded-Ultrabold.0f48afac.woff') format('woff'),
+        url('/RFDewiExpanded-Ultrabold.de21b241.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-LightItalic.6eeb7da4.eot');
+    src: local('RF Dewi Light Italic'), local('RFDewi-LightItalic'),
+        url('/RFDewi-LightItalic.6eeb7da4.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-LightItalic.968046f8.woff2') format('woff2'),
+        url('/RFDewi-LightItalic.40e15db2.woff') format('woff'),
+        url('/RFDewi-LightItalic.9472726d.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Regular.0879be1e.eot');
+    src: local('RF Dewi Regular'), local('RFDewi-Regular'),
+        url('/RFDewi-Regular.0879be1e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Regular.deaea0c9.woff2') format('woff2'),
+        url('/RFDewi-Regular.04e03c1f.woff') format('woff'),
+        url('/RFDewi-Regular.528313c5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Bold.97bd338f.eot');
+    src: local('RF Dewi Extended Bold'), local('RFDewiExtended-Bold'),
+        url('/RFDewiExtended-Bold.97bd338f.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Bold.b23fa137.woff2') format('woff2'),
+        url('/RFDewiExtended-Bold.7b880ea0.woff') format('woff'),
+        url('/RFDewiExtended-Bold.ff82edd6.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Semibold.e8846b62.eot');
+    src: local('RF Dewi Semibold'), local('RFDewi-Semibold'),
+        url('/RFDewi-Semibold.e8846b62.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Semibold.aa304193.woff2') format('woff2'),
+        url('/RFDewi-Semibold.f813d5b8.woff') format('woff'),
+        url('/RFDewi-Semibold.9847affa.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-BlackItalic.6c9e6181.eot');
+    src: local('RF Dewi Expanded Black Italic'), local('RFDewiExpanded-BlackItalic'),
+        url('/RFDewiExpanded-BlackItalic.6c9e6181.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-BlackItalic.9a12e1e9.woff2') format('woff2'),
+        url('/RFDewiExpanded-BlackItalic.d3c41d5c.woff') format('woff'),
+        url('/RFDewiExpanded-BlackItalic.1d9a5eeb.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-ThinItalic.e5c17d8c.eot');
+    src: local('RF Dewi Condensed Thin Italic'), local('RFDewiCondensed-ThinItalic'),
+        url('/RFDewiCondensed-ThinItalic.e5c17d8c.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-ThinItalic.5b6611a7.woff2') format('woff2'),
+        url('/RFDewiCondensed-ThinItalic.8e68b0bc.woff') format('woff'),
+        url('/RFDewiCondensed-ThinItalic.39f5e92a.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Light.44332350.eot');
+    src: local('RF Dewi Extended Light'), local('RFDewiExtended-Light'),
+        url('/RFDewiExtended-Light.44332350.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Light.b366ec10.woff2') format('woff2'),
+        url('/RFDewiExtended-Light.b88429f2.woff') format('woff'),
+        url('/RFDewiExtended-Light.78e953c0.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Black.282a1067.eot');
+    src: local('RF Dewi Extended Black'), local('RFDewiExtended-Black'),
+        url('/RFDewiExtended-Black.282a1067.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Black.0c6b47c0.woff2') format('woff2'),
+        url('/RFDewiExtended-Black.ab6debd9.woff') format('woff'),
+        url('/RFDewiExtended-Black.37055ef4.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Regular.cf6f3db5.eot');
+    src: local('RF Dewi Extended Regular'), local('RFDewiExtended-Regular'),
+        url('/RFDewiExtended-Regular.cf6f3db5.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Regular.937dd2af.woff2') format('woff2'),
+        url('/RFDewiExtended-Regular.7917c627.woff') format('woff'),
+        url('/RFDewiExtended-Regular.e93cbca0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Bold.e62c7404.eot');
+    src: local('RF Dewi Bold'), local('RFDewi-Bold'),
+        url('/RFDewi-Bold.e62c7404.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Bold.101f55da.woff2') format('woff2'),
+        url('/RFDewi-Bold.89e5680f.woff') format('woff'),
+        url('/RFDewi-Bold.973c77d7.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Semibold.9ac139ca.eot');
+    src: local('RF Dewi Condensed Semibold'), local('RFDewiCondensed-Semibold'),
+        url('/RFDewiCondensed-Semibold.9ac139ca.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Semibold.52656a5a.woff2') format('woff2'),
+        url('/RFDewiCondensed-Semibold.eea8d7f8.woff') format('woff'),
+        url('/RFDewiCondensed-Semibold.7e84ae0e.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Black.c7f384b2.eot');
+    src: local('RF Dewi Condensed Black'), local('RFDewiCondensed-Black'),
+        url('/RFDewiCondensed-Black.c7f384b2.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Black.59498ea5.woff2') format('woff2'),
+        url('/RFDewiCondensed-Black.484b7608.woff') format('woff'),
+        url('/RFDewiCondensed-Black.a72e59ec.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-UltralightItalic.c740bf61.eot');
+    src: local('RF Dewi Ultralight Italic'), local('RFDewi-UltralightItalic'),
+        url('/RFDewi-UltralightItalic.c740bf61.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-UltralightItalic.dcc8e4db.woff2') format('woff2'),
+        url('/RFDewi-UltralightItalic.4d0e2e58.woff') format('woff'),
+        url('/RFDewi-UltralightItalic.bbf5f9c2.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-UltralightItalic.3dc69abb.eot');
+    src: local('RF Dewi Extended Ultralight Italic'), local('RFDewiExtended-UltralightItalic'),
+        url('/RFDewiExtended-UltralightItalic.3dc69abb.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-UltralightItalic.605de0b1.woff2') format('woff2'),
+        url('/RFDewiExtended-UltralightItalic.be92a018.woff') format('woff'),
+        url('/RFDewiExtended-UltralightItalic.e09743eb.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-UltraboldItalic.9d4c7d46.eot');
+    src: local('RF Dewi Extended Ultrabold Italic'), local('RFDewiExtended-UltraboldItalic'),
+        url('/RFDewiExtended-UltraboldItalic.9d4c7d46.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-UltraboldItalic.f341e61b.woff2') format('woff2'),
+        url('/RFDewiExtended-UltraboldItalic.db1e7b81.woff') format('woff'),
+        url('/RFDewiExtended-UltraboldItalic.d13c3e9d.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-UltralightItalic.99166a14.eot');
+    src: local('RF Dewi Expanded Ultralight Italic'), local('RFDewiExpanded-UltralightItalic'),
+        url('/RFDewiExpanded-UltralightItalic.99166a14.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-UltralightItalic.070165ac.woff2') format('woff2'),
+        url('/RFDewiExpanded-UltralightItalic.e79d296f.woff') format('woff'),
+        url('/RFDewiExpanded-UltralightItalic.92c89e02.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-UltraboldItalic.96b8924e.eot');
+    src: local('RF Dewi Condensed Ultrabold Italic'), local('RFDewiCondensed-UltraboldItalic'),
+        url('/RFDewiCondensed-UltraboldItalic.96b8924e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-UltraboldItalic.21e3a6c2.woff2') format('woff2'),
+        url('/RFDewiCondensed-UltraboldItalic.9cd66c0e.woff') format('woff'),
+        url('/RFDewiCondensed-UltraboldItalic.6d181d11.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Italic.d1ecd555.eot');
+    src: local('RF Dewi Extended Italic'), local('RFDewiExtended-Italic'),
+        url('/RFDewiExtended-Italic.d1ecd555.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Italic.957fc13f.woff2') format('woff2'),
+        url('/RFDewiExtended-Italic.7319811c.woff') format('woff'),
+        url('/RFDewiExtended-Italic.c1320d40.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Ultrabold.0c1b25d6.eot');
+    src: local('RF Dewi Extended Ultrabold'), local('RFDewiExtended-Ultrabold'),
+        url('/RFDewiExtended-Ultrabold.0c1b25d6.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Ultrabold.c012992e.woff2') format('woff2'),
+        url('/RFDewiExtended-Ultrabold.45b493a8.woff') format('woff'),
+        url('/RFDewiExtended-Ultrabold.33577886.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-LightItalic.26731126.eot');
+    src: local('RF Dewi Extended Light Italic'), local('RFDewiExtended-LightItalic'),
+        url('/RFDewiExtended-LightItalic.26731126.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-LightItalic.d5d6f514.woff2') format('woff2'),
+        url('/RFDewiExtended-LightItalic.2198d6b2.woff') format('woff'),
+        url('/RFDewiExtended-LightItalic.ee40dfaa.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Thin.e11058a9.eot');
+    src: local('RF Dewi Extended Thin'), local('RFDewiExtended-Thin'),
+        url('/RFDewiExtended-Thin.e11058a9.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Thin.4fef5b90.woff2') format('woff2'),
+        url('/RFDewiExtended-Thin.1fb14ff8.woff') format('woff'),
+        url('/RFDewiExtended-Thin.eb0569b5.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Thin.5a1aa6ec.eot');
+    src: local('RF Dewi Condensed Thin'), local('RFDewiCondensed-Thin'),
+        url('/RFDewiCondensed-Thin.5a1aa6ec.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Thin.efcb1faf.woff2') format('woff2'),
+        url('/RFDewiCondensed-Thin.f91a188d.woff') format('woff'),
+        url('/RFDewiCondensed-Thin.a6d0d1aa.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-BoldItalic.471b1385.eot');
+    src: local('RF Dewi Expanded Bold Italic'), local('RFDewiExpanded-BoldItalic'),
+        url('/RFDewiExpanded-BoldItalic.471b1385.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-BoldItalic.eefa1ce5.woff2') format('woff2'),
+        url('/RFDewiExpanded-BoldItalic.71f4f27b.woff') format('woff'),
+        url('/RFDewiExpanded-BoldItalic.0255bd39.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Semibold.881ef0ee.eot');
+    src: local('RF Dewi Extended Semibold'), local('RFDewiExtended-Semibold'),
+        url('/RFDewiExtended-Semibold.881ef0ee.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Semibold.1e144936.woff2') format('woff2'),
+        url('/RFDewiExtended-Semibold.2fdac1bb.woff') format('woff'),
+        url('/RFDewiExtended-Semibold.e39d94ee.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Regular.84294f1f.eot');
+    src: local('RF Dewi Expanded Regular'), local('RFDewiExpanded-Regular'),
+        url('/RFDewiExpanded-Regular.84294f1f.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Regular.9ab08af9.woff2') format('woff2'),
+        url('/RFDewiExpanded-Regular.81610932.woff') format('woff'),
+        url('/RFDewiExpanded-Regular.3f617943.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Ultralight.bc91f4b8.eot');
+    src: local('RF Dewi Condensed Ultralight'), local('RFDewiCondensed-Ultralight'),
+        url('/RFDewiCondensed-Ultralight.bc91f4b8.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Ultralight.e72b42d7.woff2') format('woff2'),
+        url('/RFDewiCondensed-Ultralight.6a89cb6b.woff') format('woff'),
+        url('/RFDewiCondensed-Ultralight.37eba185.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-SemiboldItalic.e20e0bd9.eot');
+    src: local('RF Dewi Extended Semibold Italic'), local('RFDewiExtended-SemiboldItalic'),
+        url('/RFDewiExtended-SemiboldItalic.e20e0bd9.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-SemiboldItalic.3b41bd02.woff2') format('woff2'),
+        url('/RFDewiExtended-SemiboldItalic.759e0a02.woff') format('woff'),
+        url('/RFDewiExtended-SemiboldItalic.80e8730e.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-BlackItalic.3776fee1.eot');
+    src: local('RF Dewi Condensed Black Italic'), local('RFDewiCondensed-BlackItalic'),
+        url('/RFDewiCondensed-BlackItalic.3776fee1.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-BlackItalic.4b86c433.woff2') format('woff2'),
+        url('/RFDewiCondensed-BlackItalic.6e22d431.woff') format('woff'),
+        url('/RFDewiCondensed-BlackItalic.e821eb2e.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-BoldItalic.16d01660.eot');
+    src: local('RF Dewi Bold Italic'), local('RFDewi-BoldItalic'),
+        url('/RFDewi-BoldItalic.16d01660.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-BoldItalic.7f560a06.woff2') format('woff2'),
+        url('/RFDewi-BoldItalic.e8d33ffa.woff') format('woff'),
+        url('/RFDewi-BoldItalic.e11793a3.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-UltraboldItalic.7f6d4f45.eot');
+    src: local('RF Dewi Expanded Ultrabold Italic'), local('RFDewiExpanded-UltraboldItalic'),
+        url('/RFDewiExpanded-UltraboldItalic.7f6d4f45.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-UltraboldItalic.25d5542d.woff2') format('woff2'),
+        url('/RFDewiExpanded-UltraboldItalic.ad9c2a0e.woff') format('woff'),
+        url('/RFDewiExpanded-UltraboldItalic.498ac4b5.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Thin.62a8130c.eot');
+    src: local('RF Dewi Expanded Thin'), local('RFDewiExpanded-Thin'),
+        url('/RFDewiExpanded-Thin.62a8130c.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Thin.d4c15a5b.woff2') format('woff2'),
+        url('/RFDewiExpanded-Thin.e609582c.woff') format('woff'),
+        url('/RFDewiExpanded-Thin.923eb249.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Semibold.36008e74.eot');
+    src: local('RF Dewi Expanded Semibold'), local('RFDewiExpanded-Semibold'),
+        url('/RFDewiExpanded-Semibold.36008e74.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Semibold.1e0c56a7.woff2') format('woff2'),
+        url('/RFDewiExpanded-Semibold.b2b6feb1.woff') format('woff'),
+        url('/RFDewiExpanded-Semibold.16e66c8b.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-UltralightItalic.317da12e.eot');
+    src: local('RF Dewi Condensed Ultralight Italic'), local('RFDewiCondensed-UltralightItalic'),
+        url('/RFDewiCondensed-UltralightItalic.317da12e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-UltralightItalic.c094e60e.woff2') format('woff2'),
+        url('/RFDewiCondensed-UltralightItalic.c3a66c4b.woff') format('woff'),
+        url('/RFDewiCondensed-UltralightItalic.813baeba.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-LightItalic.a3756b2e.eot');
+    src: local('RF Dewi Expanded Light Italic'), local('RFDewiExpanded-LightItalic'),
+        url('/RFDewiExpanded-LightItalic.a3756b2e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-LightItalic.d5da30d8.woff2') format('woff2'),
+        url('/RFDewiExpanded-LightItalic.1eebb282.woff') format('woff'),
+        url('/RFDewiExpanded-LightItalic.dd50bac3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Bold.a139544e.eot');
+    src: local('RF Dewi Condensed Bold'), local('RFDewiCondensed-Bold'),
+        url('/RFDewiCondensed-Bold.a139544e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Bold.6688370d.woff2') format('woff2'),
+        url('/RFDewiCondensed-Bold.fc5db058.woff') format('woff'),
+        url('/RFDewiCondensed-Bold.3877d889.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-ThinItalic.26aea33f.eot');
+    src: local('RF Dewi Expanded Thin Italic'), local('RFDewiExpanded-ThinItalic'),
+        url('/RFDewiExpanded-ThinItalic.26aea33f.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-ThinItalic.e8516cf7.woff2') format('woff2'),
+        url('/RFDewiExpanded-ThinItalic.43ba5497.woff') format('woff'),
+        url('/RFDewiExpanded-ThinItalic.5699834a.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-ThinItalic.b7cb25f7.eot');
+    src: local('RF Dewi Thin Italic'), local('RFDewi-ThinItalic'),
+        url('/RFDewi-ThinItalic.b7cb25f7.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-ThinItalic.f894a39e.woff2') format('woff2'),
+        url('/RFDewi-ThinItalic.c2c7bbc1.woff') format('woff'),
+        url('/RFDewi-ThinItalic.b4402fcb.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Italic.100a5627.eot');
+    src: local('RF Dewi Condensed Italic'), local('RFDewiCondensed-Italic'),
+        url('/RFDewiCondensed-Italic.100a5627.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Italic.850b8259.woff2') format('woff2'),
+        url('/RFDewiCondensed-Italic.ee81d251.woff') format('woff'),
+        url('/RFDewiCondensed-Italic.f573b01a.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-UltraboldItalic.1c28c5ff.eot');
+    src: local('RF Dewi Ultrabold Italic'), local('RFDewi-UltraboldItalic'),
+        url('/RFDewi-UltraboldItalic.1c28c5ff.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-UltraboldItalic.a8b9e36c.woff2') format('woff2'),
+        url('/RFDewi-UltraboldItalic.dd90cd48.woff') format('woff'),
+        url('/RFDewi-UltraboldItalic.09bc71ea.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Light.8421324d.eot');
+    src: local('RF Dewi Expanded Light'), local('RFDewiExpanded-Light'),
+        url('/RFDewiExpanded-Light.8421324d.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Light.50585974.woff2') format('woff2'),
+        url('/RFDewiExpanded-Light.eea79594.woff') format('woff'),
+        url('/RFDewiExpanded-Light.14cce25c.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Italic.946ca580.eot');
+    src: local('RF Dewi Expanded Italic'), local('RFDewiExpanded-Italic'),
+        url('/RFDewiExpanded-Italic.946ca580.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Italic.0f4a7be9.woff2') format('woff2'),
+        url('/RFDewiExpanded-Italic.79ac9958.woff') format('woff'),
+        url('/RFDewiExpanded-Italic.d86d049a.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Light.2137a9d4.eot');
+    src: local('RF Dewi Light'), local('RFDewi-Light'),
+        url('/RFDewi-Light.2137a9d4.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Light.e6a6fb87.woff2') format('woff2'),
+        url('/RFDewi-Light.ee8d47ca.woff') format('woff'),
+        url('/RFDewi-Light.8ff39215.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-SemiboldItalic.3b05a022.eot');
+    src: local('RF Dewi Expanded Semibold Italic'), local('RFDewiExpanded-SemiboldItalic'),
+        url('/RFDewiExpanded-SemiboldItalic.3b05a022.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-SemiboldItalic.cb916da8.woff2') format('woff2'),
+        url('/RFDewiExpanded-SemiboldItalic.dc268926.woff') format('woff'),
+        url('/RFDewiExpanded-SemiboldItalic.043f3236.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-BoldItalic.c011de11.eot');
+    src: local('RF Dewi Extended Bold Italic'), local('RFDewiExtended-BoldItalic'),
+        url('/RFDewiExtended-BoldItalic.c011de11.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-BoldItalic.dbfba529.woff2') format('woff2'),
+        url('/RFDewiExtended-BoldItalic.574486c0.woff') format('woff'),
+        url('/RFDewiExtended-BoldItalic.8c73dd74.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Thin.591cf19d.eot');
+    src: local('RF Dewi Thin'), local('RFDewi-Thin'),
+        url('/RFDewi-Thin.591cf19d.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Thin.36c538a7.woff2') format('woff2'),
+        url('/RFDewi-Thin.229e03c8.woff') format('woff'),
+        url('/RFDewi-Thin.9b956178.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-BlackItalic.9cce7230.eot');
+    src: local('RF Dewi Extended Black Italic'), local('RFDewiExtended-BlackItalic'),
+        url('/RFDewiExtended-BlackItalic.9cce7230.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-BlackItalic.736cb202.woff2') format('woff2'),
+        url('/RFDewiExtended-BlackItalic.18ee9c96.woff') format('woff'),
+        url('/RFDewiExtended-BlackItalic.2a7b0158.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Ultralight.e059d76f.eot');
+    src: local('RF Dewi Expanded Ultralight'), local('RFDewiExpanded-Ultralight'),
+        url('/RFDewiExpanded-Ultralight.e059d76f.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Ultralight.86f61fe1.woff2') format('woff2'),
+        url('/RFDewiExpanded-Ultralight.769a1c49.woff') format('woff'),
+        url('/RFDewiExpanded-Ultralight.b4061df0.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-Light.f5d6fafd.eot');
+    src: local('RF Dewi Condensed Light'), local('RFDewiCondensed-Light'),
+        url('/RFDewiCondensed-Light.f5d6fafd.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-Light.1d8a8938.woff2') format('woff2'),
+        url('/RFDewiCondensed-Light.826cf65d.woff') format('woff'),
+        url('/RFDewiCondensed-Light.641f917a.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-Ultralight.b6b8922e.eot');
+    src: local('RF Dewi Extended Ultralight'), local('RFDewiExtended-Ultralight'),
+        url('/RFDewiExtended-Ultralight.b6b8922e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-Ultralight.51619aa6.woff2') format('woff2'),
+        url('/RFDewiExtended-Ultralight.f83fb684.woff') format('woff'),
+        url('/RFDewiExtended-Ultralight.01b5eda5.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('/RFDewiExtended-ThinItalic.04f8ad4e.eot');
+    src: local('RF Dewi Extended Thin Italic'), local('RFDewiExtended-ThinItalic'),
+        url('/RFDewiExtended-ThinItalic.04f8ad4e.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExtended-ThinItalic.5c7b0e54.woff2') format('woff2'),
+        url('/RFDewiExtended-ThinItalic.b37f5f75.woff') format('woff'),
+        url('/RFDewiExtended-ThinItalic.d96c77ee.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('/RFDewiExpanded-Bold.87d03cea.eot');
+    src: local('RF Dewi Expanded Bold'), local('RFDewiExpanded-Bold'),
+        url('/RFDewiExpanded-Bold.87d03cea.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiExpanded-Bold.407b225d.woff2') format('woff2'),
+        url('/RFDewiExpanded-Bold.9c444f84.woff') format('woff'),
+        url('/RFDewiExpanded-Bold.becbe6ec.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-Italic.21afd239.eot');
+    src: local('RF Dewi Italic'), local('RFDewi-Italic'),
+        url('/RFDewi-Italic.21afd239.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-Italic.fe330498.woff2') format('woff2'),
+        url('/RFDewi-Italic.5b283660.woff') format('woff'),
+        url('/RFDewi-Italic.858216b3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-SemiboldItalic.9effb4fd.eot');
+    src: local('RF Dewi Condensed Semibold Italic'), local('RFDewiCondensed-SemiboldItalic'),
+        url('/RFDewiCondensed-SemiboldItalic.9effb4fd.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-SemiboldItalic.b886acb9.woff2') format('woff2'),
+        url('/RFDewiCondensed-SemiboldItalic.efbd13ec.woff') format('woff'),
+        url('/RFDewiCondensed-SemiboldItalic.c69dfc15.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-LightItalic.f68b77e5.eot');
+    src: local('RF Dewi Condensed Light Italic'), local('RFDewiCondensed-LightItalic'),
+        url('/RFDewiCondensed-LightItalic.f68b77e5.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-LightItalic.85a8a6b8.woff2') format('woff2'),
+        url('/RFDewiCondensed-LightItalic.1c9a6270.woff') format('woff'),
+        url('/RFDewiCondensed-LightItalic.c26b426b.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi Condensed';
+    src: url('/RFDewiCondensed-BoldItalic.19565095.eot');
+    src: local('RF Dewi Condensed Bold Italic'), local('RFDewiCondensed-BoldItalic'),
+        url('/RFDewiCondensed-BoldItalic.19565095.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewiCondensed-BoldItalic.ce4d44be.woff2') format('woff2'),
+        url('/RFDewiCondensed-BoldItalic.27748d15.woff') format('woff'),
+        url('/RFDewiCondensed-BoldItalic.ed503ce1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-BlackItalic.98130883.eot');
+    src: local('RF Dewi Black Italic'), local('RFDewi-BlackItalic'),
+        url('/RFDewi-BlackItalic.98130883.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-BlackItalic.f19fbe69.woff2') format('woff2'),
+        url('/RFDewi-BlackItalic.56d5883a.woff') format('woff'),
+        url('/RFDewi-BlackItalic.be11d323.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('/RFDewi-SemiboldItalic.9ee9813b.eot');
+    src: local('RF Dewi Semibold Italic'), local('RFDewi-SemiboldItalic'),
+        url('/RFDewi-SemiboldItalic.9ee9813b.eot?#iefix') format('embedded-opentype'),
+        url('/RFDewi-SemiboldItalic.d5a3839a.woff2') format('woff2'),
+        url('/RFDewi-SemiboldItalic.c63e38d6.woff') format('woff'),
+        url('/RFDewi-SemiboldItalic.669d0b47.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "RF Dewi", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #222222;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+
+
+
+/*# sourceMappingURL=/main.11136b1b.css.map */
