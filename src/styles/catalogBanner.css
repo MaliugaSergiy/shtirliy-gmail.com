@@ -1,0 +1,116 @@
+.catalogBanner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:680px) {
+    .catalogBanner {
+        padding-bottom: 250px;
+        margin: 0 -16px;
+        width: auto;
+    }
+}
+
+.catalogBanner-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background-color: #F4F4F4;
+    background-image: url("../assets/images/catalog_banner.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:840px) {
+    .catalogBanner-bg {
+        background-position: right -75px center;
+    }
+}
+
+@media(max-width:680px) {
+    .catalogBanner-bg {
+        background-image: url("../assets/images/catalog_banner_mob.png");
+        background-position: bottom center;
+        background-size: 223px 202px;
+    }
+}
+
+.catalogBanner-content{
+    position: relative;
+    padding: 100px;
+    color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 600px;
+}
+
+@media(max-width:720px) {
+    .catalogBanner-content {
+        padding: 50px;
+        max-width: 440px;
+    }
+}
+
+@media(max-width:680px) {
+    .catalogBanner-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+.catalogBanner-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+}
+
+@media(max-width:720px) {
+    .catalogBanner-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:680px) {
+    .catalogBanner-title {
+        font-size: 26px;
+    }
+}
+
+.catalogBanner-descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+
+@media(max-width:720px) {
+    .catalogBanner-descr {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width:680px) {
+    .catalogBanner-descr {
+        font-size: 14px;
+    }
+}
+
+.catalogBanner-button {
+    display: inline-block;
+    align-self: start;
+}
+
+@media(max-width:680px) {
+    .catalogBanner-button {
+        align-self: center;
+    }
+}

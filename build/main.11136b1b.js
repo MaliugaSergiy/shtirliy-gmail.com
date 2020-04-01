@@ -309,7 +309,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../assets/fonts/RFDewi/stylesheet.css":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/catalogBanner.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\assets\\images\\catalog_banner.png":[["catalog_banner.c05494a7.png","../assets/images/catalog_banner.png"],"../assets/images/catalog_banner.png"],"./..\\assets\\images\\catalog_banner_mob.png":[["catalog_banner_mob.25a7bcdb.png","../assets/images/catalog_banner_mob.png"],"../assets/images/catalog_banner_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../assets/fonts/RFDewi/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -319,7 +324,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./reset.css":"../styles/reset.css","./_footer.css":"../styles/_footer.css","./header.css":"../styles/header.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./product.css":"../styles/product.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","./headerMenu.css":"../styles/headerMenu.css","./catalog.css":"../styles/catalog.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
+},{"./reset.css":"../styles/reset.css","./_footer.css":"../styles/_footer.css","./header.css":"../styles/header.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./product.css":"../styles/product.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","./headerMenu.css":"../styles/headerMenu.css","./catalog.css":"../styles/catalog.css","./catalogBanner.css":"../styles/catalogBanner.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

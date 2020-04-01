@@ -25,13 +25,28 @@
 }
 
 .catalog-item--wide {
-    padding-top: 50%;
+    padding-top: 65%;
     grid-column-end: span 3;
 
+}
+
+@media(max-width:560px) {
+    .catalog-item--wide {
+        grid-column-end: span 2;
+    }
+}
+
+@media(max-width:680px) {
+    .catalog-item--wide  {
+        padding-top: 0;
+    }
+
+    .catalog-item--wide .catalog-itemInner {
+        position: relative;
+    }
 }
 
 .catalog-itemInner {
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-
 }
