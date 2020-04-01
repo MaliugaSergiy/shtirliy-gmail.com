@@ -11,6 +11,10 @@
     /* width: auto; */
 }
 
+.button--bordered {
+    border: 1px solid #1E1E1E;
+}
+
 @media(max-width: 840px) {
     .button {
         font-size: 12px;

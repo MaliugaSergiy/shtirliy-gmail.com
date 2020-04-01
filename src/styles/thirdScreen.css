@@ -1,0 +1,31 @@
+.thirdScreen {
+
+}
+
+.thirdScreen-outer {
+
+}
+
+.thirdScreen-inner {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.thirdScreen-button {
+    margin-bottom: 64px;
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+}
+
+@media(max-width:840px) {
+    .thirdScreen-button {
+        margin-bottom: 30px;
+    }
+}
+
+.thirdScreen-catalog {
+
+}

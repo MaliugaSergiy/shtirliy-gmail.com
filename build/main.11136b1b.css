@@ -943,6 +943,102 @@ button {
   overflow: hidden;
 }
 
+.product {
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+
+}
+
+.product-imageHoder {
+    position: relative;
+    /* background-color: coral; */
+    padding-top: 150%;
+
+}
+
+@media (max-width:700px) {
+    .product-imageHoder {
+        padding-top: 140%;
+    };
+}
+
+.product-image {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+
+}
+.product-footer {
+    padding: 0 40px;
+
+}
+
+@media (max-width:1200px) {
+    .product-footer {
+        padding: 0 25px;
+    };
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+@media (max-width:1200px) {
+    .product-title {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 6px;
+    };
+}
+
+@media (max-width:700px) {
+    .product-title {
+        font-size: 14px;
+    };
+}
+@media (max-width:360px) {
+    .product-title {
+        font-size: 12px;
+    };
+}
+
+
+.product-info {
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+@media (max-width:1200px) {
+    .product-info {
+        font-size: 14px;
+        line-height: 1.3;
+    };
+}
+
+@media (max-width:700px) {
+    .product-info {
+        font-size: 14px;
+    };
+}
+@media (max-width:360px) {
+    .product-info {
+        font-size: 12px;
+    };
+}
+
 .iconContainer {
     display: inline-block;
     color: inherit;
@@ -1460,6 +1556,43 @@ button {
         margin-right: 16px;
     } 
  }
+.thirdScreen {
+
+}
+
+.thirdScreen-outer {
+
+}
+
+.thirdScreen-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+
+}
+
+.thirdScreen-button {
+    margin-bottom: 64px;
+    display: inline-block;
+    text-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+}
+
+@media(max-width:840px) {
+    .thirdScreen-button {
+        margin-bottom: 30px;
+    }
+}
+
+.thirdScreen-catalog {
+
+}
 .fourthScreen {
     /* height: 840px; */
     /* min-height: 100vh; */
@@ -2198,6 +2331,10 @@ position: relative;
     /* width: auto; */
 }
 
+.button--bordered {
+    border: 1px solid #1E1E1E;
+}
+
 @media(max-width: 840px) {
     .button {
         font-size: 12px;
@@ -2302,6 +2439,43 @@ position: relative;
     .headerMenu-link {
         font-size: 12px;
     }
+}
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-auto-rows: 36px; */
+    grid-gap: 20px;
+}
+
+@media(max-width: 980px) {
+    .catalog {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+    }
+}
+@media(max-width:560px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+    }
+}
+
+.catalog-item {
+    position: relative;
+    padding-top: 198%;
+    
+}
+
+.catalog-item--wide {
+    padding-top: 50%;
+    grid-column-end: span 3;
+
+}
+
+.catalog-itemInner {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+
 }
 @font-face {
     font-family: 'RF Dewi Condensed';
