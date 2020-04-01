@@ -1555,7 +1555,980 @@ var _getIsMatchedMediaQuery = _interopRequireDefault(require("./get-is-matched-m
 var _className = require("./class-name");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./scroll-to":"../scripts/utils/scroll-to.js","./move-focus":"../scripts/utils/move-focus.js","./find-focusable-element":"../scripts/utils/find-focusable-element.js","./set-height":"../scripts/utils/set-height.js","./is-node-hidden.js":"../scripts/utils/is-node-hidden.js","./add-listeners":"../scripts/utils/add-listeners.js","./throttle":"../scripts/utils/throttle.js","./throttle-lead":"../scripts/utils/throttle-lead.js","./debounce":"../scripts/utils/debounce.js","./fade-in":"../scripts/utils/fade-in.js","./highlight":"../scripts/utils/highlight.js","./wrap-element":"../scripts/utils/wrap-element.js","./text-slicer":"../scripts/utils/text-slicer.js","./chunk-substr":"../scripts/utils/chunk-substr.js","./smart-chunk-substring":"../scripts/utils/smart-chunk-substring.js","./get-is-touch-device":"../scripts/utils/get-is-touch-device.js","./get-is-mobile-device":"../scripts/utils/get-is-mobile-device.js","./transliterate":"../scripts/utils/transliterate.js","./shuffle-array":"../scripts/utils/shuffle-array.js","./ready":"../scripts/utils/ready.js","./polyfils":"../scripts/utils/polyfils.js","./get-is-mobile-or-tablet-device":"../scripts/utils/get-is-mobile-or-tablet-device.js","./get-is-matched-media-query":"../scripts/utils/get-is-matched-media-query.js","./class-name":"../scripts/utils/class-name.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
+},{"./scroll-to":"../scripts/utils/scroll-to.js","./move-focus":"../scripts/utils/move-focus.js","./find-focusable-element":"../scripts/utils/find-focusable-element.js","./set-height":"../scripts/utils/set-height.js","./is-node-hidden.js":"../scripts/utils/is-node-hidden.js","./add-listeners":"../scripts/utils/add-listeners.js","./throttle":"../scripts/utils/throttle.js","./throttle-lead":"../scripts/utils/throttle-lead.js","./debounce":"../scripts/utils/debounce.js","./fade-in":"../scripts/utils/fade-in.js","./highlight":"../scripts/utils/highlight.js","./wrap-element":"../scripts/utils/wrap-element.js","./text-slicer":"../scripts/utils/text-slicer.js","./chunk-substr":"../scripts/utils/chunk-substr.js","./smart-chunk-substring":"../scripts/utils/smart-chunk-substring.js","./get-is-touch-device":"../scripts/utils/get-is-touch-device.js","./get-is-mobile-device":"../scripts/utils/get-is-mobile-device.js","./transliterate":"../scripts/utils/transliterate.js","./shuffle-array":"../scripts/utils/shuffle-array.js","./ready":"../scripts/utils/ready.js","./polyfils":"../scripts/utils/polyfils.js","./get-is-mobile-or-tablet-device":"../scripts/utils/get-is-mobile-or-tablet-device.js","./get-is-matched-media-query":"../scripts/utils/get-is-matched-media-query.js","./class-name":"../scripts/utils/class-name.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+},{}],"../../node_modules/dom-helpers/util/inDOM.js":[function(require,module,exports) {
+"use strict";
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _default = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+exports.default = _default;
+module.exports = exports["default"];
+},{}],"../../node_modules/dom-helpers/util/scrollbarSize.js":[function(require,module,exports) {
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+exports.__esModule = true;
+exports.default = scrollbarSize;
+
+var _inDOM = _interopRequireDefault(require("./inDOM"));
+
+var size;
+
+function scrollbarSize(recalc) {
+  if (!size && size !== 0 || recalc) {
+    if (_inDOM.default) {
+      var scrollDiv = document.createElement('div');
+      scrollDiv.style.position = 'absolute';
+      scrollDiv.style.top = '-9999px';
+      scrollDiv.style.width = '50px';
+      scrollDiv.style.height = '50px';
+      scrollDiv.style.overflow = 'scroll';
+      document.body.appendChild(scrollDiv);
+      size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+      document.body.removeChild(scrollDiv);
+    }
+  }
+
+  return size;
+}
+
+module.exports = exports["default"];
+},{"@babel/runtime/helpers/interopRequireDefault":"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js","./inDOM":"../../node_modules/dom-helpers/util/inDOM.js"}],"../../node_modules/resize-detector/esm/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.addListener = addListener;
+exports.removeListener = removeListener;
+let raf = null;
+
+function requestAnimationFrame(callback) {
+  if (!raf) {
+    raf = (window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+      return setTimeout(callback, 16);
+    }).bind(window);
+  }
+
+  return raf(callback);
+}
+
+let caf = null;
+
+function cancelAnimationFrame(id) {
+  if (!caf) {
+    caf = (window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || function (id) {
+      clearTimeout(id);
+    }).bind(window);
+  }
+
+  caf(id);
+}
+
+function createStyles(styleText) {
+  var style = document.createElement('style');
+  style.type = 'text/css';
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = styleText;
+  } else {
+    style.appendChild(document.createTextNode(styleText));
+  }
+
+  (document.querySelector('head') || document.body).appendChild(style);
+  return style;
+}
+
+function createElement(tagName, props = {}) {
+  let elem = document.createElement(tagName);
+  Object.keys(props).forEach(key => {
+    elem[key] = props[key];
+  });
+  return elem;
+}
+
+function getComputedStyle(elem, prop, pseudo) {
+  // for older versions of Firefox, `getComputedStyle` required
+  // the second argument and may return `null` for some elements
+  // when `display: none`
+  let computedStyle = window.getComputedStyle(elem, pseudo || null) || {
+    display: 'none'
+  };
+  return computedStyle[prop];
+}
+
+function getRenderInfo(elem) {
+  if (!document.documentElement.contains(elem)) {
+    return {
+      detached: true,
+      rendered: false
+    };
+  }
+
+  let current = elem;
+
+  while (current !== document) {
+    if (getComputedStyle(current, 'display') === 'none') {
+      return {
+        detached: false,
+        rendered: false
+      };
+    }
+
+    current = current.parentNode;
+  }
+
+  return {
+    detached: false,
+    rendered: true
+  };
+}
+
+var css = ".resize-triggers{visibility:hidden;opacity:0}.resize-contract-trigger,.resize-contract-trigger:before,.resize-expand-trigger,.resize-triggers{content:\"\";position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden}.resize-contract-trigger,.resize-expand-trigger{background:#eee;overflow:auto}.resize-contract-trigger:before{width:200%;height:200%}";
+let total = 0;
+let style = null;
+
+function addListener(elem, callback) {
+  if (!elem.__resize_mutation_handler__) {
+    elem.__resize_mutation_handler__ = handleMutation.bind(elem);
+  }
+
+  let listeners = elem.__resize_listeners__;
+
+  if (!listeners) {
+    elem.__resize_listeners__ = [];
+
+    if (window.ResizeObserver) {
+      let {
+        offsetWidth,
+        offsetHeight
+      } = elem;
+      let ro = new ResizeObserver(() => {
+        if (!elem.__resize_observer_triggered__) {
+          elem.__resize_observer_triggered__ = true;
+
+          if (elem.offsetWidth === offsetWidth && elem.offsetHeight === offsetHeight) {
+            return;
+          }
+        }
+
+        runCallbacks(elem);
+      }); // initially display none won't trigger ResizeObserver callback
+
+      let {
+        detached,
+        rendered
+      } = getRenderInfo(elem);
+      elem.__resize_observer_triggered__ = detached === false && rendered === false;
+      elem.__resize_observer__ = ro;
+      ro.observe(elem);
+    } else if (elem.attachEvent && elem.addEventListener) {
+      // targeting IE9/10
+      elem.__resize_legacy_resize_handler__ = function handleLegacyResize() {
+        runCallbacks(elem);
+      };
+
+      elem.attachEvent('onresize', elem.__resize_legacy_resize_handler__);
+      document.addEventListener('DOMSubtreeModified', elem.__resize_mutation_handler__);
+    } else {
+      if (!total) {
+        style = createStyles(css);
+      }
+
+      initTriggers(elem);
+      elem.__resize_rendered__ = getRenderInfo(elem).rendered;
+
+      if (window.MutationObserver) {
+        let mo = new MutationObserver(elem.__resize_mutation_handler__);
+        mo.observe(document, {
+          attributes: true,
+          childList: true,
+          characterData: true,
+          subtree: true
+        });
+        elem.__resize_mutation_observer__ = mo;
+      }
+    }
+  }
+
+  elem.__resize_listeners__.push(callback);
+
+  total++;
+}
+
+function removeListener(elem, callback) {
+  let listeners = elem.__resize_listeners__;
+
+  if (!listeners) {
+    return;
+  }
+
+  if (callback) {
+    listeners.splice(listeners.indexOf(callback), 1);
+  } // no listeners exist, or removing all listeners
+
+
+  if (!listeners.length || !callback) {
+    // targeting IE9/10
+    if (elem.detachEvent && elem.removeEventListener) {
+      elem.detachEvent('onresize', elem.__resize_legacy_resize_handler__);
+      document.removeEventListener('DOMSubtreeModified', elem.__resize_mutation_handler__);
+      return;
+    }
+
+    if (elem.__resize_observer__) {
+      elem.__resize_observer__.unobserve(elem);
+
+      elem.__resize_observer__.disconnect();
+
+      elem.__resize_observer__ = null;
+    } else {
+      if (elem.__resize_mutation_observer__) {
+        elem.__resize_mutation_observer__.disconnect();
+
+        elem.__resize_mutation_observer__ = null;
+      }
+
+      elem.removeEventListener('scroll', handleScroll);
+      elem.removeChild(elem.__resize_triggers__.triggers);
+      elem.__resize_triggers__ = null;
+    }
+
+    elem.__resize_listeners__ = null;
+  }
+
+  if (! --total && style) {
+    style.parentNode.removeChild(style);
+  }
+}
+
+function getUpdatedSize(elem) {
+  let {
+    width,
+    height
+  } = elem.__resize_last__;
+  let {
+    offsetWidth,
+    offsetHeight
+  } = elem;
+
+  if (offsetWidth !== width || offsetHeight !== height) {
+    return {
+      width: offsetWidth,
+      height: offsetHeight
+    };
+  }
+
+  return null;
+}
+
+function handleMutation() {
+  // `this` denotes the scrolling element
+  let {
+    rendered,
+    detached
+  } = getRenderInfo(this);
+
+  if (rendered !== this.__resize_rendered__) {
+    if (!detached && this.__resize_triggers__) {
+      resetTriggers(this);
+      this.addEventListener('scroll', handleScroll, true);
+    }
+
+    this.__resize_rendered__ = rendered;
+    runCallbacks(this);
+  }
+}
+
+function handleScroll() {
+  // `this` denotes the scrolling element
+  resetTriggers(this);
+
+  if (this.__resize_raf__) {
+    cancelAnimationFrame(this.__resize_raf__);
+  }
+
+  this.__resize_raf__ = requestAnimationFrame(() => {
+    let updated = getUpdatedSize(this);
+
+    if (updated) {
+      this.__resize_last__ = updated;
+      runCallbacks(this);
+    }
+  });
+}
+
+function runCallbacks(elem) {
+  if (!elem || !elem.__resize_listeners__) {
+    return;
+  }
+
+  elem.__resize_listeners__.forEach(callback => {
+    callback.call(elem);
+  });
+}
+
+function initTriggers(elem) {
+  let position = getComputedStyle(elem, 'position');
+
+  if (!position || position === 'static') {
+    elem.style.position = 'relative';
+  }
+
+  elem.__resize_old_position__ = position;
+  elem.__resize_last__ = {};
+  let triggers = createElement('div', {
+    className: 'resize-triggers'
+  });
+  let expand = createElement('div', {
+    className: 'resize-expand-trigger'
+  });
+  let expandChild = createElement('div');
+  let contract = createElement('div', {
+    className: 'resize-contract-trigger'
+  });
+  expand.appendChild(expandChild);
+  triggers.appendChild(expand);
+  triggers.appendChild(contract);
+  elem.appendChild(triggers);
+  elem.__resize_triggers__ = {
+    triggers,
+    expand,
+    expandChild,
+    contract
+  };
+  resetTriggers(elem);
+  elem.addEventListener('scroll', handleScroll, true);
+  elem.__resize_last__ = {
+    width: elem.offsetWidth,
+    height: elem.offsetHeight
+  };
+}
+
+function resetTriggers(elem) {
+  let {
+    expand,
+    expandChild,
+    contract
+  } = elem.__resize_triggers__; // batch read
+
+  let {
+    scrollWidth: csw,
+    scrollHeight: csh
+  } = contract;
+  let {
+    offsetWidth: eow,
+    offsetHeight: eoh,
+    scrollWidth: esw,
+    scrollHeight: esh
+  } = expand; // batch write
+
+  contract.scrollLeft = csw;
+  contract.scrollTop = csh;
+  expandChild.style.width = eow + 1 + 'px';
+  expandChild.style.height = eoh + 1 + 'px';
+  expand.scrollLeft = esw;
+  expand.scrollTop = esh;
+}
+},{}],"../../node_modules/micromodal/dist/micromodal.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+const MicroModal = (() => {
+  const FOCUSABLE_ELEMENTS = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'];
+
+  class Modal {
+    constructor({
+      targetModal,
+      triggers = [],
+      onShow = () => {},
+      onClose = () => {},
+      openTrigger = 'data-micromodal-trigger',
+      closeTrigger = 'data-micromodal-close',
+      disableScroll = false,
+      disableFocus = false,
+      awaitCloseAnimation = false,
+      awaitOpenAnimation = false,
+      debugMode = false
+    }) {
+      // Save a reference of the modal
+      this.modal = document.getElementById(targetModal); // Save a reference to the passed config
+
+      this.config = {
+        debugMode,
+        disableScroll,
+        openTrigger,
+        closeTrigger,
+        onShow,
+        onClose,
+        awaitCloseAnimation,
+        awaitOpenAnimation,
+        disableFocus // Register click events only if pre binding eventListeners
+
+      };
+      if (triggers.length > 0) this.registerTriggers(...triggers); // pre bind functions for event listeners
+
+      this.onClick = this.onClick.bind(this);
+      this.onKeydown = this.onKeydown.bind(this);
+    }
+    /**
+     * Loops through all openTriggers and binds click event
+     * @param  {array} triggers [Array of node elements]
+     * @return {void}
+     */
+
+
+    registerTriggers(...triggers) {
+      triggers.filter(Boolean).forEach(trigger => {
+        trigger.addEventListener('click', event => this.showModal(event));
+      });
+    }
+
+    showModal() {
+      this.activeElement = document.activeElement;
+      this.modal.setAttribute('aria-hidden', 'false');
+      this.modal.classList.add('is-open');
+      this.scrollBehaviour('disable');
+      this.addEventListeners();
+
+      if (this.config.awaitOpenAnimation) {
+        const handler = () => {
+          this.modal.removeEventListener('animationend', handler, false);
+          this.setFocusToFirstNode();
+        };
+
+        this.modal.addEventListener('animationend', handler, false);
+      } else {
+        this.setFocusToFirstNode();
+      }
+
+      this.config.onShow(this.modal, this.activeElement);
+    }
+
+    closeModal() {
+      const modal = this.modal;
+      this.modal.setAttribute('aria-hidden', 'true');
+      this.removeEventListeners();
+      this.scrollBehaviour('enable');
+
+      if (this.activeElement) {
+        this.activeElement.focus();
+      }
+
+      this.config.onClose(this.modal);
+
+      if (this.config.awaitCloseAnimation) {
+        this.modal.addEventListener('animationend', function handler() {
+          modal.classList.remove('is-open');
+          modal.removeEventListener('animationend', handler, false);
+        }, false);
+      } else {
+        modal.classList.remove('is-open');
+      }
+    }
+
+    closeModalById(targetModal) {
+      this.modal = document.getElementById(targetModal);
+      if (this.modal) this.closeModal();
+    }
+
+    scrollBehaviour(toggle) {
+      if (!this.config.disableScroll) return;
+      const body = document.querySelector('body');
+
+      switch (toggle) {
+        case 'enable':
+          Object.assign(body.style, {
+            overflow: '',
+            height: ''
+          });
+          break;
+
+        case 'disable':
+          Object.assign(body.style, {
+            overflow: 'hidden',
+            height: '100vh'
+          });
+          break;
+
+        default:
+      }
+    }
+
+    addEventListeners() {
+      this.modal.addEventListener('touchstart', this.onClick);
+      this.modal.addEventListener('click', this.onClick);
+      document.addEventListener('keydown', this.onKeydown);
+    }
+
+    removeEventListeners() {
+      this.modal.removeEventListener('touchstart', this.onClick);
+      this.modal.removeEventListener('click', this.onClick);
+      document.removeEventListener('keydown', this.onKeydown);
+    }
+
+    onClick(event) {
+      if (event.target.hasAttribute(this.config.closeTrigger)) {
+        this.closeModal();
+        event.preventDefault();
+      }
+    }
+
+    onKeydown(event) {
+      if (event.keyCode === 27) this.closeModal(event);
+      if (event.keyCode === 9) this.maintainFocus(event);
+    }
+
+    getFocusableNodes() {
+      const nodes = this.modal.querySelectorAll(FOCUSABLE_ELEMENTS);
+      return Array(...nodes);
+    }
+
+    setFocusToFirstNode() {
+      if (this.config.disableFocus) return;
+      const focusableNodes = this.getFocusableNodes();
+      if (focusableNodes.length) focusableNodes[0].focus();
+    }
+
+    maintainFocus(event) {
+      const focusableNodes = this.getFocusableNodes(); // if disableFocus is true
+
+      if (!this.modal.contains(document.activeElement)) {
+        focusableNodes[0].focus();
+      } else {
+        const focusedItemIndex = focusableNodes.indexOf(document.activeElement);
+
+        if (event.shiftKey && focusedItemIndex === 0) {
+          focusableNodes[focusableNodes.length - 1].focus();
+          event.preventDefault();
+        }
+
+        if (!event.shiftKey && focusedItemIndex === focusableNodes.length - 1) {
+          focusableNodes[0].focus();
+          event.preventDefault();
+        }
+      }
+    }
+
+  }
+  /**
+   * Modal prototype ends.
+   * Here on code is responsible for detecting and
+   * auto binding event handlers on modal triggers
+   */
+  // Keep a reference to the opened modal
+
+
+  let activeModal = null;
+  /**
+   * Generates an associative array of modals and it's
+   * respective triggers
+   * @param  {array} triggers     An array of all triggers
+   * @param  {string} triggerAttr The data-attribute which triggers the module
+   * @return {array}
+   */
+
+  const generateTriggerMap = (triggers, triggerAttr) => {
+    const triggerMap = [];
+    triggers.forEach(trigger => {
+      const targetModal = trigger.attributes[triggerAttr].value;
+      if (triggerMap[targetModal] === undefined) triggerMap[targetModal] = [];
+      triggerMap[targetModal].push(trigger);
+    });
+    return triggerMap;
+  };
+  /**
+   * Validates whether a modal of the given id exists
+   * in the DOM
+   * @param  {number} id  The id of the modal
+   * @return {boolean}
+   */
+
+
+  const validateModalPresence = id => {
+    if (!document.getElementById(id)) {
+      console.warn(`MicroModal: \u2757Seems like you have missed %c'${id}'`, 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'ID somewhere in your code. Refer example below to resolve it.');
+      console.warn(`%cExample:`, 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', `<div class="modal" id="${id}"></div>`);
+      return false;
+    }
+  };
+  /**
+   * Validates if there are modal triggers present
+   * in the DOM
+   * @param  {array} triggers An array of data-triggers
+   * @return {boolean}
+   */
+
+
+  const validateTriggerPresence = triggers => {
+    if (triggers.length <= 0) {
+      console.warn(`MicroModal: \u2757Please specify at least one %c'micromodal-trigger'`, 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', 'data attribute.');
+      console.warn(`%cExample:`, 'background-color: #f8f9fa;color: #50596c;font-weight: bold;', `<a href="#" data-micromodal-trigger="my-modal"></a>`);
+      return false;
+    }
+  };
+  /**
+   * Checks if triggers and their corresponding modals
+   * are present in the DOM
+   * @param  {array} triggers   Array of DOM nodes which have data-triggers
+   * @param  {array} triggerMap Associative array of modals and their triggers
+   * @return {boolean}
+   */
+
+
+  const validateArgs = (triggers, triggerMap) => {
+    validateTriggerPresence(triggers);
+    if (!triggerMap) return true;
+
+    for (var id in triggerMap) validateModalPresence(id);
+
+    return true;
+  };
+  /**
+   * Binds click handlers to all modal triggers
+   * @param  {object} config [description]
+   * @return void
+   */
+
+
+  const init = config => {
+    // Create an config object with default openTrigger
+    const options = Object.assign({}, {
+      openTrigger: 'data-micromodal-trigger'
+    }, config); // Collects all the nodes with the trigger
+
+    const triggers = [...document.querySelectorAll(`[${options.openTrigger}]`)]; // Makes a mappings of modals with their trigger nodes
+
+    const triggerMap = generateTriggerMap(triggers, options.openTrigger); // Checks if modals and triggers exist in dom
+
+    if (options.debugMode === true && validateArgs(triggers, triggerMap) === false) return; // For every target modal creates a new instance
+
+    for (var key in triggerMap) {
+      let value = triggerMap[key];
+      options.targetModal = key;
+      options.triggers = [...value];
+      activeModal = new Modal(options); // eslint-disable-line no-new
+    }
+  };
+  /**
+   * Shows a particular modal
+   * @param  {string} targetModal [The id of the modal to display]
+   * @param  {object} config [The configuration object to pass]
+   * @return {void}
+   */
+
+
+  const show = (targetModal, config) => {
+    const options = config || {};
+    options.targetModal = targetModal; // Checks if modals and triggers exist in dom
+
+    if (options.debugMode === true && validateModalPresence(targetModal) === false) return; // stores reference to active modal
+
+    activeModal = new Modal(options); // eslint-disable-line no-new
+
+    activeModal.showModal();
+  };
+  /**
+   * Closes the active modal
+   * @param  {string} targetModal [The id of the modal to close]
+   * @return {void}
+   */
+
+
+  const close = targetModal => {
+    targetModal ? activeModal.closeModalById(targetModal) : activeModal.closeModal();
+  };
+
+  return {
+    init,
+    show,
+    close
+  };
+})();
+
+var _default = MicroModal;
+exports.default = _default;
+},{}],"../scripts/modals.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _scrollbarSize = _interopRequireDefault(require("dom-helpers/util/scrollbarSize"));
+
+var _resizeDetector = require("resize-detector");
+
+var _micromodal = _interopRequireDefault(require("micromodal"));
+
+var _utils = require("./utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var DEFAULT_PROPS = {
+  modalContentSelector: '[data-modal_id]',
+  defaultProperties: {
+    additionalClass: 'modal--slide',
+    classes: {
+      modal: 'modal',
+      overlay: 'modal-overlay',
+      container: 'modal-container',
+      header: 'modal-header',
+      title: 'modal-title',
+      closeButton: 'modal-close',
+      contentHolder: 'modal-contentHolder',
+      content: 'modal-content'
+    }
+  }
+};
+
+var Modals =
+/*#__PURE__*/
+function () {
+  function Modals(props) {
+    var _this = this;
+
+    _classCallCheck(this, Modals);
+
+    _defineProperty(this, "_props", null);
+
+    _defineProperty(this, "_modalContentNodes", []);
+
+    _defineProperty(this, "_modalsProperties", []);
+
+    _defineProperty(this, "_modalElements", []);
+
+    _defineProperty(this, "_activeModalId", null);
+
+    _defineProperty(this, "handleContentResize", function (element, index) {
+      return function () {
+        _this.setHeaderWidth(element, index);
+      };
+    });
+
+    _defineProperty(this, "setHeaderWidth", function (element, index) {
+      var _element$getBoundingC = element.getBoundingClientRect(),
+          width = _element$getBoundingC.width;
+
+      var header = _this._modalElements[index].querySelector('header');
+
+      header.style.width = "".concat(width, "px");
+    });
+
+    _defineProperty(this, "wrapModalContents", function (element, index) {
+      var _this$_modalsProperti = _this._modalsProperties[index],
+          id = _this$_modalsProperti.id,
+          title = _this$_modalsProperti.title,
+          additionalClass = _this$_modalsProperti.additionalClass,
+          classes = _this$_modalsProperti.classes;
+      var overlayElement, containerElement, headerElement, titleElement, closeButtonElement, contentElement;
+      _this._modalElements[index] = document.createElement('div');
+      (0, _utils.setAttributes)(_this._modalElements[index], {
+        class: classes.modal + ' ' + additionalClass,
+        id: id,
+        'aria-hidden': true
+      });
+      overlayElement = document.createElement('div');
+      (0, _utils.setAttributes)(overlayElement, {
+        class: classes.overlay,
+        tabindex: '-1',
+        'data-custom-close': true
+      });
+      containerElement = document.createElement('div');
+      (0, _utils.setAttributes)(containerElement, {
+        class: classes.container,
+        role: 'dialog',
+        'aria-modal': 'true',
+        'aria-labelledby': "".concat(id, "-title")
+      });
+      headerElement = document.createElement('header');
+      (0, _utils.setAttributes)(headerElement, {
+        class: classes.header
+      });
+      titleElement = document.createElement('h2');
+      (0, _utils.setAttributes)(titleElement, {
+        class: classes.title,
+        id: "".concat(id, "-title")
+      });
+      titleElement.textContent = title;
+      closeButtonElement = document.createElement('button');
+      (0, _utils.setAttributes)(closeButtonElement, {
+        class: classes.closeButton,
+        'aria-label': 'Close modal',
+        'data-custom-close': true
+      });
+      contentElement = document.createElement('div');
+      (0, _utils.setAttributes)(contentElement, {
+        class: classes.content,
+        id: "".concat(id, "-content")
+      });
+      (0, _utils.addClass)(contentElement, 'js-init-scroll-shadow');
+      (0, _utils.wrapElement)(element, contentElement);
+      (0, _utils.wrapElement)(contentElement, containerElement);
+      (0, _utils.wrapElement)(containerElement, overlayElement);
+      (0, _utils.wrapElement)(overlayElement, _this._modalElements[index]);
+      containerElement.insertAdjacentElement('afterbegin', headerElement);
+      headerElement.insertAdjacentElement('afterbegin', closeButtonElement);
+      title && headerElement.insertAdjacentElement('afterbegin', titleElement);
+    });
+
+    _defineProperty(this, "getDataProperties", function (defaultProperties) {
+      return function (element) {
+        var _element$dataset = element.dataset,
+            modal_id = _element$dataset.modal_id,
+            modal_title = _element$dataset.modal_title,
+            modal_additional_class = _element$dataset.modal_additional_class;
+        var properties = {};
+        if (modal_id !== undefined) properties.id = modal_id;
+        if (modal_title !== undefined) properties.title = modal_title;
+        if (modal_additional_class !== undefined) properties.additionalClass = modal_additional_class;
+        return _objectSpread({}, defaultProperties, {}, properties);
+      };
+    });
+
+    _defineProperty(this, "handleDialogShow", function (modal) {
+      _this._activeModalId = modal.id;
+
+      _this.setBodyStyle();
+    });
+
+    _defineProperty(this, "handleDialogClose", function (modal) {
+      _this._activeModalId = null;
+
+      _this.resetBodyStyle();
+
+      _this.pauseAllYoutubeVideos(modal);
+
+      _this.pauseAllVideos(modal);
+    });
+
+    this._props = _objectSpread({}, DEFAULT_PROPS, {}, props);
+    var _this$_props = this._props,
+        modalContentSelector = _this$_props.modalContentSelector,
+        _defaultProperties = _this$_props.defaultProperties;
+
+    if (!document.querySelector(modalContentSelector)) {
+      return;
+    }
+
+    this._modalContentNodes = Array.from(document.querySelectorAll(modalContentSelector));
+    this._modalsProperties = this._modalContentNodes.map(this.getDataProperties(_defaultProperties));
+    this._modalContentNodes[0].parentElement.style.display = 'block';
+
+    this._modalContentNodes.map(this.wrapModalContents);
+
+    _micromodal.default.init({
+      onShow: this.handleDialogShow,
+      onClose: this.handleDialogClose,
+      openTrigger: 'data-custom-open',
+      closeTrigger: 'data-custom-close',
+      disableScroll: true,
+      disableFocus: false,
+      awaitCloseAnimation: false,
+      debugMode: true
+    });
+
+    this.setHeaderWidthByContent();
+  }
+
+  _createClass(Modals, [{
+    key: "setHeaderWidthByContent",
+    value: function setHeaderWidthByContent() {
+      var _this2 = this;
+
+      var _modalContentNodes = this._modalContentNodes;
+
+      _modalContentNodes.forEach(this.setHeaderWidth);
+
+      _modalContentNodes.forEach(function (contentElement, index) {
+        (0, _resizeDetector.addListener)(contentElement, _this2.handleContentResize(contentElement, index));
+      });
+    }
+  }, {
+    key: "setBodyStyle",
+    value: function setBodyStyle() {
+      var bodyElement = document.body;
+      bodyElement.style.paddingRight = "".concat((0, _scrollbarSize.default)(), "px");
+      bodyElement.children[0].style.webkitFilter = 'blur(3px)';
+      bodyElement.children[0].style.msFilter = 'blur(3px)';
+      bodyElement.children[0].style.OFilter = 'blur(3px)';
+      bodyElement.children[0].style.MozFilter = 'blur(3px)';
+      bodyElement.children[0].style.filter = 'blur(3px)';
+    }
+  }, {
+    key: "resetBodyStyle",
+    value: function resetBodyStyle() {
+      var bodyElement = document.body;
+      bodyElement.style.paddingRight = '';
+      bodyElement.children[0].style.filter = '';
+      bodyElement.children[0].style.webkitFilter = '';
+      bodyElement.children[0].style.msFilter = '';
+      bodyElement.children[0].style.OFilter = '';
+      bodyElement.children[0].style.MozFilter = '';
+    }
+  }, {
+    key: "pauseAllYoutubeVideos",
+    value: function pauseAllYoutubeVideos(modal) {
+      if (!modal.querySelector('.youtubeVideoModal-video')) {
+        return;
+      }
+
+      try {
+        var videos = Array.from(modal.querySelectorAll('.youtubeVideoModal-video'));
+        videos.forEach(function (video) {
+          video.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        });
+      } catch (error) {
+        console.warn("Can't stop video", error);
+      }
+    }
+  }, {
+    key: "pauseAllVideos",
+    value: function pauseAllVideos(modal) {
+      if (!modal.querySelector('video')) {
+        return;
+      }
+
+      var videos = Array.from(modal.querySelectorAll('video'));
+      videos.forEach(function (video) {
+        video.pause();
+      });
+    }
+  }]);
+
+  return Modals;
+}();
+
+exports.default = Modals;
+},{"dom-helpers/util/scrollbarSize":"../../node_modules/dom-helpers/util/scrollbarSize.js","resize-detector":"../../node_modules/resize-detector/esm/index.js","micromodal":"../../node_modules/micromodal/dist/micromodal.es.js","./utils":"../scripts/utils/index.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
 var define;
 'use strict';
 
@@ -2443,6 +3416,8 @@ var define;
 
 var _utils = require("./utils");
 
+var _modals = _interopRequireDefault(require("./modals"));
+
 var _ElementQueries = _interopRequireDefault(require("css-element-queries/src/ElementQueries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -2453,9 +3428,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   _ElementQueries.default.init();
 
-  rulesAllower();
+  new _modals.default({});
 });
-},{"./utils":"../scripts/utils/index.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -2656,6 +2656,448 @@ position: relative;
             align-self: center;
     }
 }
+/* .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(37, 40, 53, 0.7);
+    overflow: auto;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s,
+        opacity 0.25s 0s,
+        transform 0.25s;
+}
+
+.isModalOpened .modal,
+.modal--opened {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s,
+        opacity 0.25s 0s,
+        transform 0.25s;
+}
+
+.modal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8vh 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+    .modal-container {
+        padding: 16px;
+    }
+}
+
+.modal-window {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .modal-window {
+        width: 60%;
+    }
+}
+
+@media (max-width: 680px) {
+    .modal-window {
+        width: 100%;
+    }
+}
+
+.modal--overflowVisible .modal-window {
+    overflow: visible;
+}
+
+.modal--expanded .modal-window {
+    width: 100%;
+}
+
+.modal-header {
+    padding: 16px 32px;
+}
+
+@media (max-width: 720px) {
+    .modal-header {
+        padding: 8px 16px;
+    }
+}
+
+.modal-title {
+    margin: 0;
+    margin-right: 24px;
+    padding-top: 1px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .modal-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .modal-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-title {
+        padding-top: 0;
+        font-size: 16px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 18px;
+    vertical-align: top;
+    line-height: 1;
+    z-index: 1;
+}
+
+@media (max-width: 640px) {
+    .modal-close {
+        top: 8px;
+        right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-close {
+        top: 0px;
+        right: 0px;
+        font-size: 16px;
+    }
+}
+
+.modal-close:hover {
+    color: #848fa5;
+}
+
+.modal-content {
+    overflow: hidden;
+}
+
+.modal--overflowVisible .modal-content {
+    overflow: visible;
+}
+
+.modal-footer {
+    margin-top: auto;
+    padding: 0px 35px 25px;
+}
+
+.modal-actionList {
+    display: flex;
+    justify-content: flex-end;
+    margin: -5px;
+    padding-top: 20px;
+}
+
+.modal-action {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .modal-actionList {
+        flex-direction: column;
+    }
+
+    .modal-action {
+        flex: 1 0 100%;
+        margin: 5px;
+        max-width: calc(100% - 10px);
+    }
+} */
+
+.modals {
+  display: none;
+}
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  display: none;
+  font-family: inherit;
+  position: relative;
+  z-index: 101;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+
+@media (max-width: 840px) {
+  .modal-overlay {
+    padding: 0;
+    padding-top: 24px;
+  }
+}
+
+.modal-container {
+  background-color: #fff;
+  padding: 32px 16px 16px;
+  /* max-width: 500px; */
+  max-width: 1200px;
+  max-height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.modal-header {
+  display: inline-block;
+  text-align: center;
+  margin: 16px 0;
+  /* display: inline-flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 840px) {
+  .modal-title {
+    font-size: 18px;
+  }
+}
+
+.modal-close {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 18px;
+  vertical-align: top;
+  line-height: 1;
+  z-index: 102;
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  width: auto;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-header .modal-close:before {
+  content: '\2715';
+}
+
+.modal-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@-webkit-keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes mmslideIn {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mmslideOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+.modal--slide {
+  display: none;
+}
+
+.modal--slide.is-open {
+  display: block;
+}
+
+.modal--slide[aria-hidden='false'] .modal-overlay {
+  -webkit-animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal--slide[aria-hidden='false'] .modal-container {
+  -webkit-animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal--slide[aria-hidden='true'] .modal-overlay {
+  -webkit-animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal--slide[aria-hidden='true'] .modal-container {
+  -webkit-animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal--slide .modal-container,
+.modal--slide .modal-overlay {
+  will-change: transform;
+}
+
+.modal--fullSized .modal-overlay {
+  background-color: #fff;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0;
+  outline: none;
+  /* pointer-events: none; */
+}
+
+.modal--fullSized .modal-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-top: 16px;
+  pointer-events: visible;
+  width: 100%;
+}
+
+.modal--fullSized .modal-header {
+  text-align: left;
+}
+
 @font-face {
     font-family: 'RF Dewi Condensed';
     src: url('/RFDewiCondensed-Regular.69abd3f8.eot');
