@@ -45,6 +45,7 @@
     </div>
     <div class="page-main">
       <div class="page-content js-page-content">
+
         <div class="firstScreen">
           <div class="firstScreen-bg"></div>
           <div class="firstScreen-outer">
@@ -249,7 +250,7 @@
                                 <div class="catalogBanner-title">Закажите антисептики прямо сейчас</div>
                                 <div class="catalogBanner-descr">Мы перезвоним вам в ближайшее время!</div>
                                 <div class="catalogBanner-button">
-                                  <button class="button button--theme-dark">Заказать антисептики</button>
+                                  <button class="button button--theme-dark" data-custom-open="orderAntiseptic">Заказать антисептики</button>
                                 </div>
                               </div>
                             </div>
@@ -311,9 +312,9 @@
                       <div class="fifthScreen-maskItem">
                         <button class="fifthScreen-maskItemInner">
                           <div class="maskProduct">
+                            <div class="maskProduct-hoverImage" style="background-image: url(/mask_1_hover.bca2c7a2.png);"></div>
                             <div class="maskProduct-imageHolder">
                               <img src="/mask_sample.c04f5e6f.png" alt="" class="maskProduct-image">
-                              <!-- <img src="http://mask_sample.png" alt="" class="maskProduct-image"> -->
                             </div>
                             <div class="maskProduct-title">Mask Purple</div>
                           </div>
@@ -322,44 +323,44 @@
                       <div class="fifthScreen-maskItem">
                         <button class="fifthScreen-maskItemInner">
                           <div class="maskProduct">
+                            <div class="maskProduct-hoverImage" style="background-image: url(/mask_2_hover.aa1787aa.png);"></div>
                             <div class="maskProduct-imageHolder">
-                              <img src="/mask_sample.c04f5e6f.png" alt="" class="maskProduct-image">
-                              <!-- <img src="http://mask_sample.png" alt="gfg" class="maskProduct-image"> -->
+                              <img src="/mask_sample_2.55d516ae.png" alt="" class="maskProduct-image">
                             </div>
-                            <div class="maskProduct-title">Mask Purple</div>
+                            <div class="maskProduct-title">Mask Rose</div>
                           </div>
                         </button>
                       </div>
                       <div class="fifthScreen-maskItem">
                         <button class="fifthScreen-maskItemInner">
                           <div class="maskProduct">
+                            <div class="maskProduct-hoverImage" style="background-image: url(/mask_3_hover.dd6acc22.png);"></div>
                             <div class="maskProduct-imageHolder">
-                              <img src="/mask_sample.c04f5e6f.png" alt="" class="maskProduct-image">
-                              <!-- <img src="http://mask_sample.png" alt="" class="maskProduct-image"> -->
+                              <img src="/mask_sample_3.1d33272d.png" alt="" class="maskProduct-image">
                             </div>
-                            <div class="maskProduct-title">Mask Purple</div>
+                            <div class="maskProduct-title">Mask Yellow</div>
                           </div>
                         </button>
                       </div>
                       <div class="fifthScreen-maskItem">
                         <button class="fifthScreen-maskItemInner">
                           <div class="maskProduct">
+                            <div class="maskProduct-hoverImage" style="background-image: url(/mask_4_hover.2f87cbc1.png);"></div>
                             <div class="maskProduct-imageHolder">
-                              <img src="/mask_sample.c04f5e6f.png" alt="" class="maskProduct-image">
-                              <!-- <img src="http://mask_sample.png" alt="" class="maskProduct-image"> -->
+                              <img src="/mask_sample_4.032d7fdd.png" alt="" class="maskProduct-image">
                             </div>
-                            <div class="maskProduct-title">Mask Purple</div>
+                            <div class="maskProduct-title">Mask Black</div>
                           </div>
                         </button>
                       </div>
                       <div class="fifthScreen-maskItem">
                         <button class="fifthScreen-maskItemInner">
                           <div class="maskProduct">
+                            <div class="maskProduct-hoverImage" style="background-image: url(/mask_5_hover.30a04490.png);"></div>
                             <div class="maskProduct-imageHolder">
-                              <img src="/mask_sample.c04f5e6f.png" alt="" class="maskProduct-image">
-                              <!-- <img src="http://mask_sample.png" alt="" class="maskProduct-image"> -->
+                              <img src="/mask_sample_5.f127e399.png" alt="" class="maskProduct-image">
                             </div>
-                            <div class="maskProduct-title">Mask Purple</div>
+                            <div class="maskProduct-title">Mask Grey</div>
                           </div>
                         </button>
                       </div>
@@ -379,7 +380,7 @@
                 <div class="sixthScreen-title">Закажите защитные маски прямо сейчас</div>
                 <div class="sixthScreen-descr">Мы перезвоним вам в ближайшее время!</div>
                 <div class="sixthScreen-button">
-                  <button class="button">Заказать маски</button>
+                  <button class="button" data-custom-open="orderMak">Заказать маски</button>
                 </div>
               </div> 
             </div>
@@ -468,7 +469,7 @@
                       <div class="lastScreen-infoColumn">
                         <div class="lastScreen-description">Заполните заявку и наш представитель перезвонит вам, чтобы обсудить все подробности оптовой поставки</div>
                         <div class="lastScreen-fillOutApplication">
-                          <button class="button button--theme-dark">Заполнить заявку</button>
+                          <button class="button button--theme-dark" data-custom-open="orderWholeSale">Заполнить заявку</button>
                         </div>
                       </div>
                     </div>
@@ -562,12 +563,151 @@
     </div>
   </section>
   <div class="modals">
-    <div class="testModal" data-modal_id="testModal" style="max-width: 200px">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, repudiandae quod voluptatibus aut exercitationem nisi! Perferendis nemo iste fugit dolores harum accusantium inventore eaque assumenda esse eius veniam iusto minus odit, nulla, placeat molestias ratione beatae, recusandae dolor. Asperiores sit iure placeat rem perferendis voluptatem nisi voluptate, quibusdam id autem?
+    <div data-modal_id="orderAntiseptic" data-modal_additional_class="modal--full modal--slide">
+      <div class="оrderDialog">
+        <div class="оrderDialog-main">
+          <div class="оrderDialog-header">
+            <div class="оrderDialog-title">Заказать</div>
+            <div class="оrderDialog-underTitle">антисептики</div>
+          </div>
+          <div class="оrderDialog-underHeader">Цены могут гибко меняться в зависимости от объема заказа</div>
+          <div class="orderDialog-imageHolder">
+            <div class="orderDialog-image" style="background-image: url(/order-banner.68706f1c.png);"></div>
+          </div>
+          <div class="оrderDialog-form">
+            <form class="orderForm">
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">ФИО</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input class="input-field js-phone-input" type="text" placeholder="+7 (000) 000 00 00" required="">
+                    <div class="input-placeholder">Телефон</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">E-mail</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+              </div> 
+            </form>
+          </div>
+        </div>
+        <div class="оrderDialog-bg">
+          <div class="orderDialog-image" style="background-image: url(/order-banner.68706f1c.png);"></div>
+        </div>
+      </div>
     </div>
-    <div class="testModal" data-modal_id="testModal_2">
-      Привет
+    <div data-modal_id="orderMak" data-modal_additional_class="modal--full modal--slide">
+      <div class="оrderDialog">
+        <div class="оrderDialog-main">
+          <div class="оrderDialog-header">
+            <div class="оrderDialog-title">Заказать</div>
+            <div class="оrderDialog-underTitle">защитные маски</div>
+          </div>
+          <div class="оrderDialog-underHeader">Цены могут гибко меняться в зависимости от объема заказа</div>
+          <div class="orderDialog-imageHolder">
+            <div class="orderDialog-image" style="background-image: url(/girl_1.a3ea3fa4.png), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5)); background-image: url(/girl_1.a3ea3fa4.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%); background-color: #fff; "></div>
+          </div>
+          <div class="оrderDialog-form">
+            <form class="orderForm">
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">ФИО</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input class="input-field js-phone-input" type="text" placeholder="+7 (000) 000 00 00" required="">
+                    <div class="input-placeholder">Телефон</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">E-mail</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+              </div> 
+            </form>
+          </div>
+        </div>
+        <div class="оrderDialog-bg">
+          <div class="orderDialog-image" style="background-image: url(/girl_1.a3ea3fa4.png), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));background-image: url(/girl_1.a3ea3fa4.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);"></div>
+        </div>
+      </div>
     </div>
+    <div data-modal_id="orderWholeSale" data-modal_additional_class="modal--full modal--slide">
+      <div class="оrderDialog">
+        <div class="оrderDialog-main">
+          <div class="оrderDialog-header">
+            <div class="оrderDialog-title">Оставить <span style="font-weight: 300;">заявку</span></div>
+            <div class="оrderDialog-underTitle">на оптовый заказ</div>
+          </div>
+          <div class="оrderDialog-underHeader">Цены могут гибко меняться в зависимости от объема заказа</div>
+          <div class="orderDialog-imageHolder">
+            <div class="orderDialog-image" style="background-image: url(/whole_sale.c346509d.png);background-color: #fff;"></div>
+          </div>
+          <div class="оrderDialog-form">
+            <form class="orderForm">
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">ФИО</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input class="input-field js-phone-input" type="text" placeholder="+7 (000) 000 00 00" required="">
+                    <div class="input-placeholder">Телефон</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <div class="input js-input">
+                  <label class="input-label">
+                    <input type="text" class="input-field" required="">
+                    <div class="input-placeholder">E-mail</div>
+                  </label>
+                </div>
+              </div>
+              <div class="orderForm-field">
+                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+              </div> 
+            </form>
+          </div>
+        </div>
+        <div class="оrderDialog-bg">
+          <div class="orderDialog-image" style="background-image: url(/whole_sale.c346509d.png); background-color: #fff;"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="/scripts.3cddadf4.js"></script>
 </body>

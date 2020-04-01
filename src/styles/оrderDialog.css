@@ -1,0 +1,104 @@
+.оrderDialog {
+    display: flex;
+    overflow: hidden;
+}
+
+.оrderDialog-main {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 64px 100px;
+}
+
+@media(max-width:840px) {
+    .оrderDialog-main {
+        padding: 16px;
+    }
+}
+
+@media (max-width:1100px) {
+    .оrderDialog-main {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.оrderDialog-header{
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #1E1E1E;
+    margin-bottom: 16px;
+}
+
+.оrderDialog-title {
+    font-weight: 800;
+}
+
+.оrderDialog-underTitle {
+    margin-bottom: 16px;
+    
+}
+
+
+.оrderDialog-underHeader {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.orderDialog-imageHolder {
+    display: block;
+    position: relative;
+}
+
+@media (max-width:1100px) {
+    .orderDialog-imageHolder {
+        display: block;
+        padding-top: 50%;
+        /* width: 100%; */
+        margin-bottom: 32px;
+
+    }
+}
+
+.orderDialog-imageHolder .orderDialog-image {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+
+    transition: 0.5s ease-out;
+}
+
+
+
+@media (max-width:840px) {
+    .orderDialog-imageHolder {
+        margin: 0 -32px;
+        margin-bottom: 32px;
+
+    }
+}
+
+
+.оrderDialog-form {
+
+}
+
+.оrderDialog-bg{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+@media (max-width:1100px) {
+    .оrderDialog-bg {
+        display: none;
+    }
+}
+
+.orderDialog-image {
+    height: 100%;
+    background-color: #F4F4F4;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+

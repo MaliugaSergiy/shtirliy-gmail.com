@@ -11,7 +11,7 @@ import { addClass, setAttributes, removeClass, wrapElement } from './utils';
 const DEFAULT_PROPS = {
   modalContentSelector: '[data-modal_id]',
   defaultProperties: {
-    additionalClass: 'modal--slide',
+    additionalClass: '',
     classes: {
       modal: 'modal',
       overlay: 'modal-overlay',
@@ -164,6 +164,7 @@ export default class Modals {
     if (modal_title !== undefined) properties.title = modal_title;
     if (modal_additional_class !== undefined)
       properties.additionalClass = modal_additional_class;
+
 
     return { ...defaultProperties, ...properties };
   };

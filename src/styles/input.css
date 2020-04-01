@@ -1,0 +1,89 @@
+.input {
+  position: relative;
+  /* background-color: pink; */
+}
+
+.input::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #1E1E1E;
+  bottom: 0;
+  /* transform: rotateY(90deg); */
+  transform: rotateY(90deg);
+  transition: 0.4s ease-out;
+  opacity: 0;
+}
+
+.input--isFocused::before {
+  transform: rotateY(0);
+  opacity: 1;
+}
+
+.input-label {}
+
+.input-field {
+  appearance: none;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 1.2;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.2);
+  margin: 0;
+  padding: 8px 0;
+}
+
+.input--isFilled .input-field {
+  border-bottom: 1px solid rgba(30, 30, 30, 1);
+}
+
+.input-field::placeholder {
+  color: transparent;
+  transition: 0.3s ease-out;
+}
+
+.input--isFilled .input-field::placeholder {
+  color: #e5e5e5;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: transparent;
+}
+
+.input-placeholder {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 0.3s ease-out;
+  cursor: text;
+}
+
+.input--isFilled .input-placeholder {
+  transform: translate(calc(-100% - 10px), -50%);
+  font-weight: 700;
+  cursor: default;
+}
+
+@media (max-width:840px) {
+  .input--isFilled .input-placeholder {
+    transform: translate(0, -38px);
+    font-size: 14px;
+  }
+}
+
+.input-error {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  color: red;
+  font-size: 14px;
+}
