@@ -1303,21 +1303,48 @@ button {
 }
 
 .secondScreen {
-    height: 780px;
+    height: 700px;
     /* min-height: 100vh; */
     color: #fff;
    position: relative;
 }
 
+@media (max-width: 1020px) {
+    .secondScreen {
+        height: 550px;
+    } 
+ }
+@media (max-width: 940px) {
+    .secondScreen {
+        height: auto;
+    } 
+ }
+
 .secondScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background: url(/back_2.85d0d6b3.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#B7DC9A), to(#70B13D));
-    background: url(/back_2.85d0d6b3.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #B7DC9A 0%, #70B13D 100%);
+    background: url(/back_2_1.64c6049a.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#7ED2E4), to(#2395AD));
+    background: url(/back_2_1.64c6049a.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 350px 600px, cover, cover;
+    background-size: 191px 540px, cover, cover;
 }
+
+@media (max-width: 1020px) {
+    .secondScreen-bg  {
+        background-size: 152px 435px, cover, cover;
+
+    } 
+ }
+@media (max-width: 840px) {
+    .secondScreen-bg  {
+        background: url(/back_2_1_mob.0e0c83f2.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#7ED2E4), to(#2395AD));
+        background: url(/back_2_1_mob.0e0c83f2.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain, cover, cover;
+    } 
+ }
 
 .secondScreen-outer {
     height: 100%;
@@ -1336,9 +1363,35 @@ button {
             justify-content: space-between;
 }
 
+@media(max-width: 840px) {
+    .secondScreen-inner {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
 .secondScreen-column {
     max-width: 370px;
 }
+
+@media(max-width:940px) {
+    .secondScreen-column {
+        width: 290px;
+    }
+    .secondScreen-column:first-child {
+        margin-bottom: 42px;
+    }
+}
+
+
 
 .secondScreen-columnTitle {
     font-family: "RF Dewi";
@@ -1350,11 +1403,24 @@ button {
     margin-bottom: 36px;
 }
 
+@media (max-width: 840px) {
+    .secondScreen-columnTitle {
+        font-size: 18px;
+        margin-bottom: 22px;
+    } 
+ }
+
 .secondScreen-columnDescrHolder {overflow: hidden;}
 
 .secondScreen-columnDescr {
     margin: -8px;
 }
+
+@media (max-width: 840px) {
+    .secondScreen-columnDescr {
+       margin: -4px;
+    } 
+ }
 
 .secondScreen-columnDescrItem {
    padding: 8px; 
@@ -1362,7 +1428,7 @@ button {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1370,6 +1436,13 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+@media (max-width: 840px) {
+   .secondScreen-columnDescrItem {
+       font-size: 12px;
+       padding: 4px;
+   } 
 }
 
 .secondScreen-columnDescrItem::before {
@@ -1381,6 +1454,12 @@ button {
     background-color: #fff;
     border-radius: 50%;
 }
+
+@media (max-width: 840px) {
+    .secondScreen-columnDescrItem::before {
+        margin-right: 16px;
+    } 
+ }
 .fourthScreen {
     /* height: 840px; */
     /* min-height: 100vh; */

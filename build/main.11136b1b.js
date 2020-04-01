@@ -244,7 +244,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\back_2.png":[["back_2.85d0d6b3.png","../assets/images/back_2.png"],"../assets/images/back_2.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fourthScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\back_2_1.png":[["back_2_1.64c6049a.png","../assets/images/back_2_1.png"],"../assets/images/back_2_1.png"],"./..\\assets\\images\\back_2_1_mob.png":[["back_2_1_mob.0e0c83f2.png","../assets/images/back_2_1_mob.png"],"../assets/images/back_2_1_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fourthScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
