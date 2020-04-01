@@ -1,5 +1,5 @@
 .footer {
-  background-color: #231F20;
+  background-color: #F0F0F0;
   /* margin-bottom: 500px;   */
 }
 
@@ -35,7 +35,7 @@
 
 .footer-gridItem--left {
   padding-top: 24px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   font-size: 14px;
 }
 
@@ -73,7 +73,7 @@
 
 .footer-socials-title {
   text-align: center;
-  color: #a6a7aa;
+  color: #1E1E1E;
   font-size: 14px;
   margin-bottom: 16px;
 }
@@ -91,14 +91,14 @@
 
 .footer-socialsLink {
   padding: 5px;
-  color: #fff;
+  color: #1E1E1E;
 }
 
 .footer-bottom {
   text-align: center;
   padding: 18px;
   font-size: 14px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   border-top: 1px solid rgba(166, 167, 170, 0.14);
 }
 
@@ -118,7 +118,7 @@
 
 .footer-menuLink {
   font-size: 14px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   text-decoration: none;
   padding: 8px 0;
   display: inline-block;

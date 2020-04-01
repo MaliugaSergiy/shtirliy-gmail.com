@@ -26,9 +26,9 @@
 }
 
 .MixitLogo-image {
-  height: 30px;
+  height: 100%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .MixitLogo-image svg {
@@ -38,19 +38,19 @@
 
 @media (max-width: 840px) {
   .MixitLogo-image {
-    height: 28px;
+    /* height: 28px; */
   }
 }
 
 @media (max-width: 480px) {
   .MixitLogo-image {
-    height: 24px;
+    /* height: 24px; */
   }
 }
 
 @media (max-width: 400px) {
   .MixitLogo-image {
-    height: 20px;
+    /* height: 20px; */
   }
 }
 

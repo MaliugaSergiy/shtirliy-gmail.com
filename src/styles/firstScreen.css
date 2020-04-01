@@ -9,11 +9,42 @@
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
     background-color: coral;
-    background-image: url(../assets/images/back_1.jpg);
+    background: url(../assets/images/girl_1.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    /* background-image: url(../assets/images/back_1.jpg); */
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    background-size: contain;
+    background-position: right -170px bottom,  center center;
 }
+
+@media(max-width:1220px) {
+    .firstScreen-bg {
+        background-position: right -280px bottom,  center center;
+    }
+}
+
+.firstScreen-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(../assets/images/anti_1.png);
+    background-size: 462px 594px;
+    background-repeat: no-repeat;
+    background-position: right 500px bottom -70px;
+}
+
+@media(max-width:1300px) {
+    .firstScreen-bg::before {
+        background-position: right 430px bottom -70px;
+    }
+}
+
+@media(max-width:1220px) {
+    .firstScreen-bg::before {
+        background-position: right 320px bottom -70px;
+    }
+}
+
+
 
 .firstScreen-outer {
     height: 100%;
@@ -22,7 +53,6 @@
 
 .firstScreen-header {
     flex-grow: 0.5;
-
 }
 
 .firstScreen-inner{
@@ -40,7 +70,7 @@
 }
 
 .firstScreen-main {
-    max-width: 40vw;
+    max-width: 450px;
     flex-grow: 1;
 
 }

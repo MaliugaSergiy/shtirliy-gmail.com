@@ -1,0 +1,32 @@
+.headerMenu {
+    overflow: hidden;
+}
+
+.headerMenu-list {
+    margin: -8px !important;
+    display: flex;
+    align-items: center;
+}
+
+.headerMenu-item{
+    padding: 8px;
+    display: flex;
+
+}
+
+.headerMenu-link{
+    color: #1e1e1e;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@media(max-width:840px) {
+
+    .headerMenu-list {
+        flex-direction: column;
+    }
+
+    .headerMenu-link {
+        font-size: 12px;
+    }
+}

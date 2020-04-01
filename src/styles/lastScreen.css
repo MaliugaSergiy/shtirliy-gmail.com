@@ -85,8 +85,6 @@ position: relative;
 }
 
 
-
-
 .lastScreen-production {
     /* height: 450px; */
     padding-top: 37%;
@@ -94,7 +92,7 @@ position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    margin-bottom: 58px;
+    /* margin-bottom: 58px; */
     border-bottom: 1px solid #D7D7D7;
 }
 
@@ -110,12 +108,17 @@ position: relative;
 .lastScreen-goToMainSite{
     display: inline-block;
     margin: auto;
+    display: none;
 }
 
 @media (max-width:560px) {
     .lastScreen-goToMainSite {
         display: none;
     }
+}
+
+.lastScreen .section {
+    padding-bottom: 16px;
 }
 
 

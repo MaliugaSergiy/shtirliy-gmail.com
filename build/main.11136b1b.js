@@ -184,7 +184,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../styles/_footer.css":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../styles/reset.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/_footer.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/header.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -229,7 +239,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\back_1.jpg":[["back_1.e938612c.jpg","../assets/images/back_1.jpg"],"../assets/images/back_1.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\girl_1.png":[["girl_1.a3ea3fa4.png","../assets/images/girl_1.png"],"../assets/images/girl_1.png"],"./..\\assets\\images\\anti_1.png":[["anti_1.2d23edb3.png","../assets/images/anti_1.png"],"../assets/images/anti_1.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -269,17 +279,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\last_section.png":[["last_section.3da65120.png","../assets/images/last_section.png"],"../assets/images/last_section.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/reset.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/button.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\last_section.png":[["last_section.3da65120.png","../assets/images/last_section.png"],"../assets/images/last_section.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/button.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/maskProduct.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/headerMenu.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -294,7 +304,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./_footer.css":"../styles/_footer.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./reset.css":"../styles/reset.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
+},{"./reset.css":"../styles/reset.css","./_footer.css":"../styles/_footer.css","./header.css":"../styles/header.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","./headerMenu.css":"../styles/headerMenu.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -342,7 +352,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56945" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55907" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

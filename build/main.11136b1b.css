@@ -1,5 +1,105 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+    font-family: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
 .footer {
-  background-color: #231F20;
+  background-color: #F0F0F0;
   /* margin-bottom: 500px;   */
 }
 
@@ -43,7 +143,7 @@
 
 .footer-gridItem--left {
   padding-top: 24px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   font-size: 14px;
 }
 
@@ -91,7 +191,7 @@
 
 .footer-socials-title {
   text-align: center;
-  color: #a6a7aa;
+  color: #1E1E1E;
   font-size: 14px;
   margin-bottom: 16px;
 }
@@ -113,14 +213,14 @@
 
 .footer-socialsLink {
   padding: 5px;
-  color: #fff;
+  color: #1E1E1E;
 }
 
 .footer-bottom {
   text-align: center;
   padding: 18px;
   font-size: 14px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   border-top: 1px solid rgba(166, 167, 170, 0.14);
 }
 
@@ -140,7 +240,7 @@
 
 .footer-menuLink {
   font-size: 14px;
-  color: #a6a7aa;
+  color: #1E1E1E;
   text-decoration: none;
   padding: 8px 0;
   display: inline-block;
@@ -151,6 +251,55 @@
 .footer-menuLink:hover {
   /* color: #666668; */
   text-decoration: underline;
+}
+.header {
+    padding: 16px 0;
+    overflow: hidden;
+}
+
+.header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -12px;
+}
+
+@media(max-width:840px) {
+    .header-content {
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: -4px;
+    }
+}
+
+.header-logo {
+    height: 34px;
+    padding: 12px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+@media(max-width:840px) {
+    .header-logo {
+        height: 20px;
+        padding: 4px;
+    }
+}
+
+.header-menu {
+    padding: 12px;
+}
+
+@media(max-width:840px) {
+    .header-menu {
+        padding: 4px;
+    }
 }
 .Social_IconButton {
   cursor: pointer;
@@ -335,9 +484,9 @@
 }
 
 .MixitLogo-image {
-  height: 30px;
+  height: 100%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .MixitLogo-image svg {
@@ -347,19 +496,19 @@
 
 @media (max-width: 840px) {
   .MixitLogo-image {
-    height: 28px;
+    /* height: 28px; */
   }
 }
 
 @media (max-width: 480px) {
   .MixitLogo-image {
-    height: 24px;
+    /* height: 24px; */
   }
 }
 
 @media (max-width: 400px) {
   .MixitLogo-image {
-    height: 20px;
+    /* height: 20px; */
   }
 }
 
@@ -549,11 +698,20 @@
   width: 100%;
 
   position: absolute;
-  top: 70px;
+  top: 48px;
   left: 0;
   right: 0;
-
   width: auto;
+
+}
+
+@media (max-width:840px) {
+  .page-header {
+    position: relative;
+    top: 0;
+    width: 100%;left: auto;right: auto;
+    
+  }
 }
 
 .page--windowScrolled .page-header {
@@ -879,11 +1037,43 @@
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
     background-color: coral;
-    background-image: url(/back_1.e938612c.jpg);
+    background: url(/girl_1.a3ea3fa4.png), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
+    background: url(/girl_1.a3ea3fa4.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    /* background-image: url(../assets/images/back_1.jpg); */
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    background-size: contain;
+    background-position: right -170px bottom,  center center;
 }
+
+@media(max-width:1220px) {
+    .firstScreen-bg {
+        background-position: right -280px bottom,  center center;
+    }
+}
+
+.firstScreen-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(/anti_1.2d23edb3.png);
+    background-size: 462px 594px;
+    background-repeat: no-repeat;
+    background-position: right 500px bottom -70px;
+}
+
+@media(max-width:1300px) {
+    .firstScreen-bg::before {
+        background-position: right 430px bottom -70px;
+    }
+}
+
+@media(max-width:1220px) {
+    .firstScreen-bg::before {
+        background-position: right 320px bottom -70px;
+    }
+}
+
+
 
 .firstScreen-outer {
     height: 100%;
@@ -894,7 +1084,6 @@
     -webkit-box-flex: 0.5;
         -ms-flex-positive: 0.5;
             flex-grow: 0.5;
-
 }
 
 .firstScreen-inner{
@@ -921,7 +1110,7 @@
 }
 
 .firstScreen-main {
-    max-width: 40vw;
+    max-width: 450px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1145,15 +1334,17 @@ max-width: 364px;
     background-color: coral;
 }
 .fifthScreen {
-
+position: relative;
 }
 
 .fifthScreen-bg {
-
+    position: absolute;
+    background-color: #F7F7F7;
+    top: 0;right: 0;left: 0;bottom: 0;
 }
 
 .fifthScreen-outer{
-
+    position: relative;
 }
 
 .fifthScreen-inner {
@@ -1182,6 +1373,7 @@ max-width: 364px;
         -ms-flex: 1 1 33.3333%;
             flex: 1 1 33.3333%;
     max-width: 33.3333%;
+   
 }
 
 @media(max-width:840px) {
@@ -1199,6 +1391,7 @@ max-width: 364px;
     border: 1px solid #DFDFDF;
     padding: 10%;
     text-align: left;
+    background-color: #fff;
 }
 
 @media(max-width:840px) {
@@ -1502,8 +1695,6 @@ position: relative;
 }
 
 
-
-
 .lastScreen-production {
     /* height: 450px; */
     padding-top: 37%;
@@ -1511,7 +1702,7 @@ position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    margin-bottom: 58px;
+    /* margin-bottom: 58px; */
     border-bottom: 1px solid #D7D7D7;
 }
 
@@ -1527,6 +1718,7 @@ position: relative;
 .lastScreen-goToMainSite{
     display: inline-block;
     margin: auto;
+    display: none;
 }
 
 @media (max-width:560px) {
@@ -1535,108 +1727,12 @@ position: relative;
     }
 }
 
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.lastScreen .section {
+    padding-bottom: 16px;
 }
 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-button {
-    padding: 0;
-    font-family: inherit;
-    margin: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 100%;
-    display: block;
-}
 .button {
     padding: 22px 48px;
     background-color: #fff;
@@ -1646,6 +1742,7 @@ button {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.25;
+    /* white-space: nowrap; */
     /* width: auto; */
 }
 
@@ -1712,6 +1809,47 @@ button {
 
 .maskProduct-title {
 
+}
+.headerMenu {
+    overflow: hidden;
+}
+
+.headerMenu-list {
+    margin: -8px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.headerMenu-item{
+    padding: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.headerMenu-link{
+    color: #1e1e1e;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@media(max-width:840px) {
+
+    .headerMenu-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .headerMenu-link {
+        font-size: 12px;
+    }
 }
 @font-face {
     font-family: 'RF Dewi Condensed';

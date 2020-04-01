@@ -1,5 +1,7 @@
 
+@import "./reset.css";
 @import "./_footer.css";
+@import "./header.css";
 @import "./_sicial-icon-button.css";
 @import "./_mixit-logo.css";
 @import "./section.css";
@@ -18,9 +20,9 @@
 @import "./genDirScreen.css";
 @import "./massMediaScreen.css";
 @import "./lastScreen.css";
-@import "./reset.css";
 @import "./button.css";
 @import "./maskProduct.css";
+@import "./headerMenu.css";
 
 
 

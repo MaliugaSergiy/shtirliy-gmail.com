@@ -1,13 +1,15 @@
 .fifthScreen {
-
+position: relative;
 }
 
 .fifthScreen-bg {
-
+    position: absolute;
+    background-color: #F7F7F7;
+    top: 0;right: 0;left: 0;bottom: 0;
 }
 
 .fifthScreen-outer{
-
+    position: relative;
 }
 
 .fifthScreen-inner {
@@ -31,6 +33,7 @@
     padding: 1%;
     flex: 1 1 33.3333%;
     max-width: 33.3333%;
+   
 }
 
 @media(max-width:840px) {
@@ -46,6 +49,7 @@
     border: 1px solid #DFDFDF;
     padding: 10%;
     text-align: left;
+    background-color: #fff;
 }
 
 @media(max-width:840px) {
