@@ -1211,6 +1211,29 @@ max-width: 364px;
     }
 
 }
+.sixthScreen {
+position: relative;
+height: 670px;
+overflow: hidden;
+}
+
+.sixthScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFB3BE),to(#F67E91));
+    background: linear-gradient(to bottom, #FFB3BE 0%,#F67E91 100%); 
+    background-color: #FFA9B5;
+    background-image: url("/back_6.69f76684.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    /* border: 1px solid; */
+    /* background-color: #F0F0F0; */
+}
+
+.sixthScreen-outer {
+    position: relative;
+}
 .seventhScreen {
 
 }
@@ -1287,6 +1310,8 @@ max-width: 364px;
             flex-direction: column-reverse;
     padding-bottom: 40px;
     /* overflow: hidden; */
+    max-width: 500px;
+    margin: auto;
 }
 
 .genDirScreen-mobilePhoto{
@@ -1380,6 +1405,7 @@ height: 100%;
 }
 .lastScreen {
 position: relative;
+overflow: hidden;
 }
 
 .lastScreen-bg{
@@ -1393,19 +1419,27 @@ position: relative;
 }
 
 .lastScreen-inner {
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .lastScreen-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -8px;
 }
 
 .lastScreen-infoColumn {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    padding: 8px;
 }
 
 .lastScreen-title {
@@ -1415,6 +1449,16 @@ position: relative;
 
 .lastScreen-title b {
     font-weight: 800;
+}
+
+.lastScreen-title br {
+    /* display: none; */
+}
+
+@media (min-width: 560px) {
+    .lastScreen-title br {
+        display: none;
+    }
 }
 
 .lastScreen-description {
@@ -1441,6 +1485,7 @@ position: relative;
     .lastScreen-description {
         font-size: 16px;
         margin-bottom: 16px;
+        margin-top: 0;
     }
 }
 
@@ -1456,11 +1501,42 @@ position: relative;
     }
 }
 
-.lastScreen-production {}
+
+
+
+.lastScreen-production {
+    /* height: 450px; */
+    padding-top: 37%;
+    background-image: url("/last_section.3da65120.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 58px;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+@media (max-width:560px) {
+    .lastScreen-production {
+        background-size: cover;
+        padding-top: 44%;
+        margin: 0 -16px;
+        margin-top: 10%;
+    }
+}
 
 .lastScreen-goToMainSite{
     display: inline-block;
+    margin: auto;
 }
+
+@media (max-width:560px) {
+    .lastScreen-goToMainSite {
+        display: none;
+    }
+}
+
+
+
 /* Box sizing rules */
 *,
 *::before,
