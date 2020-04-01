@@ -1,5 +1,6 @@
 .lastScreen {
 position: relative;
+overflow: hidden;
 }
 
 .lastScreen-bg{
@@ -13,15 +14,18 @@ position: relative;
 }
 
 .lastScreen-inner {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .lastScreen-info {
     display: flex;
+    margin: -8px;
 }
 
 .lastScreen-infoColumn {
     flex-grow: 1;
+    padding: 8px;
 }
 
 .lastScreen-title {
@@ -31,6 +35,16 @@ position: relative;
 
 .lastScreen-title b {
     font-weight: 800;
+}
+
+.lastScreen-title br {
+    /* display: none; */
+}
+
+@media (min-width: 560px) {
+    .lastScreen-title br {
+        display: none;
+    }
 }
 
 .lastScreen-description {
@@ -54,6 +68,7 @@ position: relative;
     .lastScreen-description {
         font-size: 16px;
         margin-bottom: 16px;
+        margin-top: 0;
     }
 }
 
@@ -69,8 +84,38 @@ position: relative;
     }
 }
 
-.lastScreen-production {}
+
+
+
+.lastScreen-production {
+    /* height: 450px; */
+    padding-top: 37%;
+    background-image: url("../assets/images/last_section.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 58px;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+@media (max-width:560px) {
+    .lastScreen-production {
+        background-size: cover;
+        padding-top: 44%;
+        margin: 0 -16px;
+        margin-top: 10%;
+    }
+}
 
 .lastScreen-goToMainSite{
     display: inline-block;
+    margin: auto;
 }
+
+@media (max-width:560px) {
+    .lastScreen-goToMainSite {
+        display: none;
+    }
+}
+
+

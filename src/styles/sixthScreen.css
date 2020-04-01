@@ -1,0 +1,22 @@
+.sixthScreen {
+position: relative;
+height: 670px;
+overflow: hidden;
+}
+
+.sixthScreen-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background: linear-gradient(to bottom, #FFB3BE 0%,#F67E91 100%); 
+    background-color: #FFA9B5;
+    background-image: url("../assets/images/back_6.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    /* border: 1px solid; */
+    /* background-color: #F0F0F0; */
+}
+
+.sixthScreen-outer {
+    position: relative;
+}

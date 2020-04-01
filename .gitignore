@@ -1,5 +1,6 @@
 .cache
-
+build
+public
 _public
 __public
 _build

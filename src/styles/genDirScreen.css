@@ -37,6 +37,8 @@
     flex-direction: column-reverse;
     padding-bottom: 40px;
     /* overflow: hidden; */
+    max-width: 500px;
+    margin: auto;
 }
 
 .genDirScreen-mobilePhoto{
