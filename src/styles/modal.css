@@ -56,6 +56,9 @@
   max-width: 100%;
   width: 90vw;
 }
+.modal--product  .modal-container{
+  max-width: 1500px;
+}
 
 
 
@@ -89,7 +92,7 @@
   position: absolute;
   right: 16px;
   top: 16px;
-  font-size: 18px;
+  font-size: 30px;
   vertical-align: top;
   line-height: 1;
   z-index: 102;

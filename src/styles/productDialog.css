@@ -1,0 +1,149 @@
+.productDialogHolder {
+    /* height: 100%; */
+    /* max-height: 90vh; */
+    height: 90vh;
+}
+.productDialog {
+    height: 100%;
+    max-height: 90vh;
+    display: flex;
+}
+
+.productDialog-imageHolder {
+    /* height: 100%; */
+    flex-basis: 35%;
+    position: relative;
+}
+
+.productDialog-image {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+
+}
+
+.productDialog-content {
+    flex-basis: 65%;
+    padding: 60px;
+    color: #1E1E1E;
+    height: 100%;
+    overflow-y: auto;
+
+}
+
+.productDialog-main {
+    border-bottom: 1px solid rgba(30, 30, 30, 0.1);;
+    padding-bottom: 48px;
+
+}
+
+.productDialog-mainInner {
+    max-width: 700px;
+}
+
+.productDialog-title {
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.productDialog-underTitle {
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.6;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+}
+
+.productDialog-descr {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 21px;
+}
+
+.productDialog-values {
+    margin: -8px !important;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.productDialog-value{
+    padding: 8px;
+}
+.productDialog-valueInner {
+    background: #F5F5F5;
+    padding: 10px 24px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.productDialog-options {
+    padding-top: 48px;
+
+}
+
+.productDialog-optionsInner {
+    max-width: 700px;
+}
+
+.productDialog-option {
+    margin-bottom: 28px;
+}
+
+.productDialog-optionTitle {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.productDialog-optionList {
+
+}
+
+.productDialog-optionItem {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.productDialog-optionText {
+
+}
+
+.productDialog-optionItem::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+
+.productDialog-optionDescr {
+    opacity: 0.5;
+
+}
+
+.productDialog-optionImportantInfo {
+    padding: 38px;
+    background-color: rgba(220, 0, 0, 0.05);
+    color: #7E0505;
+}
+
+.productDialog-optionImportantInfo .productDialog-optionTitle{
+    font-weight: 800;
+}
+
+.productDialog-optionImportantInfo .productDialog-optionDescr {
+    opacity: 1;
+
+}
