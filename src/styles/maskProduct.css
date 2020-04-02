@@ -62,8 +62,8 @@
     transition: transform 0.2s ease-out;
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
     .maskProduct:hover .maskProduct-hoverImage {
         opacity: 0;
     }
-  }
+  } */

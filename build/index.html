@@ -75,72 +75,6 @@
           </div>
           <div class="firstScreen-overlay"></div>
         </div>
-        <div class="dialogSetificates">
-          <div class="dialogSetificates-coll dialogSetificates-coll_catalog">
-            <div class="dialogSetificates-title">Сертификаты качества</div>
-            <div class="dialogSetificates-description">Мы предоставляем паспорта качества на наши антисептики, поэтому вы можете быть полностью уверены в безопасности и надежности нашего средства</div>
-            <ul class="dialogSetificates-list js-sertificatToogler">
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="1">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_1.e05bf95a.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" checked="" type="radio" name="sertificat" value="2">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_2.55eaf0de.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="3">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_3.aeac93e3.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="4">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_4.897db6bf.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="5">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_5.78fe1f5e.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-              <li class="dialogSetificates-item">
-                <label class="dialogSetificates-itemLabel">
-                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="5">
-                  <div class="dialogSetificates-itemButton">
-                    <img src="/sertificat_5.78fe1f5e.png" class="dialogSetificates-itemThumb">
-                  </div>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="dialogSetificates-coll dialogSetificates-coll_previev">
-            <div class="dialogSetificates-previevHolder js-sertificatPreview">
-              <img class="dialogSetificates-previev" src="/sertificat_1.e05bf95a.png" alt="">
-              <img class="dialogSetificates-previev" src="/sertificat_2.55eaf0de.png" alt="">
-              <img class="dialogSetificates-previev" src="/sertificat_3.aeac93e3.png" alt="">
-              <img class="dialogSetificates-previev" src="/sertificat_4.897db6bf.png" alt="">
-              <img class="dialogSetificates-previev" src="/sertificat_5.78fe1f5e.png" alt="">
-              <img class="dialogSetificates-previev" src="/sertificat_6.1d773d0d.png" alt="">
-            </div>
-          </div>
-        </div>
         <div id="anti" class="secondScreen">
           <div class="secondScreen-bg"></div>
           <div class="secondScreen-outer">
@@ -203,9 +137,9 @@
                 <div class="section-description">Предлагаем вам широкую линейку качественных антисептических средств, имеющих паспорта качества, по оптовым ценам. <br> <b> Благодаря собственному производству мы можем поставлять продукцию в любых объемах и таре под заказ.</b></div>
                 <div class="section-content">              
                   <div class="thirdScreen-inner">
-                    <!-- <div class="thirdScreen-button">
-                      <button class="button button--bordered">Сертификаты качества</button>
-                    </div> -->
+                    <div class="thirdScreen-button">
+                      <button data-custom-open="sertificates" class="button button--bordered">Сертификаты качества</button>
+                    </div>
                     <div class="thirdScreen-catalog">
                       <div class="catalog">
                         <div class="catalog-item">
@@ -650,6 +584,88 @@
     </div>
   </section>
   <div class="modals">
+    <div class="dialogSetificates-holder" data-modal_id="sertificates" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="dialogSetificates">
+        <div class="dialogSetificates-desktop">
+          <div class="dialogSetificates-coll dialogSetificates-coll_catalog">
+            <div class="dialogSetificates-title">Сертификаты качества</div>
+            <div class="dialogSetificates-description">Мы предоставляем паспорта качества на наши антисептики, поэтому вы можете быть полностью уверены в безопасности и надежности нашего средства</div>
+            <ul class="dialogSetificates-list js-sertificatToogler">
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="1">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_1.e05bf95a.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" checked="" type="radio" name="sertificat" value="2">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_2.55eaf0de.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="3">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_3.aeac93e3.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="4">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_4.897db6bf.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="5">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_5.78fe1f5e.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+              <li class="dialogSetificates-item">
+                <label class="dialogSetificates-itemLabel">
+                  <input class="dialogSetificates-radio" type="radio" name="sertificat" value="5">
+                  <div class="dialogSetificates-itemButton">
+                    <img src="/sertificat_5.78fe1f5e.png" class="dialogSetificates-itemThumb">
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="dialogSetificates-coll dialogSetificates-coll_preview">
+            <div class="dialogSetificates-previewHolder js-sertificatPreview">
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_1.e05bf95a.png" alt="">
+              </div>
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_2.55eaf0de.png" alt="">
+              </div>
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_3.aeac93e3.png" alt="">
+              </div>
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_4.897db6bf.png" alt="">
+              </div>
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_5.78fe1f5e.png" alt="">
+              </div>
+              <div class="dialogSetificates-previewWrapper">
+                <img class="dialogSetificates-preview" src="/sertificat_6.1d773d0d.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="thanksOrderDialog" data-modal_id="thanksOrderDialog" data-modal_additional_class=" modal--slide">
       <div class="thanksOrderDialog-title">Благодарим за заявку</div>
       <div class="thanksOrderDialog-descr">Мы перезвоним вам в ближайшее время!</div>
@@ -1401,7 +1417,7 @@
         </div>
       </div>
     </div>
-    <div data-modal_id="orderAntiseptic" data-modal_additional_class="modal--full modal--slide">
+    <div data-modal_id="orderAntiseptic" data-modal_additional_class="modal--full modal--slide  modal--product">
       <div class="оrderDialog">
         <div class="оrderDialog-main">
           <div class="оrderDialog-header">
@@ -1449,7 +1465,7 @@
         </div>
       </div>
     </div>
-    <div data-modal_id="orderMak" data-modal_additional_class="modal--full modal--slide">
+    <div data-modal_id="orderMak" data-modal_additional_class="modal--full modal--slide modal--product">
       <div class="оrderDialog">
         <div class="оrderDialog-main">
           <div class="оrderDialog-header">
@@ -1497,7 +1513,7 @@
         </div>
       </div>
     </div>
-    <div data-modal_id="orderWholeSale" data-modal_additional_class="modal--full modal--slide">
+    <div data-modal_id="orderWholeSale" data-modal_additional_class="modal--full modal--slide  modal--product">
       <div class="оrderDialog">
         <div class="оrderDialog-main">
           <div class="оrderDialog-header">

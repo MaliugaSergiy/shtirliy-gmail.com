@@ -2543,11 +2543,11 @@ position: relative;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
     .maskProduct:hover .maskProduct-hoverImage {
         opacity: 0;
     }
-  }
+  } */
 
 .headerMenu {
     overflow: hidden;
@@ -2887,7 +2887,7 @@ position: relative;
   position: absolute;
   right: 16px;
   top: 16px;
-  font-size: 30px;
+  font-size: 48px;
   vertical-align: top;
   line-height: 1;
   z-index: 102;
@@ -3638,10 +3638,23 @@ position: relative;
 }
 
 .dialogSetificates {
-    /* min-height: 100vh; */
+}
+
+.dialogSetificates-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1220px)  {
+    .dialogSetificates-desktop {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 
 .dialogSetificates-coll {
@@ -3649,44 +3662,81 @@ position: relative;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
     max-width: 50%;
+}
 
+@media(max-width:1220px)  {
+    .dialogSetificates-coll {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 .dialogSetificates-coll_catalog {
-    padding: 75px 90px;
+    padding: 4% 5%;
     color: #1E1E1E;
 }
-
-.dialogSetificates-coll_previev {
-    background-color: #F4F3F9;
-    padding: 70px 56px;
+@media(max-width:840px)  {
+    .dialogSetificates-coll_catalog {
+        padding-bottom: 16px;
+    }
 }
 
-.dialogSetificates-title{
-    font-size: 42px;
-    line-height: 1.5;
-    margin-bottom: 24px;
+.dialogSetificates-coll_preview {
+    background-color: #F4F3F9;
+    padding: 4% 5%;
+}
 
+@media(max-width:1220px)  {
+    .dialogSetificates-coll_preview {
+        overflow-y: auto;
+        background-color: #fff;
+    }
+}
+
+@media(max-width:840px)  {
+    .dialogSetificates-coll_preview {
+        padding-top: 0;
+    }
+}
+
+.dialogSetificates-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 3%;
+}
+@media(max-width:840px)  {
+    .dialogSetificates-title {
+        font-size: 30px;
+    }
 }
 
 .dialogSetificates-description {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 64px;
+    margin-bottom: 7%;
+}
+@media(max-width:840px)  {
+    .dialogSetificates-description {
+        font-size: 12px;
+    }
 }
 
 .dialogSetificates-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 18px 24px;
-    /* grid-auto-rows: 160px; */
-    
+    grid-gap: 5% 3%;
+}
+
+@media(max-width:1220px)  {
+    .dialogSetificates-list {
+        display: none;
+    }
 }
 
 .dialogSetificates-item {
-    
-
 }
 
 .dialogSetificates-itemLabel {
@@ -3705,8 +3755,6 @@ position: relative;
     padding: 0;
     border: 0;
 }
-
-
 
 .dialogSetificates-itemButton {
     width: 100%;
@@ -3748,8 +3796,6 @@ position: relative;
     transition: 0.2s ease-out;
 }
 
-
-
 .dialogSetificates-radio:checked + .dialogSetificates-itemButton::before {
     opacity: 1;
 }
@@ -3763,17 +3809,23 @@ position: relative;
        object-fit: contain;
     -o-object-position: bottom center;
        object-position: bottom center;
-
 }
 
-.dialogSetificates-previevHolder {
+.dialogSetificates-previewHolder {
     position: relative;
     padding-top: 137%;
 }
 
+@media(max-width:1220px)  {
+    .dialogSetificates-previewHolder {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 0;
+    }
+}
 
-
-.dialogSetificates-previev {
+.dialogSetificates-preview {
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
     width: 100%;
@@ -3788,8 +3840,26 @@ position: relative;
     transition: 0.2s ease-out;
 }
 
-.dialogSetificates-previev.active {
+.dialogSetificates-previewWrapper {
+
+}
+@media(max-width:1220px)  {
+    .dialogSetificates-previewWrapper {
+        position: relative;
+        padding-top: 0;
+        min-width: 320px;
+    }
+}
+
+.dialogSetificates-preview.active {
     opacity: 1;
+}
+
+@media(max-width:1220px)  {
+    .dialogSetificates-preview {
+        opacity: 1;
+        position: static;
+    }
 }
 @font-face {
     font-family: 'RF Dewi Condensed';
