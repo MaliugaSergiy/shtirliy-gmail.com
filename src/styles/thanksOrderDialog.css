@@ -1,0 +1,50 @@
+.thanksOrderDialog {
+    width: 50vw;
+    padding: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1e1e1e;
+}
+
+.thanksOrderDialog-title{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    
+    margin-bottom: 16px;
+}
+
+.thanksOrderDialog-descr {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 42px;
+}
+
+.thanksOrderDialog-button {
+    align-self: center;
+    min-width: 300px;
+}
+
+@media(max-width:840px) {
+    .thanksOrderDialog {
+        width: 100vw;
+        padding: 16px;
+    }
+    
+    .thanksOrderDialog-title{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .thanksOrderDialog-descr {
+        font-size: 12px;
+        margin-bottom: 58px;
+    }
+    .thanksOrderDialog-button {
+        min-width: 250px;
+
+    }
+}

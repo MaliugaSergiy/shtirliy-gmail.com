@@ -52,6 +52,7 @@
     transform: scale(1.5);
     background-position: right bottom;
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
 

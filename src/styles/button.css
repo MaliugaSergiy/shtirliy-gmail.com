@@ -7,9 +7,16 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.25;
+    transition:  0.2s ease-out;
     /* white-space: nowrap; */
     /* width: auto; */
 }
+
+.button:hover {
+    background-color: #FC2F6C;
+    color: #fff;
+}
+
 
 .button--bordered {
     border: 1px solid #1E1E1E;

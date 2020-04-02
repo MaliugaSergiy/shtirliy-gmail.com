@@ -2130,7 +2130,7 @@ overflow: hidden;
             flex-direction: column-reverse;
     padding-bottom: 40px;
     /* overflow: hidden; */
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: auto;
 }
 
@@ -2253,6 +2253,9 @@ position: relative;
     display: -ms-flexbox;
     display: flex;
     margin: -8px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .lastScreen-infoColumn {
@@ -2262,9 +2265,39 @@ position: relative;
     padding: 8px;
 }
 
+.lastScreen-infoColumn:last-child{
+    max-width: 45%;
+    /* max-width: 530px; */
+}
+
+@media (max-width: 1100px) {
+    .lastScreen-infoColumn:last-child {
+        max-width: 100%;
+    }
+}
+
+.lastScreen-infoColumn:first-child{
+    padding-right: 5%;
+}
+
+@media (max-width: 1100px) {
+    .lastScreen-infoColumn:first-child {
+        padding-right: 0;
+        max-width: 630px;
+    }
+}
+
 .lastScreen-title {
     font-size: 56px;
     line-height: 1.2;
+    margin-bottom: 36px;
+    font-weight: 300;
+}
+
+@media(max-width: 1100px) {
+    .lastScreen-title {
+        margin-bottom: 0;
+    }
 }
 
 .lastScreen-title b {
@@ -2282,21 +2315,37 @@ position: relative;
 }
 
 .lastScreen-description {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     margin-top: 16px;
 }
 
+.lastScreen-underDescription {
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.02em;
+}
 
 @media (max-width: 840px) {
+    .lastScreen-underDescription {
+        font-size: 12px;
+    }
+}
 
+@media (max-width: 1100px) {
     .lastScreen-info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+}
+
+
+@media (max-width: 840px) {
+
+ 
 
     .lastScreen-title {
         font-size: 28px;
@@ -2313,11 +2362,9 @@ position: relative;
     display: inline-block;
 }
 
-@media (max-width: 840px) {
+@media (max-width:1100px) {
     .lastScreen-fillOutApplication {
-        display: block;
-        max-width: 200px;
-        margin: auto;
+        display: none;
     }
 }
 
@@ -2358,7 +2405,18 @@ position: relative;
     padding-bottom: 16px;
 }
 
+.lastScreen-fillOutApplicationMobile {
+    display: none;
+    max-width: 300px;
+    margin: auto;
+}
 
+@media (max-width:1100px) {
+    .lastScreen-fillOutApplicationMobile {
+        display: block;
+        margin-top: 30px;
+    }
+}
 
 .button {
     padding: 22px 48px;
@@ -2369,9 +2427,17 @@ position: relative;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.25;
+    -webkit-transition:  0.2s ease-out;
+    transition:  0.2s ease-out;
     /* white-space: nowrap; */
     /* width: auto; */
 }
+
+.button:hover {
+    background-color: #FC2F6C;
+    color: #fff;
+}
+
 
 .button--bordered {
     border: 1px solid #1E1E1E;
@@ -2459,6 +2525,7 @@ position: relative;
             transform: scale(1.5);
     background-position: right bottom;
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -3227,6 +3294,64 @@ position: relative;
 }
 
 
+.thanksOrderDialog {
+    width: 50vw;
+    padding: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1e1e1e;
+}
+
+.thanksOrderDialog-title{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    
+    margin-bottom: 16px;
+}
+
+.thanksOrderDialog-descr {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 42px;
+}
+
+.thanksOrderDialog-button {
+    -ms-flex-item-align: center;
+        align-self: center;
+    min-width: 300px;
+}
+
+@media(max-width:840px) {
+    .thanksOrderDialog {
+        width: 100vw;
+        padding: 16px;
+    }
+    
+    .thanksOrderDialog-title{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .thanksOrderDialog-descr {
+        font-size: 12px;
+        margin-bottom: 58px;
+    }
+    .thanksOrderDialog-button {
+        min-width: 250px;
+
+    }
+}
 @font-face {
     font-family: 'RF Dewi Condensed';
     src: url('/RFDewiCondensed-Regular.69abd3f8.eot');
@@ -4010,6 +4135,8 @@ body {
 html {
   height: 100%;
 }
+
+/* * {letter-spacing: 0.02em;} */
 
 
 

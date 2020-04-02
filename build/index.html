@@ -62,7 +62,7 @@
                   <div class="firstScreen-buttonsHolder">
                     <div class="firstScreen-buttons">
                       <div class="firstScreen-button">
-                        <button class="button">Антисептики</button>
+                        <button class="button" data-custom-open="thanksOrderDialog">Антисептики</button>
                       </div>
                       <div class="firstScreen-button">
                         <button class="button button--theme-dark" data-custom-open="testModal">Защитные маски</button>
@@ -465,10 +465,14 @@
                     <div class="lastScreen-info">
                       <div class="lastScreen-infoColumn">
                         <div class="lastScreen-title"><b>Хотите</b> <br> качественные средства защиты по доступной цене? </div>
+                        <div class="lastScreen-fillOutApplication">
+                          <button class="button button--theme-dark" data-custom-open="orderWholeSale">Заполнить заявку</button>
+                        </div>
                       </div>
                       <div class="lastScreen-infoColumn">
-                        <div class="lastScreen-description">Заполните заявку и наш представитель перезвонит вам, чтобы обсудить все подробности оптовой поставки</div>
-                        <div class="lastScreen-fillOutApplication">
+                        <div class="lastScreen-description">Мы специально не указываем условия по цене и доставке, так как хотим каждому оптовому клиенту сделать индивидуальное предложение.</div>
+                        <div class="lastScreen-underDescription">Цена и доставка сильно зависят от вашего территориального местоположения и желаемого объема заказа. Делая цену единой, производители усредняют все показатели, мы же хотим, чтобы вы получили актуальную стоимость под каждый конкретный заказ.</div>
+                        <div class="lastScreen-fillOutApplicationMobile">
                           <button class="button button--theme-dark" data-custom-open="orderWholeSale">Заполнить заявку</button>
                         </div>
                       </div>
@@ -563,6 +567,13 @@
     </div>
   </section>
   <div class="modals">
+    <div class="thanksOrderDialog" data-modal_id="thanksOrderDialog" data-modal_additional_class=" modal--slide">
+      <div class="thanksOrderDialog-title">Благодарим за заявку</div>
+      <div class="thanksOrderDialog-descr">Мы перезвоним вам в ближайшее время!</div>
+      <div class="thanksOrderDialog-button">
+        <button class="button button--theme-dark" data-custom-close="">Спасибо</button>
+      </div>
+    </div>
     <div data-modal_id="orderAntiseptic" data-modal_additional_class="modal--full modal--slide">
       <div class="оrderDialog">
         <div class="оrderDialog-main">
@@ -601,7 +612,7 @@
                 </div>
               </div>
               <div class="orderForm-field">
-                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+                <button class="button button--theme-dark" data-custom-close="" type="submit">Заказать антисептики</button>
               </div> 
             </form>
           </div>
@@ -649,7 +660,7 @@
                 </div>
               </div>
               <div class="orderForm-field">
-                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+                <button class="button button--theme-dark" data-custom-close="" type="submit">Заказать антисептики</button>
               </div> 
             </form>
           </div>
@@ -697,7 +708,7 @@
                 </div>
               </div>
               <div class="orderForm-field">
-                <button class="button button--theme-dark" type="submit">Заказать антисептики</button>
+                <button class="button button--theme-dark" data-custom-close="" type="submit">Заказать антисептики</button>
               </div> 
             </form>
           </div>
