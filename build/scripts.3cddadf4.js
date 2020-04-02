@@ -2803,6 +2803,130 @@ var SmoothScrollToAnchor = function SmoothScrollToAnchor(props) {
 };
 
 exports.SmoothScrollToAnchor = SmoothScrollToAnchor;
+},{"./utils":"../scripts/utils/index.js"}],"../scripts/sertificatPreviev.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _utils = require("./utils");
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var SertificatPreview =
+/*#__PURE__*/
+function () {
+  function SertificatPreview(props) {
+    var _this = this;
+
+    _classCallCheck(this, SertificatPreview);
+
+    _defineProperty(this, "_props", null);
+
+    _defineProperty(this, "_previousActiveIndex", null);
+
+    _defineProperty(this, "_activeIndex", null);
+
+    _defineProperty(this, "_buttons", []);
+
+    _defineProperty(this, "_images", []);
+
+    _defineProperty(this, "handleRadioChange", function (index) {
+      return function () {
+        _this.setActive(index);
+      };
+    });
+
+    this._props = _objectSpread({}, props);
+    var _this$_props = this._props,
+        holderSelector = _this$_props.holderSelector,
+        previewSelector = _this$_props.previewSelector;
+    var $sertificatToogler = document.querySelector(holderSelector);
+
+    if (!$sertificatToogler) {
+      return;
+    }
+
+    var $previewSelector = document.querySelector(previewSelector);
+
+    if (!$previewSelector) {
+      return;
+    }
+
+    this._buttons = Array.from($sertificatToogler.querySelectorAll("input[type='radio']"));
+
+    if (!this._buttons || this._buttons.length === 0) {
+      return;
+    }
+
+    this._images = Array.from($previewSelector.querySelectorAll("img"));
+
+    if (!this._images || this._images.length === 0) {
+      return;
+    }
+
+    this.setActive();
+    this.setListeners();
+  }
+
+  _createClass(SertificatPreview, [{
+    key: "setListeners",
+    value: function setListeners() {
+      var _this2 = this;
+
+      this._buttons.forEach(function (radio, index) {
+        radio.addEventListener("change", _this2.handleRadioChange(index));
+      });
+    }
+  }, {
+    key: "setActive",
+    value: function setActive() {
+      var activeIndex = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      this._buttons.forEach(function (button, index) {
+        if (button.checked) {
+          activeIndex = index;
+        }
+      });
+
+      this._previousActiveIndex = this._activeIndex;
+      this._activeIndex = activeIndex;
+      this.setActiveToPeview();
+    }
+  }, {
+    key: "setActiveToPeview",
+    value: function setActiveToPeview() {
+      var activeImage = this._images[this._activeIndex];
+
+      if (activeImage) {
+        (0, _utils.addClass)(activeImage, "active");
+      }
+
+      var previousActiveImage = this._images[this._previousActiveIndex];
+
+      if (previousActiveImage) {
+        (0, _utils.removeClass)(previousActiveImage, "active");
+      }
+    }
+  }]);
+
+  return SertificatPreview;
+}();
+
+var _default = SertificatPreview;
+exports.default = _default;
 },{"./utils":"../scripts/utils/index.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
 var define;
 'use strict';
@@ -3699,6 +3823,8 @@ var _phoneMask = _interopRequireDefault(require("./phone-mask"));
 
 var _smoothScrollToAnchor = _interopRequireDefault(require("./smooth-scroll-to-anchor"));
 
+var _sertificatPreviev = _interopRequireDefault(require("./sertificatPreviev"));
+
 var _ElementQueries = _interopRequireDefault(require("css-element-queries/src/ElementQueries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -3716,11 +3842,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     filledClass: 'input--isFilled',
     focudedClass: 'input--isFocused'
   });
+  new _sertificatPreviev.default({
+    holderSelector: ".js-sertificatToogler",
+    previewSelector: ".js-sertificatPreview"
+  });
   (0, _phoneMask.default)({
     inputSelector: '.js-phone-input'
   });
 });
-},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3748,7 +3878,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53139" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
