@@ -60,6 +60,18 @@
   max-width: 1500px;
 }
 
+@media (max-width:840px) {
+  .modal--full .modal-container{
+    width: 100vw;
+  }
+  .modal--product .modal-content {
+    height: 100vh;
+  }
+  .modal--product .modal-overlay {
+    padding: 0;
+  } 
+}
+
 
 
 .modal-header {

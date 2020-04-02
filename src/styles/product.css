@@ -25,7 +25,7 @@
 }
 
 @media (hover: none) {
-    .product:hover {
+    .product:hover::before {
         opacity: 0;
     }
   }

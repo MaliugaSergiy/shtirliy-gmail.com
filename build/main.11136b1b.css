@@ -971,7 +971,7 @@ button {
 }
 
 @media (hover: none) {
-    .product:hover {
+    .product:hover::before {
         opacity: 0;
     }
   }
@@ -2838,6 +2838,18 @@ position: relative;
   max-width: 1500px;
 }
 
+@media (max-width:840px) {
+  .modal--full .modal-container{
+    width: 100vw;
+  }
+  .modal--product .modal-content {
+    height: 100vh;
+  }
+  .modal--product .modal-overlay {
+    padding: 0;
+  } 
+}
+
 
 
 .modal-header {
@@ -3368,11 +3380,28 @@ position: relative;
     display: flex;
 }
 
+@media (max-width:840px) {
+    .productDialog {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
 .productDialog-imageHolder {
     /* height: 100%; */
     -ms-flex-preferred-size: 35%;
         flex-basis: 35%;
     position: relative;
+}
+
+@media (max-width:840px) {
+    .productDialog-imageHolder {
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        min-height: 100vh;
+    }
 }
 
 .productDialog-image {
@@ -3385,6 +3414,12 @@ position: relative;
 
 }
 
+@media (max-width:840px) {
+    .productDialog-image {
+       height: 80%;
+    }
+}
+
 .productDialog-content {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
@@ -3392,13 +3427,33 @@ position: relative;
     color: #1E1E1E;
     height: 100%;
     overflow-y: auto;
+}
 
+@media (max-width:840px) {
+    .productDialog-content {
+       padding: 16px;
+    }
+}
+
+@media (max-width:840px) {
+    .productDialog-content {
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        height: auto;
+        overflow-y: inherit;
+    }
 }
 
 .productDialog-main {
     border-bottom: 1px solid rgba(30, 30, 30, 0.1);;
     padding-bottom: 48px;
 
+}
+
+@media (max-width:840px) {
+    .productDialog-main {
+       padding-bottom: 24px;
+    }
 }
 
 .productDialog-mainInner {
@@ -3412,6 +3467,12 @@ position: relative;
     margin-bottom: 8px;
 }
 
+@media (max-width:840px) {
+    .productDialog-title {
+       font-size: 20px;
+    }
+}
+
 .productDialog-underTitle {
     font-size: 18px;
     line-height: 1.5;
@@ -3420,11 +3481,25 @@ position: relative;
     margin-bottom: 28px;
 }
 
+@media (max-width:840px) {
+    .productDialog-underTitle {
+       font-size: 14px;
+       margin-bottom: 16px;
+    }
+}
+
 .productDialog-descr {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 21px;
+}
+
+@media (max-width:840px) {
+    .productDialog-descr {
+       font-size: 10px;
+       margin-bottom: 16px;
+    }
 }
 
 .productDialog-values {
@@ -3448,15 +3523,27 @@ position: relative;
     text-align: center;
     letter-spacing: 0.02em;
 }
+@media (max-width:840px) {
+    .productDialog-valueInner {
+       font-size: 10px;
+       padding: 10px 18px;
+    }
+}
+
 
 .productDialog-options {
     padding-top: 48px;
-
+}
+@media (max-width:840px) {
+    .productDialog-options {
+       padding-top: 24px;
+    }
 }
 
 .productDialog-optionsInner {
     max-width: 700px;
 }
+
 
 .productDialog-option {
     margin-bottom: 28px;
@@ -3466,6 +3553,13 @@ position: relative;
     font-size: 18px;
     margin-bottom: 18px;
 }
+@media (max-width:840px) {
+    .productDialog-optionTitle {
+       font-size: 16px;
+       margin-bottom: 8px;
+    }
+}
+
 
 .productDialog-optionList {
 
@@ -3483,7 +3577,14 @@ position: relative;
 }
 
 .productDialog-optionText {
+    font-size: 14px;
+    line-height: 1.5;
+}
 
+@media (max-width:840px) {
+    .productDialog-optionText {
+       font-size: 10px;
+    }
 }
 
 .productDialog-optionItem::before {
@@ -3498,10 +3599,23 @@ position: relative;
     margin-right: 24px;
 }
 
+@media (max-width:840px) {
+    .productDialog-optionItem::before {
+       margin-right: 14px;
+       width: 4px;
+       height: 4px;
+    }
+}
 
 .productDialog-optionDescr {
     opacity: 0.5;
+    font-size: 14px;
+}
 
+@media (max-width:840px) {
+    .productDialog-optionDescr {
+       font-size: 10px;
+    }
 }
 
 .productDialog-optionImportantInfo {
