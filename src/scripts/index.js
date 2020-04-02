@@ -2,6 +2,8 @@ import { ready, polyfils } from "./utils";
 import Modals from './modals';
 import SetInputState from './set-input-state';
 import initPhoneMaskSetter from './phone-mask';
+import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
+
 
 import ElementQueries from "css-element-queries/src/ElementQueries";
 
@@ -12,6 +14,7 @@ import ElementQueries from "css-element-queries/src/ElementQueries";
 
 ready(() => {
   polyfils();
+  initSmoothScrollToAnchor();
 
   ElementQueries.init();
 

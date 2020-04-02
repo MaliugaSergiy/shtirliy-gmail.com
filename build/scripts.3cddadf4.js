@@ -2671,7 +2671,139 @@ var PhoneMaskSetter = function PhoneMaskSetter(props) {
     guide: false
   });
 };
-},{"vanilla-text-mask":"../../node_modules/vanilla-text-mask/dist/vanillaTextMask.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
+},{"vanilla-text-mask":"../../node_modules/vanilla-text-mask/dist/vanillaTextMask.js"}],"../scripts/smooth-scroll-to-anchor.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = initSmoothScrollToAnchor;
+exports.SmoothScrollToAnchor = void 0;
+
+var _utils = require("./utils");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var DEFAULT_PROPS = {
+  selector: "a[href^='#']",
+  hideNonActiveAnchors: true,
+  duration: 300,
+  offsetElementSelector: ".js-page-header",
+  offset: 0,
+  callback: null
+}; // function isHidden(el) {
+//   return (el.offsetParent === null)
+// }
+
+function getIsHiddenElement(el) {
+  if (!el) {
+    return false;
+  }
+
+  var style = window.getComputedStyle(el);
+  return style.display === "none";
+}
+
+function getAnchorsRelatedToExistingTargets(element) {
+  var targetElement = document.getElementById(element.hash.substr(1));
+  var isDisplayTarget = !getIsHiddenElement(targetElement);
+  return isDisplayTarget;
+}
+
+function getIdFromHash(element) {
+  return element.hash.substr(1);
+}
+
+function initSmoothScrollToAnchor(props) {
+  var _props = _objectSpread({}, DEFAULT_PROPS, {}, props);
+
+  var selector = _props.selector,
+      hideNonActiveAnchors = _props.hideNonActiveAnchors,
+      rest = _objectWithoutProperties(_props, ["selector", "hideNonActiveAnchors"]);
+
+  var anchorElement = document.querySelector(selector);
+
+  if (!anchorElement) {
+    return;
+  }
+
+  var anchorElements = Array.from(document.querySelectorAll(selector));
+  var hashedAnchorElements = anchorElements.filter(getIdFromHash);
+  var anchorsRelatedToExistingTargets = hashedAnchorElements.filter(getAnchorsRelatedToExistingTargets);
+  anchorsRelatedToExistingTargets.forEach(function (element) {
+    new SmoothScrollToAnchor(_objectSpread({
+      element: element
+    }, rest));
+  });
+}
+
+var SmoothScrollToAnchor = function SmoothScrollToAnchor(props) {
+  var _this = this;
+
+  _classCallCheck(this, SmoothScrollToAnchor);
+
+  _defineProperty(this, "_props", null);
+
+  _defineProperty(this, "_id", null);
+
+  _defineProperty(this, "_target", null);
+
+  _defineProperty(this, "_scrollOffset", 0);
+
+  _defineProperty(this, "getDataScrollOffset", function (target) {
+    var _this$_props = _this._props,
+        offsetElementSelector = _this$_props.offsetElementSelector,
+        _offset = _this$_props.offset;
+    var offsetElement = document.querySelector(offsetElementSelector);
+    var offset = target.dataset.scroll_offset;
+
+    if (offsetElement) {
+      var elementOffset = offsetElement.getBoundingClientRect().height;
+      offset = offset - elementOffset + _offset;
+    }
+
+    return offset ? +offset : 0;
+  });
+
+  _defineProperty(this, "handleClick", function (e) {
+    var _this$_props2 = _this._props,
+        duration = _this$_props2.duration,
+        callback = _this$_props2.callback;
+    e.preventDefault();
+    var final = _this._target.offsetTop + _this._scrollOffset;
+    (0, _utils.scrollTo)(final, duration, callback);
+  });
+
+  this._props = props;
+  var element = this._props.element;
+
+  if (!element) {
+    return;
+  }
+
+  this._id = getIdFromHash(element);
+  this._target = document.getElementById(this._id);
+
+  if (!this._target) {
+    return;
+  }
+
+  this._scrollOffset = this.getDataScrollOffset(this._target);
+  element.addEventListener("click", this.handleClick);
+};
+
+exports.SmoothScrollToAnchor = SmoothScrollToAnchor;
+},{"./utils":"../scripts/utils/index.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
 var define;
 'use strict';
 
@@ -3565,6 +3697,8 @@ var _setInputState = _interopRequireDefault(require("./set-input-state"));
 
 var _phoneMask = _interopRequireDefault(require("./phone-mask"));
 
+var _smoothScrollToAnchor = _interopRequireDefault(require("./smooth-scroll-to-anchor"));
+
 var _ElementQueries = _interopRequireDefault(require("css-element-queries/src/ElementQueries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -3572,6 +3706,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
 (0, _utils.ready)(function () {
   (0, _utils.polyfils)();
+  (0, _smoothScrollToAnchor.default)();
 
   _ElementQueries.default.init();
 
@@ -3585,7 +3720,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     inputSelector: '.js-phone-input'
   });
 });
-},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

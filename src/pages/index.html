@@ -64,10 +64,10 @@
                   <div class="firstScreen-buttonsHolder">
                     <div class="firstScreen-buttons">
                       <div class="firstScreen-button">
-                        <button class="button" data-custom-open="thanksOrderDialog">Антисептики</button>
+                        <a href="#anti" class="button">Антисептики</a>
                       </div>
                       <div class="firstScreen-button">
-                        <button class="button button--theme-dark" data-custom-open="testModal">Защитные маски</button>
+                        <a href="#masks" class="button button--theme-dark" data-custom-open="testModal">Защитные маски</a>
                       </div>
                     </div>
                   </div>
@@ -79,7 +79,7 @@
           <div class="firstScreen-overlay"></div>
         </div>
 
-        <div class="secondScreen">
+        <div id="anti" class="secondScreen">
           <div class="secondScreen-bg"></div>
           <div class="secondScreen-outer">
             <div class="container container--fullHeight">
@@ -141,9 +141,9 @@
                 <div class="section-description">Предлагаем вам широкую линейку качественных антисептических средств, имеющих паспорта качества, по оптовым ценам. </br> <b> Благодаря собственному производству мы можем поставлять продукцию в любых объемах и таре под заказ.</b></div>
                 <div class="section-content">              
                   <div class="thirdScreen-inner">
-                    <div class="thirdScreen-button">
+                    <!-- <div class="thirdScreen-button">
                       <button class="button button--bordered">Сертификаты качества</button>
-                    </div>
+                    </div> -->
                     <div class="thirdScreen-catalog">
                       <div class="catalog">
                         <div class="catalog-item">
@@ -161,7 +161,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #FDB6DB 0%, #E5589D 100%);">
+                            <button data-custom-open="product_2" class="product" style="background: linear-gradient(180deg, #FDB6DB 0%, #E5589D 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_2.png" alt="" class="product-image">
                               </div>
@@ -174,7 +174,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+                            <button data-custom-open="product_3" class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_3.png" alt="" class="product-image">
                               </div>
@@ -187,12 +187,12 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #FCC8A5 0%, #FC1A64 100%);">
+                            <button data-custom-open="product_8" class="product" style="background: linear-gradient(180deg, #FCC8A5 0%, #FC1A64 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_8.png" alt="" class="product-image">
                               </div>
                               <div class="product-footer">
-                                <div class="product-title">Antiseptic Hand Spray Peach</div>
+                                <div class="product-title">Antibacterial Hand Spray Peach</div>
                                 <div class="product-info">20 ml</div>
                               </div>
                             </button>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+                            <button data-custom-open="product_4" class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_4.png" alt="" class="product-image">
                               </div>
@@ -213,7 +213,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #FFACD6 0%, #DE6187 100%);">
+                            <button data-custom-open="product_5" class="product" style="background: linear-gradient(180deg, #FFACD6 0%, #DE6187 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_5.png" alt="" class="product-image">
                               </div>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+                            <button data-custom-open="product_6" class="product" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_6.png" alt="" class="product-image">
                               </div>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #C4EB8E 0%, #7CA848 100%);">
+                            <button data-custom-open="product_7" class="product" style="background: linear-gradient(180deg, #C4EB8E 0%, #7CA848 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_7.png" alt="" class="product-image">
                               </div>
@@ -252,7 +252,7 @@
                         </div>
                         <div class="catalog-item">
                           <div class="catalog-itemInner">
-                            <button class="product" style="background: linear-gradient(180deg, #D1C0E2 0%, #29BFB3 100%);">
+                            <button data-custom-open="product_9" class="product" style="background: linear-gradient(180deg, #D1C0E2 0%, #29BFB3 100%);">
                               <div class="product-imageHoder">
                                 <img src="../assets/images/product_9.png" alt="" class="product-image">
                               </div>
@@ -286,7 +286,7 @@
           </div>
           <div class="thirdScreen-overlay"></div>
         </div>
-        <div class="fourthScreen">
+        <div id="masks" class="fourthScreen">
           <div class="fourthScreen-bg"></div>
           <div class="fourthScreen-outer">
             <div class="container container--fullHeight">
@@ -601,6 +601,585 @@
     </div>
     <div class="productDialogHolder"  data-modal_id="product_1" data-modal_additional_class="modal--full modal--product modal--slide">
       <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+          <img src="../assets/images/product_1.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">ок</div>
+              <div class="productDialog-underTitle">Антисептический гель для рук</div>
+              <div class="productDialog-descr">Гель для рук с антибактериальным эффектом. Удобно использовать в любых условиях: в транспорте, на работе, в путешествиях и общественных местах.</div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">50 ml</div>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      отсутствие ощущения липкости.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет обезопасить себя от вирусов и бактерий.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, Феноксиэтанол, Глицерил Лаурат, Акрилат/C10-30 Алкил Акрилатный Кроссполимер, Пантенол, Парфюмерная Композиция, Триэтаноламин, CI 42090, Натрия Сульфат.
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Не требует смывания.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_2" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #FDB6DB 0%, #E5589D 100%);">
+          <img src="../assets/images/product_2.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Gel Pink</div>
+              <div class="productDialog-underTitle">Антисептический гель для рук</div>
+              <div class="productDialog-descr">Защищаться нужно красиво! Гель для рук нежно-розового цвета с антибактериальным эффектом устранит микробы и вирусы, а значит и все причины для беспокойства!</div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">30 ml</div>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет всегда иметь под рукой надёжного защитника.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, Феноксиэтанол, Глицерил Лаурат, Акрилат/C10-30 Алкил Акрилатный Кроссполимер, Пантенол, Парфюмерная Композиция, Триэтаноламин, CI 14720
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Не требует смывания.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_3" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+          <img src="../assets/images/product_3.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Gel</div>
+              <div class="productDialog-underTitle">Антисептический гель для рук</div>
+              <div class="productDialog-descr">Гель для рук с антибактериальным эффектом.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">100 ml</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, Феноксиэтанол, Глицерил Лаурат, Акрилат/C10-30 Алкил Акрилатный Кроссполимер, Пантенол, Парфюмерная Композиция, Триэтаноламин, CI 42090, Натрия Сульфат.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Не требует смывания.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_4" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+          <img src="../assets/images/product_4.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Spray</div>
+              <div class="productDialog-underTitle">Антисептический спрей для рук</div>
+              <div class="productDialog-descr">Антисептическое средство для рук в форме спрея будет сопровождать тебя везде и всюду, защищая руки от всех вирусов и бактерий.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">50 ml</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, ПЭГ-40 Гидрогенизированное Касторовое Масло, Феноксиэтанол, Глицерил Лаурат, Глицерин, Парфюмерная Композиция, Сульфат Натрия, CI 42090.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Распыли небольшое количество средства на руки, тщательно разотри до полного высыхания.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_5" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #FFACD6 0%, #DE6187 100%);">
+          <img src="../assets/images/product_5.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Spray Pink</div>
+              <div class="productDialog-underTitle">Антисептический спрей для рук розовый</div>
+              <div class="productDialog-descr">Твоя яркая защита! Розовый спрей для рук с антибактериальным эффектом сделает всё, чтобы твоя кожа была в безопасности.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">100 ml</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет всегда иметь под рукой надёжного защитника.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, ПЭГ-40 Гидрогенизированное Касторовое Масло, Феноксиэтанол, Глицерил Лаурат, Глицерин, Парфюмерная Композиция, CI 14720.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Подходит для ежедневного использования.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_6" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #A6E1EE 0%, #3DA8BE 100%);">
+          <img src="../assets/images/product_6.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Spray Blue</div>
+              <div class="productDialog-underTitle">Антисептический спрей для рук голубой</div>
+              <div class="productDialog-descr">Твоя яркая защита! Голубой спрей для рук с антибактериальным эффектом сделает всё, чтобы твоя кожа была в безопасности.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">100 ml</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет всегда иметь под рукой надёжного защитника.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, ПЭГ-40 Гидрогенизированное Касторовое Масло, Феноксиэтанол, Глицерил Лаурат, Глицерин, Парфюмерная Композиция, CI 14720.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Подходит для ежедневного использования.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_7" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #C4EB8E 0%, #7CA848 100%);">
+          <img src="../assets/images/product_7.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antiseptic Hand Spray Green </div>
+              <div class="productDialog-underTitle">Антисептический спрей для рук зелёный</div>
+              <div class="productDialog-descr">Твоя яркая защита! Зелёный спрей для рук с антибактериальным эффектом сделает всё, чтобы твоя кожа была в безопасности.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">100 ml</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      изопропиловый спирт (не менее 60% в составе) уничтожает 99,9% вирусов и бактерий меньше чем за 30 секунд
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      пантенол увлажняет и смягчает кожу
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      феноксиэтанол обладает бактерицидным действием
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      быстрое очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      усиленная защита от микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      полное отсутствие ощущения липкости
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет всегда иметь под рукой надёжного защитника.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionImportantInfo">
+                  <div class="productDialog-optionTitle">Это важно знать</div>
+                  <div class="productDialog-optionDescr">Центры по контролю и профилактике заболеваний США - Centers for Disease Control and Prevention (CDC) рекомендуют использовать против COVID-19 антисептические средства на спиртовой основе, в которых содержится не менее 60% спирта. Внимательно читайте состав! В связи с повышением спроса на антисептики некоторые производители игнорируют содержание спирта в своих составах. При этом, в описании продукта указывается, что это антисептическое средство. Антисептик, в котором отсутствует спирт или его % меньше нормы не будет эффективным для дезинфекции рук. Выбирайте надёжный антисептик!
+                    В составе каждого нашего антисептика содержится 60% изопропилового спирта. Это подтверждено паспортом качества.</div>
+                </div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">Изопропиловый Спирт, Вода, ПЭГ-40 Гидрогенизированное Касторовое Масло, Феноксиэтанол, Глицерил Лаурат, Глицерин, Парфюмерная Композиция, CI 14720.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Подходит для ежедневного использования.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_8" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
         <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #FCC8A5 0%, #FC1A64 100%);">
           <img src="../assets/images/product_8_full.png" alt="" class="productDialog-image">
         </div>
@@ -679,6 +1258,85 @@
               <div class="productDialog-option">
                 <div class="productDialog-optionTitle">Применение</div>
                 <div class="productDialog-optionDescr">Нанеси небольшое количество средства на руки, тщательно разотри до полного высыхания. Подходит для ежедневного использования.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDialogHolder"  data-modal_id="product_9" data-modal_additional_class="modal--full modal--product modal--slide">
+      <div class="productDialog">
+        <div class="productDialog-imageHolder" style="background: linear-gradient(180deg, #D1C0E2 0%, #29BFB3 100%);">
+          <img src="../assets/images/product_9.png" alt="" class="productDialog-image">
+        </div>
+        <div class="productDialog-content">
+          <div class="productDialog-main">
+            <div class="productDialog-mainInner">
+              <div class="productDialog-title">Antibacterial Hand Spray Flower </div>
+              <div class="productDialog-underTitle">Антисептический спрей для рук</div>
+              <div class="productDialog-descr">Антибактериальное средство для кожи рук с нежным цветочным ароматом.
+              </div>
+              <ul class="productDialog-values">
+                <li class="productDialog-value">
+                  <div class="productDialog-valueInner">20 ml</div>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+          <div class="productDialog-options">
+            <div class="productDialog-optionsInner">
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Как работает</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      медицинский этиловый спирт (не менее 60% в составе) моментально убивает 99,9% микробов и вирусов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      витамин E и алоэ вера смягчают кожу, не пересушивая её
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      цветочный аромат дарит чувство свежести.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Результат</div>
+                <ul class="productDialog-optionList">
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      тщательное очищение кожи рук
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      надёжная защита от микробов
+                    </div>
+                  </li>
+                  <li class="productDialog-optionItem">
+                    <div class="productDialog-optionText">
+                      приятное ощущение защищённости и комфорта
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Для кого</div>
+                <div class="productDialog-optionDescr">Для тех, кто хочет всегда иметь под рукой маленького защитника от микробов.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Состав</div>
+                <div class="productDialog-optionDescr">этиловый спирт, вода, глицерин, пропиленгликоль, витамин Е, растительный экстракт алоэ вера, парфюмерная композиция.</div>
+              </div>
+              <div class="productDialog-option">
+                <div class="productDialog-optionTitle">Применение</div>
+                <div class="productDialog-optionDescr">Нанеси небольшое количество антибактериального спрея на руки либо распыли на поверхность, которую хочется продезинфицировать. Средство подходит для ежедневного использования.</div>
               </div>
             </div>
           </div>

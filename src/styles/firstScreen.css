@@ -49,18 +49,18 @@
     background:  url(../assets/images/anti_1.png);
     background-size: 462px 594px;
     background-repeat: no-repeat;
-    background-position: right 500px bottom -70px;
+    background-position: right 430px bottom -70px;
 }
 
 @media(max-width:1300px) {
     .firstScreen-bg::before {
-        background-position: right 430px bottom -70px;
+        background-position: right 380px bottom -70px;
     }
 }
 
 @media(max-width:1220px) {
     .firstScreen-bg::before {
-        background-position: right 320px bottom -70px;
+        background-position: right 300px bottom -70px;
     }
 }
 
@@ -127,13 +127,13 @@
 }
 
 .firstScreen-main {
-    max-width: 450px;
+    max-width: 580px;
     flex-grow: 1;
 }
 
 @media(max-width:1100px) {
     .firstScreen-main {
-        max-width: 580px;
+        
         text-align: center;
         margin: 0 auto;
         flex-grow: 0;

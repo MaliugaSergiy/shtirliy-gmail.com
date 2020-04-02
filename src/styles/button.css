@@ -1,4 +1,6 @@
 .button {
+    display: inline-block;
+    width: 100%;
     padding: 22px 48px;
     background-color: #fff;
     color: #1E1E1E;
@@ -10,10 +12,12 @@
     transition:  0.2s ease-out;
     /* white-space: nowrap; */
     /* width: auto; */
+    border: 1px solid transparent;
 }
 
 .button:hover {
     background-color: #FC2F6C;
+    border: 1px solid #FC2F6C;
     color: #fff;
 }
 

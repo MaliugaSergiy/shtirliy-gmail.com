@@ -703,7 +703,7 @@ button {
 
   position: absolute;
   top: 48px;
-  left: 0;
+  left: 110px;
   right: 0;
   width: auto;
 
@@ -1217,18 +1217,18 @@ button {
     background:  url(/anti_1.2d23edb3.png);
     background-size: 462px 594px;
     background-repeat: no-repeat;
-    background-position: right 500px bottom -70px;
+    background-position: right 430px bottom -70px;
 }
 
 @media(max-width:1300px) {
     .firstScreen-bg::before {
-        background-position: right 430px bottom -70px;
+        background-position: right 380px bottom -70px;
     }
 }
 
 @media(max-width:1220px) {
     .firstScreen-bg::before {
-        background-position: right 320px bottom -70px;
+        background-position: right 300px bottom -70px;
     }
 }
 
@@ -1312,7 +1312,7 @@ button {
 }
 
 .firstScreen-main {
-    max-width: 450px;
+    max-width: 580px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1320,7 +1320,7 @@ button {
 
 @media(max-width:1100px) {
     .firstScreen-main {
-        max-width: 580px;
+        
         text-align: center;
         margin: 0 auto;
         -webkit-box-flex: 0;
@@ -2419,6 +2419,8 @@ position: relative;
 }
 
 .button {
+    display: inline-block;
+    width: 100%;
     padding: 22px 48px;
     background-color: #fff;
     color: #1E1E1E;
@@ -2431,10 +2433,12 @@ position: relative;
     transition:  0.2s ease-out;
     /* white-space: nowrap; */
     /* width: auto; */
+    border: 1px solid transparent;
 }
 
 .button:hover {
     background-color: #FC2F6C;
+    border: 1px solid #FC2F6C;
     color: #fff;
 }
 
