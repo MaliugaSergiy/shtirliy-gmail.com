@@ -1184,8 +1184,8 @@ button {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
     background-color: coral;
-    background: url(/girl_1.a3ea3fa4.png), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
-    background: url(/girl_1.a3ea3fa4.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    background: url(/girl_1_new.dcd5d21e.png), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
+    background: url(/girl_1_new.dcd5d21e.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
     /* background-image: url(../assets/images/back_1.jpg); */
     background-repeat: no-repeat;
     background-size: contain;
@@ -1215,7 +1215,7 @@ button {
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(/anti_1.2d23edb3.png);
+    background:  url(/anti_1_new.4a41d67d.png);
     background-size: 462px 594px;
     background-repeat: no-repeat;
     background-position: right 430px bottom -70px;
@@ -1464,8 +1464,8 @@ button {
 .secondScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background: url(/back_2_1.64c6049a.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#7ED2E4), to(#2395AD));
-    background: url(/back_2_1.64c6049a.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
+    background: url(/back_2_new.1b763884.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left top, left bottom, from(#7ED2E4), to(#2395AD));
+    background: url(/back_2_new.1b763884.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 191px 540px, cover, cover;
@@ -1654,8 +1654,8 @@ button {
 .fourthScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background-image: url(/fantomas.aa57b63d.png), -webkit-gradient(linear, left top, left bottom, from(#DFCBF4), to(#C3ABE4));
-    background-image: url(/fantomas.aa57b63d.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
+    background-image: url(/fantomas_new.188d685d.png), -webkit-gradient(linear, left top, left bottom, from(#DFCBF4), to(#C3ABE4));
+    background-image: url(/fantomas_new.188d685d.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
     background-repeat: no-repeat;
     /* background-size: 850px 704px, contain; */
     background-size: 43.4vw 36vw, contain;
@@ -1954,8 +1954,8 @@ overflow: hidden;
 .sixthScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background: url("/masks.0c543e41.png"), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
-    background: url("/masks.0c543e41.png"), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%); 
+    background: url("/masks_new.e96408b5.png"), -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
+    background: url("/masks_new.e96408b5.png"), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%); 
     background-color: #FFA9B5;
     background-repeat: no-repeat;
     background-position: center right;
@@ -2489,7 +2489,7 @@ position: relative;
 .lastScreen-production {
     /* height: 450px; */
     padding-top: 37%;
-    background-image: url("/last_section.3da65120.png");
+    background-image: url("/last_section_new.c4a8fe48.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -2812,7 +2812,7 @@ position: relative;
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
     background-color: #F4F4F4;
-    background-image: url("/catalog_banner.c05494a7.png");
+    background-image: url("/catalog_banner_new.2aad98db.png");
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
@@ -2992,6 +2992,10 @@ position: relative;
 }
 .modal--product  .modal-container{
   max-width: 1500px;
+}
+
+.modal--video .modal-container{
+  max-width: 1200px;
 }
 
 @media (max-width:840px) {
@@ -4065,7 +4069,7 @@ position: relative;
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(/anti_1.2d23edb3.png);
+    background:  url(/anti_1_new.4a41d67d.png);
     background-size: 23.333vw 30vw;
     background-repeat: no-repeat;
     background-position: right 5vw bottom;
@@ -4075,7 +4079,7 @@ position: relative;
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(/masks.0c543e41.png);
+    background:  url(/masks_new.e96408b5.png);
     background-size: 32.8vw 40vw;
     background-repeat: no-repeat;
     background-position: right -3vw top -3vw;
@@ -4154,6 +4158,13 @@ position: relative;
     /* margin: auto; */
 }
 
+.videoBanner {
+    width: 100%;
+}
+
+.videoBanner-iframe {
+
+}
 @font-face {
     font-family: 'RF Dewi Condensed';
     src: url('/RFDewiCondensed-Regular.69abd3f8.eot');

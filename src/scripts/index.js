@@ -9,7 +9,11 @@ import indicateMobileDevices from './indicate-mobile-devices';
 import indicateMobileOrTabletDevices from './indicate-mobile-and-tablet-devices';
 import KeyboardUsingState from './keyboard-using-state';
 
+import MicroModal from 'micromodal';
+
 import ElementQueries from "css-element-queries/src/ElementQueries";
+
+window.MicroModal = MicroModal
 
 // import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
 
@@ -81,5 +85,5 @@ ready(() => {
     keyUsingClass: 'isTabUsing'
   });
 
-
+  $(".videoBanner").fitVids();
 });

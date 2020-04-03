@@ -21,7 +21,7 @@ overflow: hidden;
 .sixthScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background: url("../assets/images/masks.png"), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%); 
+    background: url("../assets/images/masks_new.png"), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%); 
     background-color: #FFA9B5;
     background-repeat: no-repeat;
     background-position: center right;

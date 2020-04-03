@@ -14,7 +14,7 @@
 .fourthScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background-image: url(../assets/images/fantomas.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
+    background-image: url(../assets/images/fantomas_new.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
     background-repeat: no-repeat;
     /* background-size: 850px 704px, contain; */
     background-size: 43.4vw 36vw, contain;

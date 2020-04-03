@@ -244,12 +244,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\girl_1.png":[["girl_1.a3ea3fa4.png","../assets/images/girl_1.png"],"../assets/images/girl_1.png"],"./..\\assets\\images\\anti_1.png":[["anti_1.2d23edb3.png","../assets/images/anti_1.png"],"../assets/images/anti_1.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\girl_1_new.png":[["girl_1_new.dcd5d21e.png","../assets/images/girl_1_new.png"],"../assets/images/girl_1_new.png"],"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\back_2_1.png":[["back_2_1.64c6049a.png","../assets/images/back_2_1.png"],"../assets/images/back_2_1.png"],"./..\\assets\\images\\back_2_1_mob.png":[["back_2_1_mob.0e0c83f2.png","../assets/images/back_2_1_mob.png"],"../assets/images/back_2_1_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/thirdScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\back_2_new.png":[["back_2_new.1b763884.png","../assets/images/back_2_new.png"],"../assets/images/back_2_new.png"],"./..\\assets\\images\\back_2_1_mob.png":[["back_2_1_mob.0e0c83f2.png","../assets/images/back_2_1_mob.png"],"../assets/images/back_2_1_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/thirdScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -259,7 +259,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\fantomas.png":[["fantomas.aa57b63d.png","../assets/images/fantomas.png"],"../assets/images/fantomas.png"],"./..\\assets\\images\\texture.jpg":[["texture.8a8cf449.jpg","../assets/images/texture.jpg"],"../assets/images/texture.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fifthScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\fantomas_new.png":[["fantomas_new.188d685d.png","../assets/images/fantomas_new.png"],"../assets/images/fantomas_new.png"],"./..\\assets\\images\\texture.jpg":[["texture.8a8cf449.jpg","../assets/images/texture.jpg"],"../assets/images/texture.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fifthScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -269,7 +269,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\masks.png":[["masks.0c543e41.png","../assets/images/masks.png"],"../assets/images/masks.png"],"./..\\assets\\images\\mask_mob.png":[["mask_mob.8bb915fb.png","../assets/images/mask_mob.png"],"../assets/images/mask_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\masks_new.png":[["masks_new.e96408b5.png","../assets/images/masks_new.png"],"../assets/images/masks_new.png"],"./..\\assets\\images\\mask_mob.png":[["mask_mob.8bb915fb.png","../assets/images/mask_mob.png"],"../assets/images/mask_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -289,7 +289,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\last_section.png":[["last_section.3da65120.png","../assets/images/last_section.png"],"../assets/images/last_section.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/button.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\last_section_new.png":[["last_section_new.c4a8fe48.png","../assets/images/last_section_new.png"],"../assets/images/last_section_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/button.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -314,7 +314,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\catalog_banner.png":[["catalog_banner.c05494a7.png","../assets/images/catalog_banner.png"],"../assets/images/catalog_banner.png"],"./..\\assets\\images\\catalog_banner_mob.png":[["catalog_banner_mob.25a7bcdb.png","../assets/images/catalog_banner_mob.png"],"../assets/images/catalog_banner_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/modal.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\catalog_banner_new.png":[["catalog_banner_new.2aad98db.png","../assets/images/catalog_banner_new.png"],"../assets/images/catalog_banner_new.png"],"./..\\assets\\images\\catalog_banner_mob.png":[["catalog_banner_mob.25a7bcdb.png","../assets/images/catalog_banner_mob.png"],"../assets/images/catalog_banner_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/modal.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -354,7 +354,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\anti_1.png":[["anti_1.2d23edb3.png","../assets/images/anti_1.png"],"../assets/images/anti_1.png"],"./..\\assets\\images\\masks.png":[["masks.0c543e41.png","../assets/images/masks.png"],"../assets/images/masks.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../assets/fonts/RFDewi/stylesheet.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"./..\\assets\\images\\masks_new.png":[["masks_new.e96408b5.png","../assets/images/masks_new.png"],"../assets/images/masks_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/videoBanner.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../assets/fonts/RFDewi/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -364,7 +369,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./reset.css":"../styles/reset.css","./_footer.css":"../styles/_footer.css","./header.css":"../styles/header.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./product.css":"../styles/product.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","./headerMenu.css":"../styles/headerMenu.css","./catalog.css":"../styles/catalog.css","./catalogBanner.css":"../styles/catalogBanner.css","./modal.css":"../styles/modal.css","./input.css":"../styles/input.css","./оrderDialog.css":"../styles/оrderDialog.css","./orderForm.css":"../styles/orderForm.css","./thanksOrderDialog.css":"../styles/thanksOrderDialog.css","./productDialog.css":"../styles/productDialog.css","./dialogSetificates.css":"../styles/dialogSetificates.css","./thanksPage.css":"../styles/thanksPage.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
+},{"./reset.css":"../styles/reset.css","./_footer.css":"../styles/_footer.css","./header.css":"../styles/header.css","./_sicial-icon-button.css":"../styles/_sicial-icon-button.css","./_mixit-logo.css":"../styles/_mixit-logo.css","./section.css":"../styles/section.css","./container.css":"../styles/container.css","./icon-container.css":"../styles/icon-container.css","./icon.css":"../styles/icon.css","./page.css":"../styles/page.css","./product.css":"../styles/product.css","./icons/index.css":"../styles/icons/index.css","./firstScreen.css":"../styles/firstScreen.css","./secondScreen.css":"../styles/secondScreen.css","./thirdScreen.css":"../styles/thirdScreen.css","./fourthScreen.css":"../styles/fourthScreen.css","./fifthScreen.css":"../styles/fifthScreen.css","./sixthScreen.css":"../styles/sixthScreen.css","./seventhScreen.css":"../styles/seventhScreen.css","./genDirScreen.css":"../styles/genDirScreen.css","./massMediaScreen.css":"../styles/massMediaScreen.css","./lastScreen.css":"../styles/lastScreen.css","./button.css":"../styles/button.css","./maskProduct.css":"../styles/maskProduct.css","./headerMenu.css":"../styles/headerMenu.css","./catalog.css":"../styles/catalog.css","./catalogBanner.css":"../styles/catalogBanner.css","./modal.css":"../styles/modal.css","./input.css":"../styles/input.css","./оrderDialog.css":"../styles/оrderDialog.css","./orderForm.css":"../styles/orderForm.css","./thanksOrderDialog.css":"../styles/thanksOrderDialog.css","./productDialog.css":"../styles/productDialog.css","./dialogSetificates.css":"../styles/dialogSetificates.css","./thanksPage.css":"../styles/thanksPage.css","./videoBanner.css":"../styles/videoBanner.css","../assets/fonts/RFDewi/stylesheet.css":"../assets/fonts/RFDewi/stylesheet.css","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/icons/icon-container.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -412,7 +417,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51088" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61246" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

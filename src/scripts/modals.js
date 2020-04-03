@@ -53,7 +53,7 @@ export default class Modals {
     this._modalContentNodes[0].parentElement.style.display = 'block';
     this._modalContentNodes.map(this.wrapModalContents);
 
-    MicroModal.init({
+ MicroModal.init({
       onShow: this.handleDialogShow,
       onClose: this.handleDialogClose,
       openTrigger: 'data-custom-open',
@@ -63,6 +63,7 @@ export default class Modals {
       awaitCloseAnimation: false,
       debugMode: true
     });
+
 
     this.setHeaderWidthByContent();
   }
@@ -195,27 +196,38 @@ export default class Modals {
   };
 
   handleDialogClose = modal => {
+  console.log("Modals -> modal", modal)
     this._activeModalId = null;
     this.resetBodyStyle();
     this.pauseAllYoutubeVideos(modal);
     this.pauseAllVideos(modal);
   };
 
+
+
   pauseAllYoutubeVideos(modal) {
     if (!modal.querySelector('.youtubeVideoModal-video')) {
       return;
     }
 
+
     try {
       const videos = Array.from(
         modal.querySelectorAll('.youtubeVideoModal-video')
-      );
-      videos.forEach(video => {
-        video.contentWindow.postMessage(
-          '{"event":"command","func":"stopVideo","args":""}',
-          '*'
         );
-      });
+        videos.forEach(video=>{
+          video.src=video.src
+        })
+        // videos.forEach(video => {
+        //   video.contentWindow.postMessage(
+        //     '{"event":"command","func":"stopVideo","args":""}',
+        //     '*'
+        //     );
+        //   });
+      // videos.forEach(video => {
+      //   console.log("Modals -> pauseAllYoutubeVideos -> video", Boolean(video.contentWindow))
+      //   video.stopVideo();
+      // });
     } catch (error) {
       console.warn("Can't stop video", error);
     }

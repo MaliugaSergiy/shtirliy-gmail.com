@@ -24,7 +24,7 @@
 .secondScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background: url(../assets/images/back_2_1.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
+    background: url(../assets/images/back_2_new.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 191px 540px, cover, cover;

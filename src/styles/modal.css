@@ -60,6 +60,10 @@
   max-width: 1500px;
 }
 
+.modal--video .modal-container{
+  max-width: 1200px;
+}
+
 @media (max-width:840px) {
   .modal--full .modal-container{
     width: 100vw;

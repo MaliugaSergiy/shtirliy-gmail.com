@@ -2421,6 +2421,7 @@ function () {
     });
 
     _defineProperty(this, "handleDialogClose", function (modal) {
+      console.log("Modals -> modal", modal);
       _this._activeModalId = null;
 
       _this.resetBodyStyle();
@@ -2504,8 +2505,17 @@ function () {
       try {
         var videos = Array.from(modal.querySelectorAll('.youtubeVideoModal-video'));
         videos.forEach(function (video) {
-          video.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-        });
+          video.src = video.src;
+        }); // videos.forEach(video => {
+        //   video.contentWindow.postMessage(
+        //     '{"event":"command","func":"stopVideo","args":""}',
+        //     '*'
+        //     );
+        //   });
+        // videos.forEach(video => {
+        //   console.log("Modals -> pauseAllYoutubeVideos -> video", Boolean(video.contentWindow))
+        //   video.stopVideo();
+        // });
       } catch (error) {
         console.warn("Can't stop video", error);
       }
@@ -3995,11 +4005,14 @@ var _indicateMobileAndTabletDevices = _interopRequireDefault(require("./indicate
 
 var _keyboardUsingState = _interopRequireDefault(require("./keyboard-using-state"));
 
+var _micromodal = _interopRequireDefault(require("micromodal"));
+
 var _ElementQueries = _interopRequireDefault(require("css-element-queries/src/ElementQueries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
+window.MicroModal = _micromodal.default; // import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
+
 var KEY_CODE_TAB = 9;
 var KEY_CODE_ARROW_LEFT = 37;
 var KEY_CODE_ARROW_RIGHT = 39;
@@ -4047,8 +4060,9 @@ var ARROWS_KEY_CODE_LIST = [KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_
     keyCodes: KEY_CODE_TAB,
     keyUsingClass: 'isTabUsing'
   });
+  $(".videoBanner").fitVids();
 });
-},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","./indicate-touch-devices":"../scripts/indicate-touch-devices.js","./indicate-mobile-devices":"../scripts/indicate-mobile-devices.js","./indicate-mobile-and-tablet-devices":"../scripts/indicate-mobile-and-tablet-devices.js","./keyboard-using-state":"../scripts/keyboard-using-state.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","./indicate-touch-devices":"../scripts/indicate-touch-devices.js","./indicate-mobile-devices":"../scripts/indicate-mobile-devices.js","./indicate-mobile-and-tablet-devices":"../scripts/indicate-mobile-and-tablet-devices.js","./keyboard-using-state":"../scripts/keyboard-using-state.js","micromodal":"../../node_modules/micromodal/dist/micromodal.es.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -4076,7 +4090,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51088" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61246" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

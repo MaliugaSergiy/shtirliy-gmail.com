@@ -25,7 +25,7 @@
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(../assets/images/anti_1.png);
+    background:  url(../assets/images/anti_1_new.png);
     background-size: 23.333vw 30vw;
     background-repeat: no-repeat;
     background-position: right 5vw bottom;
@@ -35,7 +35,7 @@
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(../assets/images/masks.png);
+    background:  url(../assets/images/masks_new.png);
     background-size: 32.8vw 40vw;
     background-repeat: no-repeat;
     background-position: right -3vw top -3vw;
