@@ -544,7 +544,7 @@ button {
 
 @media(max-width:840px) {
   .section {
-    padding: 48px 0;
+    padding:  0;
   }
 }
 
@@ -559,6 +559,7 @@ button {
   color: inherit;
   max-width: 550px;
   margin-bottom: 16px;
+  margin-top: 34px;
 }
 
 @media(max-width:840px) {
@@ -1454,6 +1455,11 @@ button {
         height: auto;
     } 
  }
+@media (max-width: 840px) {
+    .secondScreen {
+        padding-bottom: 28px;
+    } 
+ }
 
 .secondScreen-bg {
     position: absolute;
@@ -1839,7 +1845,13 @@ button {
     }
 }
 .fifthScreen {
-position: relative;
+    position: relative;
+}
+
+@media(max-width:840px) {
+    .fifthScreen {
+        padding-bottom: 28px;
+    }
 }
 
 .fifthScreen-bg {
@@ -1866,7 +1878,7 @@ position: relative;
     margin: -1%;
 }
 
-@media(max-width:840px) {
+@media(max-width:640px) {
     .fifthScreen-masksCatalog {
         margin: 0;
     }
@@ -1878,10 +1890,17 @@ position: relative;
         -ms-flex: 1 1 33.3333%;
             flex: 1 1 33.3333%;
     max-width: 33.3333%;
-   
 }
 
-@media(max-width:840px) {
+@media(max-width:1020px) {
+    .fifthScreen-maskItem {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
+        max-width: 50%; 
+    }
+}
+@media(max-width:640px) {
     .fifthScreen-maskItem {
         padding: 0;
         -webkit-box-flex: 1;
@@ -1901,7 +1920,7 @@ position: relative;
     overflow: hidden;
 }
 
-@media(max-width:840px) {
+@media(max-width:640px) {
     .fifthScreen-maskItem:not(:last-child) .fifthScreen-maskItemInner  {
         border-bottom: none;
     }
@@ -2177,6 +2196,13 @@ overflow: hidden;
 
 }
 
+@media (max-width: 840px) {
+    .massMediaScreen {
+        padding-bottom: 28px;
+    }
+    
+}
+
 .massMediaScreen-outer {
 
 }
@@ -2195,10 +2221,7 @@ overflow: hidden;
     /* grid-template-areas: ". . ." ". xxx"; */
 }
 
-.xxx {
-    /* grid-area: xxx; */
-    /* grid-column-end: 2 span; */
-}
+
 
 @media(max-width:720px) {
     .massMediaScreen-list {
@@ -2480,16 +2503,18 @@ position: relative;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-
-
 }
 
 @media(max-width:840px) { 
     .maskProduct {
         text-align: center;
     }
+}
+
+.maskProduct--fontBackground {
 
 }
+
 
 .maskProduct-imageHolder{
     position: relative;
@@ -2499,7 +2524,7 @@ position: relative;
             flex-grow: 1;
 }
 
-@media(max-width:840px) {
+@media(max-width:640px) {
     .maskProduct-imageHolder {
         padding-top: 55%;
     }
@@ -2526,7 +2551,39 @@ position: relative;
 
 .maskProduct-title {
     position: relative;
+    display: inline-block;
+    
 }
+
+@media(max-width: 840px) {
+    .maskProduct-title {
+        margin: auto;
+    }
+}
+
+@media(max-width: 840px) {
+    .maskProduct--fontBackground:hover .maskProduct-title {
+        color: #fff;
+    }
+}
+
+.maskProduct--fontBackground  .maskProduct-title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -6px;
+    right: -6px;
+    top: -6px;
+    bottom: -6px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 3px;
+}
+
+.maskProduct-titleInner {
+    position: relative;
+}
+
+/* .maskProduct--fontBackground */
 
 .maskProduct-hoverImage {
     position: absolute;
@@ -3685,7 +3742,7 @@ position: relative;
     padding: 4% 5%;
     color: #1E1E1E;
 }
-@media(max-width:840px)  {
+@media(max-width:1220px)  {
     .dialogSetificates-coll_catalog {
         padding-bottom: 16px;
     }
@@ -3700,12 +3757,13 @@ position: relative;
     .dialogSetificates-coll_preview {
         overflow-y: auto;
         background-color: #fff;
+        padding-top: 0;
     }
 }
-
 @media(max-width:840px)  {
     .dialogSetificates-coll_preview {
-        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -3725,6 +3783,11 @@ position: relative;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 7%;
+}
+@media(max-width:1220px)  {
+    .dialogSetificates-description {
+        margin-bottom: 2%;
+    }
 }
 @media(max-width:840px)  {
     .dialogSetificates-description {
@@ -3832,6 +3895,11 @@ position: relative;
         padding-top: 0;
     }
 }
+@media(max-width:840px)  {
+    .dialogSetificates-previewHolder {
+        padding-right: 24px;
+    }
+}
 
 .dialogSetificates-preview {
     position: absolute;
@@ -3856,6 +3924,19 @@ position: relative;
         position: relative;
         padding-top: 0;
         min-width: 320px;
+    }
+}
+
+@media(max-width:840px)  {
+    .dialogSetificates-previewWrapper {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .dialogSetificates-previewWrapper:first-child {
+        margin-left: 28px;
+    }
+    .dialogSetificates-previewWrapper:last-child {
+        margin-right: 28px;
     }
 }
 

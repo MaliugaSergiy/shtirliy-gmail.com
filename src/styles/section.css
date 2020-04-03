@@ -9,7 +9,7 @@
 
 @media(max-width:840px) {
   .section {
-    padding: 48px 0;
+    padding:  0;
   }
 }
 
@@ -24,6 +24,7 @@
   color: inherit;
   max-width: 550px;
   margin-bottom: 16px;
+  margin-top: 34px;
 }
 
 @media(max-width:840px) {

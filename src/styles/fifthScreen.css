@@ -1,5 +1,11 @@
 .fifthScreen {
-position: relative;
+    position: relative;
+}
+
+@media(max-width:840px) {
+    .fifthScreen {
+        padding-bottom: 28px;
+    }
 }
 
 .fifthScreen-bg {
@@ -23,7 +29,7 @@ position: relative;
     margin: -1%;
 }
 
-@media(max-width:840px) {
+@media(max-width:640px) {
     .fifthScreen-masksCatalog {
         margin: 0;
     }
@@ -33,10 +39,15 @@ position: relative;
     padding: 1%;
     flex: 1 1 33.3333%;
     max-width: 33.3333%;
-   
 }
 
-@media(max-width:840px) {
+@media(max-width:1020px) {
+    .fifthScreen-maskItem {
+        flex: 1 1 50%;
+        max-width: 50%; 
+    }
+}
+@media(max-width:640px) {
     .fifthScreen-maskItem {
         padding: 0;
         flex: 1 1 100%;
@@ -54,7 +65,7 @@ position: relative;
     overflow: hidden;
 }
 
-@media(max-width:840px) {
+@media(max-width:640px) {
     .fifthScreen-maskItem:not(:last-child) .fifthScreen-maskItemInner  {
         border-bottom: none;
     }

@@ -2,6 +2,13 @@
 
 }
 
+@media (max-width: 840px) {
+    .massMediaScreen {
+        padding-bottom: 28px;
+    }
+    
+}
+
 .massMediaScreen-outer {
 
 }
@@ -20,10 +27,7 @@
     /* grid-template-areas: ". . ." ". xxx"; */
 }
 
-.xxx {
-    /* grid-area: xxx; */
-    /* grid-column-end: 2 span; */
-}
+
 
 @media(max-width:720px) {
     .massMediaScreen-list {

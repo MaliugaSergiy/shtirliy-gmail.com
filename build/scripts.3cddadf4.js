@@ -2927,7 +2927,169 @@ function () {
 
 var _default = SertificatPreview;
 exports.default = _default;
-},{"./utils":"../scripts/utils/index.js"}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js"}],"../scripts/indicate-touch-devices.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = indicateMobileDevices;
+
+var _utils = require("./utils");
+
+var TOUCH_DEVICES_CLASS_NAME = 'is-touch-device';
+var NO_TOUCH_DEVICES_CLASS_NAME = 'is-not-touch-device';
+
+function indicateMobileDevices(targetSelector) {
+  var target = targetSelector ? document.querySelector(targetSelector) : document.documentElement;
+
+  if ((0, _utils.getIsTouchDevice)()) {
+    (0, _utils.addClass)(target, TOUCH_DEVICES_CLASS_NAME);
+  } else {
+    (0, _utils.addClass)(target, NO_TOUCH_DEVICES_CLASS_NAME);
+  }
+}
+},{"./utils":"../scripts/utils/index.js"}],"../scripts/indicate-mobile-devices.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = indicateMobileDevices;
+
+var _utils = require("./utils");
+
+var MOBILE_DEVICES_CLASS_NAME = 'is-mobile-device';
+var NO_MOBILE_DEVICES_CLASS_NAME = 'is-not-mobile-device';
+
+function indicateMobileDevices(targetSelector) {
+  var target = targetSelector ? document.querySelector(targetSelector) : document.documentElement;
+
+  if ((0, _utils.getIsMobileDevice)()) {
+    (0, _utils.addClass)(target, MOBILE_DEVICES_CLASS_NAME);
+  } else {
+    (0, _utils.addClass)(target, NO_MOBILE_DEVICES_CLASS_NAME);
+  }
+}
+},{"./utils":"../scripts/utils/index.js"}],"../scripts/indicate-mobile-and-tablet-devices.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = indicateMobileOrTabletDevices;
+
+var _utils = require("./utils");
+
+var MOBILE_AND_TABLET_DEVICES_CLASS_NAME = 'is-mobile-or-device';
+var NO_MOBILE_AND_TABLET_DEVICES_CLASS_NAME = 'is-not-mobile-or-tablet-device';
+
+function indicateMobileOrTabletDevices(targetSelector) {
+  var target = targetSelector ? document.querySelector(targetSelector) : document.documentElement;
+
+  if ((0, _utils.getIsMobileOrTabletDevice)()) {
+    (0, _utils.addClass)(target, MOBILE_AND_TABLET_DEVICES_CLASS_NAME);
+  } else {
+    (0, _utils.addClass)(target, NO_MOBILE_AND_TABLET_DEVICES_CLASS_NAME);
+  }
+}
+},{"./utils":"../scripts/utils/index.js"}],"../scripts/keyboard-using-state.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// const KEY_CODE_TAB = 9;
+// const KEY_CODE_ARROW_LEFT = 37;
+// const KEY_CODE_ARROW_RIGHT = 39;
+// const KEY_CODE_ARROW_UP = 38;
+// const KEY_CODE_ARROW_DOWN = 40;
+// const KEY_CODE_LIST = [KEY_CODE_TAB, KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_ARROW_UP, KEY_CODE_ARROW_DOWN];
+// document.addEventListener('DOMContentLoaded', () => {
+//   new KeyboardUsingState({ listenerSelector: null, targetSelector: '.page', keyCodes: KEY_CODE_LIST, keyUsingClass: 'isKeyboardUsing' });
+// });
+var KeyboardUsingState =
+/*#__PURE__*/
+function () {
+  function KeyboardUsingState(props) {
+    var _this = this;
+
+    _classCallCheck(this, KeyboardUsingState);
+
+    _defineProperty(this, "_props", null);
+
+    _defineProperty(this, "handleKeydown", function (e) {
+      _this.setUsingKeyboard(e.keyCode);
+    });
+
+    _defineProperty(this, "handleMousedown", function (e) {
+      _this.resetUsingKeyboard();
+    });
+
+    this._props = props;
+    this._target = null;
+    var _this$_props = this._props,
+        listenerSelector = _this$_props.listenerSelector,
+        targetSelector = _this$_props.targetSelector;
+    var listenerNode = listenerSelector ? document.querySelector(listenerSelector) : window;
+    this._target = targetSelector ? document.querySelector(targetSelector) : document.body;
+    listenerNode.addEventListener('keydown', this.handleKeydown);
+    listenerNode.addEventListener('mousedown', this.handleMousedown);
+  }
+
+  _createClass(KeyboardUsingState, [{
+    key: "setUsingKeyboard",
+    value: function setUsingKeyboard(_keyCode) {
+      var _this$_props2 = this._props,
+          keyCodes = _this$_props2.keyCodes,
+          keyUsingClass = _this$_props2.keyUsingClass;
+      var isMultipleKeys = Array.isArray(keyCodes);
+
+      if (!isMultipleKeys) {
+        keyCodes = keyCodes.toString();
+      }
+
+      if (isMultipleKeys ? this.hasArrayElement(keyCodes, _keyCode) : this.isEqualStrings(keyCodes, _keyCode.toString())) {
+        this._target.classList.add(keyUsingClass);
+      } else {
+        this.resetUsingKeyboard();
+      }
+    }
+  }, {
+    key: "resetUsingKeyboard",
+    value: function resetUsingKeyboard() {
+      var keyUsingClass = this._props.keyUsingClass;
+
+      this._target.classList.remove(keyUsingClass);
+    }
+  }, {
+    key: "hasArrayElement",
+    value: function hasArrayElement(array, element) {
+      return array.indexOf(element) !== -1;
+    }
+  }, {
+    key: "isEqualStrings",
+    value: function isEqualStrings(string_1, string_2) {
+      return string_1 === string_2;
+    }
+  }]);
+
+  return KeyboardUsingState;
+}();
+
+var _default = KeyboardUsingState;
+exports.default = _default;
+},{}],"../../node_modules/css-element-queries/src/ResizeSensor.js":[function(require,module,exports) {
 var define;
 'use strict';
 
@@ -3825,14 +3987,32 @@ var _smoothScrollToAnchor = _interopRequireDefault(require("./smooth-scroll-to-a
 
 var _sertificatPreviev = _interopRequireDefault(require("./sertificatPreviev"));
 
+var _indicateTouchDevices = _interopRequireDefault(require("./indicate-touch-devices"));
+
+var _indicateMobileDevices = _interopRequireDefault(require("./indicate-mobile-devices"));
+
+var _indicateMobileAndTabletDevices = _interopRequireDefault(require("./indicate-mobile-and-tablet-devices"));
+
+var _keyboardUsingState = _interopRequireDefault(require("./keyboard-using-state"));
+
 var _ElementQueries = _interopRequireDefault(require("css-element-queries/src/ElementQueries"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import initSmoothScrollToAnchor from "./smooth-scroll-to-anchor";
+var KEY_CODE_TAB = 9;
+var KEY_CODE_ARROW_LEFT = 37;
+var KEY_CODE_ARROW_RIGHT = 39;
+var KEY_CODE_ARROW_UP = 38;
+var KEY_CODE_ARROW_DOWN = 40;
+var KEY_CODE_LIST = [KEY_CODE_TAB, KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_ARROW_UP, KEY_CODE_ARROW_DOWN];
+var ARROWS_KEY_CODE_LIST = [KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_ARROW_UP, KEY_CODE_ARROW_DOWN];
 (0, _utils.ready)(function () {
   (0, _utils.polyfils)();
   (0, _smoothScrollToAnchor.default)();
+  (0, _indicateTouchDevices.default)('body');
+  (0, _indicateMobileDevices.default)('body');
+  (0, _indicateMobileAndTabletDevices.default)('body');
 
   _ElementQueries.default.init();
 
@@ -3849,8 +4029,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _phoneMask.default)({
     inputSelector: '.js-phone-input'
   });
+  new _keyboardUsingState.default({
+    listenerSelector: null,
+    targetSelector: 'body',
+    keyCodes: KEY_CODE_LIST,
+    keyUsingClass: 'isKeyboardUsing'
+  });
+  new _keyboardUsingState.default({
+    listenerSelector: null,
+    targetSelector: 'body',
+    keyCodes: ARROWS_KEY_CODE_LIST,
+    keyUsingClass: 'isArrowsUsing'
+  });
+  new _keyboardUsingState.default({
+    listenerSelector: null,
+    targetSelector: 'body',
+    keyCodes: KEY_CODE_TAB,
+    keyUsingClass: 'isTabUsing'
+  });
 });
-},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","./indicate-touch-devices":"../scripts/indicate-touch-devices.js","./indicate-mobile-devices":"../scripts/indicate-mobile-devices.js","./indicate-mobile-and-tablet-devices":"../scripts/indicate-mobile-and-tablet-devices.js","./keyboard-using-state":"../scripts/keyboard-using-state.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3878,7 +4076,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53139" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64671" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

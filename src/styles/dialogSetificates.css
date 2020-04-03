@@ -29,7 +29,7 @@
     padding: 4% 5%;
     color: #1E1E1E;
 }
-@media(max-width:840px)  {
+@media(max-width:1220px)  {
     .dialogSetificates-coll_catalog {
         padding-bottom: 16px;
     }
@@ -44,12 +44,13 @@
     .dialogSetificates-coll_preview {
         overflow-y: auto;
         background-color: #fff;
+        padding-top: 0;
     }
 }
-
 @media(max-width:840px)  {
     .dialogSetificates-coll_preview {
-        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -69,6 +70,11 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 7%;
+}
+@media(max-width:1220px)  {
+    .dialogSetificates-description {
+        margin-bottom: 2%;
+    }
 }
 @media(max-width:840px)  {
     .dialogSetificates-description {
@@ -170,6 +176,11 @@
         padding-top: 0;
     }
 }
+@media(max-width:840px)  {
+    .dialogSetificates-previewHolder {
+        padding-right: 24px;
+    }
+}
 
 .dialogSetificates-preview {
     position: absolute;
@@ -191,6 +202,19 @@
         position: relative;
         padding-top: 0;
         min-width: 320px;
+    }
+}
+
+@media(max-width:840px)  {
+    .dialogSetificates-previewWrapper {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .dialogSetificates-previewWrapper:first-child {
+        margin-left: 28px;
+    }
+    .dialogSetificates-previewWrapper:last-child {
+        margin-right: 28px;
     }
 }
 
