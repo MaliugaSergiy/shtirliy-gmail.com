@@ -284,7 +284,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/lastScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\video_holder.jpg":[["video_holder.c86a60a8.jpg","../assets/images/video_holder.jpg"],"../assets/images/video_holder.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/lastScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
