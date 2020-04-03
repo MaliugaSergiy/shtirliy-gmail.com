@@ -1,0 +1,105 @@
+.thanksPage {
+    height: 100vh;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+}
+
+@media(max-width:840px) {
+    .thanksPage {
+        height: calc(100vh - 74px);
+    }
+}
+
+.thanksPage-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: coral;
+    background: linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:   center center;
+}
+
+.thanksPage-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(../assets/images/anti_1.png);
+    background-size: 23.333vw 30vw;
+    background-repeat: no-repeat;
+    background-position: right 5vw bottom;
+    /* transform: rotateY(180deg); */
+}
+.thanksPage-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(../assets/images/masks.png);
+    background-size: 32.8vw 40vw;
+    background-repeat: no-repeat;
+    background-position: right -3vw top -3vw;
+    transform: rotateY(180deg) ;
+}
+
+@media(max-width: 840px) {
+    .thanksPage-bg::before {
+        background-size: 162px 208px;
+    }
+}
+@media(max-width: 840px) {
+    .thanksPage-bg::after {
+        background-size: 307px 375px;
+    }
+}
+
+
+
+.thanksPage-inner{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.thanksPage-title {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.thanksPage-description {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
+
+@media(max-width: 1250px) {
+    .thanksPage-title {
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .thanksPage-description {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+
+    }
+}
+
+.thanksPage-button {
+    display: inline-block;
+    /* margin: auto; */
+}

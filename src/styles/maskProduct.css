@@ -22,7 +22,7 @@
 
 @media(max-width:640px) {
     .maskProduct-imageHolder {
-        padding-top: 55%;
+        padding-top: 80%;
     }
 }
 
@@ -70,6 +70,7 @@
     bottom: -6px;
     background-color: rgba(255, 255, 255, 0.2); 
     border-radius: 3px;
+    max-width: 120px;
 }
 
 .maskProduct-titleInner {

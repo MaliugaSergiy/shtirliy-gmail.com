@@ -2526,7 +2526,7 @@ position: relative;
 
 @media(max-width:640px) {
     .maskProduct-imageHolder {
-        padding-top: 55%;
+        padding-top: 80%;
     }
 }
 
@@ -2577,6 +2577,7 @@ position: relative;
     bottom: -6px;
     background-color: rgba(255, 255, 255, 0.2); 
     border-radius: 3px;
+    max-width: 120px;
 }
 
 .maskProduct-titleInner {
@@ -3950,6 +3951,123 @@ position: relative;
         position: static;
     }
 }
+.thanksPage {
+    height: 100vh;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+}
+
+@media(max-width:840px) {
+    .thanksPage {
+        height: calc(100vh - 74px);
+    }
+}
+
+.thanksPage-bg {
+    position: absolute;
+    left: 0;right: 0;top: 0; bottom: 0;
+    background-color: coral;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDB6DB), to(#EC80B5));
+    background: linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:   center center;
+}
+
+.thanksPage-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(/anti_1.2d23edb3.png);
+    background-size: 23.333vw 30vw;
+    background-repeat: no-repeat;
+    background-position: right 5vw bottom;
+    /* transform: rotateY(180deg); */
+}
+.thanksPage-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background:  url(/masks.0c543e41.png);
+    background-size: 32.8vw 40vw;
+    background-repeat: no-repeat;
+    background-position: right -3vw top -3vw;
+    -webkit-transform: rotateY(180deg) ;
+            transform: rotateY(180deg) ;
+}
+
+@media(max-width: 840px) {
+    .thanksPage-bg::before {
+        background-size: 162px 208px;
+    }
+}
+@media(max-width: 840px) {
+    .thanksPage-bg::after {
+        background-size: 307px 375px;
+    }
+}
+
+
+
+.thanksPage-inner{
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+.thanksPage-title {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.thanksPage-description {
+    font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
+
+@media(max-width: 1250px) {
+    .thanksPage-title {
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .thanksPage-description {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+
+    }
+}
+
+.thanksPage-button {
+    display: inline-block;
+    /* margin: auto; */
+}
+
 @font-face {
     font-family: 'RF Dewi Condensed';
     src: url('/RFDewiCondensed-Regular.69abd3f8.eot');
