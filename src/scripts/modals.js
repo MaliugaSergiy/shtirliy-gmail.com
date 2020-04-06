@@ -3,7 +3,7 @@ import {
   addListener as addResizeDetectorListener
 } from 'resize-detector';
 import MicroModal from 'micromodal';
-
+import {arrayToObject} from  "./utils"
 
 import { addClass, setAttributes, removeClass, wrapElement } from './utils';
 
@@ -30,6 +30,8 @@ export default class Modals {
   _modalContentNodes = [];
   _modalsProperties = [];
 
+  _openers = []
+
   _modalElements = [];
 
   _activeModalId = null;
@@ -53,7 +55,11 @@ export default class Modals {
     this._modalContentNodes[0].parentElement.style.display = 'block';
     this._modalContentNodes.map(this.wrapModalContents);
 
- MicroModal.init({
+    this._openers =  Array.from(
+      document.querySelectorAll("[data-custom-open]")
+    );
+
+MicroModal.init({
       onShow: this.handleDialogShow,
       onClose: this.handleDialogClose,
       openTrigger: 'data-custom-open',
@@ -63,6 +69,7 @@ export default class Modals {
       awaitCloseAnimation: false,
       debugMode: true
     });
+
 
 
     this.setHeaderWidthByContent();
@@ -81,6 +88,22 @@ export default class Modals {
   handleContentResize = (element, index) => () => {
     this.setHeaderWidth(element, index);
   };
+
+  openDialog = (id)=> {
+    const openersTree =  arrayToObject(this._openers, "dataset", "customOpen")
+    const opener = openersTree[id];
+    const targetDialog = arrayToObject(this._modalElements, "id")[id];
+    
+    if(!targetDialog) {
+      console.log(`there is no dialid with id: ${id}`)
+      return 
+    }
+
+    if(opener) {
+      opener.click()
+    }
+
+  } 
 
   setHeaderWidth = (element, index) => {
     const { width } = element.getBoundingClientRect();
@@ -196,7 +219,6 @@ export default class Modals {
   };
 
   handleDialogClose = modal => {
-  console.log("Modals -> modal", modal)
     this._activeModalId = null;
     this.resetBodyStyle();
     this.pauseAllYoutubeVideos(modal);

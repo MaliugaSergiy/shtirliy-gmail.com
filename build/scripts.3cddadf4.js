@@ -1215,7 +1215,36 @@ function initPolyfils() {
     window.CustomEvent = CustomEvent;
   }
 }
-},{"smoothscroll-polyfill":"../../node_modules/smoothscroll-polyfill/dist/smoothscroll.js"}],"../scripts/utils/get-is-mobile-or-tablet-device.js":[function(require,module,exports) {
+},{"smoothscroll-polyfill":"../../node_modules/smoothscroll-polyfill/dist/smoothscroll.js"}],"../scripts/utils/array-to-object.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = arrayToObject;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function arrayToObject(arr, keyField, dataAttr) {
+  if (dataAttr) {
+    return Object.assign.apply(Object, [{}].concat(_toConsumableArray(arr.map(function (item) {
+      return _defineProperty({}, item[keyField][dataAttr], item);
+    }))));
+  }
+
+  return Object.assign.apply(Object, [{}].concat(_toConsumableArray(arr.map(function (item) {
+    return _defineProperty({}, item[keyField], item);
+  }))));
+}
+},{}],"../scripts/utils/get-is-mobile-or-tablet-device.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1457,6 +1486,12 @@ Object.defineProperty(exports, "polyfils", {
     return _polyfils.default;
   }
 });
+Object.defineProperty(exports, "arrayToObject", {
+  enumerable: true,
+  get: function () {
+    return _arrayToObject.default;
+  }
+});
 Object.defineProperty(exports, "getIsMobileOrTabletDevice", {
   enumerable: true,
   get: function () {
@@ -1548,6 +1583,8 @@ var _ready = _interopRequireDefault(require("./ready"));
 
 var _polyfils = _interopRequireDefault(require("./polyfils"));
 
+var _arrayToObject = _interopRequireDefault(require("./array-to-object"));
+
 var _getIsMobileOrTabletDevice = _interopRequireDefault(require("./get-is-mobile-or-tablet-device"));
 
 var _getIsMatchedMediaQuery = _interopRequireDefault(require("./get-is-matched-media-query"));
@@ -1555,7 +1592,7 @@ var _getIsMatchedMediaQuery = _interopRequireDefault(require("./get-is-matched-m
 var _className = require("./class-name");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./scroll-to":"../scripts/utils/scroll-to.js","./move-focus":"../scripts/utils/move-focus.js","./find-focusable-element":"../scripts/utils/find-focusable-element.js","./set-height":"../scripts/utils/set-height.js","./is-node-hidden.js":"../scripts/utils/is-node-hidden.js","./add-listeners":"../scripts/utils/add-listeners.js","./throttle":"../scripts/utils/throttle.js","./throttle-lead":"../scripts/utils/throttle-lead.js","./debounce":"../scripts/utils/debounce.js","./fade-in":"../scripts/utils/fade-in.js","./highlight":"../scripts/utils/highlight.js","./wrap-element":"../scripts/utils/wrap-element.js","./text-slicer":"../scripts/utils/text-slicer.js","./chunk-substr":"../scripts/utils/chunk-substr.js","./smart-chunk-substring":"../scripts/utils/smart-chunk-substring.js","./get-is-touch-device":"../scripts/utils/get-is-touch-device.js","./get-is-mobile-device":"../scripts/utils/get-is-mobile-device.js","./transliterate":"../scripts/utils/transliterate.js","./shuffle-array":"../scripts/utils/shuffle-array.js","./ready":"../scripts/utils/ready.js","./polyfils":"../scripts/utils/polyfils.js","./get-is-mobile-or-tablet-device":"../scripts/utils/get-is-mobile-or-tablet-device.js","./get-is-matched-media-query":"../scripts/utils/get-is-matched-media-query.js","./class-name":"../scripts/utils/class-name.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
+},{"./scroll-to":"../scripts/utils/scroll-to.js","./move-focus":"../scripts/utils/move-focus.js","./find-focusable-element":"../scripts/utils/find-focusable-element.js","./set-height":"../scripts/utils/set-height.js","./is-node-hidden.js":"../scripts/utils/is-node-hidden.js","./add-listeners":"../scripts/utils/add-listeners.js","./throttle":"../scripts/utils/throttle.js","./throttle-lead":"../scripts/utils/throttle-lead.js","./debounce":"../scripts/utils/debounce.js","./fade-in":"../scripts/utils/fade-in.js","./highlight":"../scripts/utils/highlight.js","./wrap-element":"../scripts/utils/wrap-element.js","./text-slicer":"../scripts/utils/text-slicer.js","./chunk-substr":"../scripts/utils/chunk-substr.js","./smart-chunk-substring":"../scripts/utils/smart-chunk-substring.js","./get-is-touch-device":"../scripts/utils/get-is-touch-device.js","./get-is-mobile-device":"../scripts/utils/get-is-mobile-device.js","./transliterate":"../scripts/utils/transliterate.js","./shuffle-array":"../scripts/utils/shuffle-array.js","./ready":"../scripts/utils/ready.js","./polyfils":"../scripts/utils/polyfils.js","./array-to-object":"../scripts/utils/array-to-object.js","./get-is-mobile-or-tablet-device":"../scripts/utils/get-is-mobile-or-tablet-device.js","./get-is-matched-media-query":"../scripts/utils/get-is-matched-media-query.js","./class-name":"../scripts/utils/class-name.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -2324,6 +2361,8 @@ function () {
 
     _defineProperty(this, "_modalsProperties", []);
 
+    _defineProperty(this, "_openers", []);
+
     _defineProperty(this, "_modalElements", []);
 
     _defineProperty(this, "_activeModalId", null);
@@ -2332,6 +2371,21 @@ function () {
       return function () {
         _this.setHeaderWidth(element, index);
       };
+    });
+
+    _defineProperty(this, "openDialog", function (id) {
+      var openersTree = (0, _utils.arrayToObject)(_this._openers, "dataset", "customOpen");
+      var opener = openersTree[id];
+      var targetDialog = (0, _utils.arrayToObject)(_this._modalElements, "id")[id];
+
+      if (!targetDialog) {
+        console.log("there is no dialid with id: ".concat(id));
+        return;
+      }
+
+      if (opener) {
+        opener.click();
+      }
     });
 
     _defineProperty(this, "setHeaderWidth", function (element, index) {
@@ -2421,7 +2475,6 @@ function () {
     });
 
     _defineProperty(this, "handleDialogClose", function (modal) {
-      console.log("Modals -> modal", modal);
       _this._activeModalId = null;
 
       _this.resetBodyStyle();
@@ -2445,6 +2498,8 @@ function () {
     this._modalContentNodes[0].parentElement.style.display = 'block';
 
     this._modalContentNodes.map(this.wrapModalContents);
+
+    this._openers = Array.from(document.querySelectorAll("[data-custom-open]"));
 
     _micromodal.default.init({
       onShow: this.handleDialogShow,
@@ -3987,7 +4042,7 @@ var define;
 
 var _utils = require("./utils");
 
-var _modals = _interopRequireDefault(require("./modals"));
+var _modals2 = _interopRequireDefault(require("./modals"));
 
 var _setInputState = _interopRequireDefault(require("./set-input-state"));
 
@@ -4029,7 +4084,9 @@ var ARROWS_KEY_CODE_LIST = [KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_
 
   _ElementQueries.default.init();
 
-  new _modals.default({});
+  var _modals = new _modals2.default({});
+
+  window.openDialog = _modals.openDialog;
   new _setInputState.default({
     inputHolderSelector: '.js-input',
     filledClass: 'input--isFilled',
@@ -4090,7 +4147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61246" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63142" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

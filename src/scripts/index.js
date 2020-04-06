@@ -47,7 +47,8 @@ ready(() => {
 
   ElementQueries.init();
 
-  new Modals({})
+  const _modals = new Modals({})
+  window.openDialog = _modals.openDialog
 
   new SetInputState({
     inputHolderSelector: '.js-input',

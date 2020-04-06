@@ -23,6 +23,7 @@ export { default as transliterate } from './transliterate';
 export { default as shuffle } from './shuffle-array';
 export { default as ready } from './ready';
 export { default as polyfils } from './polyfils';
+export { default as arrayToObject } from './array-to-object';
 export {
   default as getIsMobileOrTabletDevice
 } from './get-is-mobile-or-tablet-device';
