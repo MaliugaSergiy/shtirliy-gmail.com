@@ -36,11 +36,11 @@
     text-align: center;
     /* transition: 0.2s ease-out; */
 }
-
+/* 
 .maskProduct:hover .maskProduct-image {
     opacity: 0;
     transition: none;
-}
+} */
 
 .maskProduct-title {
     position: relative;
@@ -91,11 +91,11 @@
     
 }
 
-.maskProduct:hover .maskProduct-hoverImage {
+/* .maskProduct:hover .maskProduct-hoverImage {
     opacity: 1;
     transform: scale(1);
     transition: transform 0.2s ease-out;
-}
+} */
 
 /* @media (hover: none) {
     .maskProduct:hover .maskProduct-hoverImage {
