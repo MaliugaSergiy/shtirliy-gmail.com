@@ -84,6 +84,10 @@ position: relative;
     margin-bottom: 24px;
     margin-top: 16px;
 }
+.lastScreen-description a {
+    color: inherit;
+    text-decoration: underline;
+}
 
 .lastScreen-underDescription {
     font-size: 16px;
