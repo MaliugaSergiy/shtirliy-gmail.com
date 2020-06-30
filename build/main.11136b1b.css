@@ -4164,6 +4164,83 @@ position: relative;
 .videoBanner-iframe {
 
 }
+.declarations {
+    overflow: hidden;
+    border-bottom: 1px solid #D7D7D7;
+    padding-bottom: 24px;
+}
+
+.declarations-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -16px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.declarations-item {
+    padding: 16px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 182px;
+            flex: 1 1 182px;
+    max-width: 182px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+}
+
+
+.declarations-title {
+    font-size: 36px;
+    font-weight: 600;
+    /* text-align: center; */
+    margin-bottom: 24px;
+    margin-top: 32px;
+}
+@media(max-width:840px) {
+    .declarations-title  {
+        font-size: 24px;
+    }
+}
+.declarations-itemButton {
+    width: 100%;
+    padding-top: 141.43%;
+    background-color: red;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ourPartnersSection {
+
+}
+
+.ourPartnersSection-outer {
+
+}
+
+.ourPartnersSection-inner {
+
+}
+
+.ourPartnersSection-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+@media(max-width:840px) {
+    .ourPartnersSection-title   {
+        font-size: 24px;
+    }
+}
+.ourPartnersSection-list {
+    
+}
 @font-face {
     font-family: 'RF Dewi Condensed';
     src: url('/RFDewiCondensed-Regular.69abd3f8.eot');
