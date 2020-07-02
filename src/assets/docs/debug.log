@@ -1,0 +1,6 @@
+[0630/215232.198:ERROR:process_reader_win.cc(127)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[0630/215232.230:ERROR:exception_snapshot_win.cc(99)] thread ID 10756 not found in process
+[0630/215232.511:ERROR:minidumpwritedump_with_crashpad_info.cc(435)] Failed to call MiniDumpWriteDump: Отказано в доступе. (0x80070005)
+[0630/215232.511:ERROR:minidumpwritedump_with_crashpad_info.cc(592)] Failed to write minidump file
+[0630/215232.511:ERROR:crash_report_exception_handler.cc(132)] TryMiniDumpWriteDumpWithCrashpadInfo failed
+[0630/215232.511:ERROR:process_memory_win.cc(73)] ReadMemory at 0x29ff5e10000 of 64 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
