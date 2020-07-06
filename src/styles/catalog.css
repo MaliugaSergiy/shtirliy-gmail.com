@@ -25,9 +25,9 @@
 }
 
 .catalog-item--wide {
-    padding-top: 65%;
-    grid-column-end: span 3;
-
+    padding-top: 49%;
+    max-height: 590px;
+    grid-column-end: span 4;
 }
 
 @media(max-width:560px) {

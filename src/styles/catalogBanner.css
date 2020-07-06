@@ -24,7 +24,7 @@
 
 @media(max-width:840px) {
     .catalogBanner-bg {
-        background-position: right -75px center;
+        background-position: right 0 center;
     }
 }
 

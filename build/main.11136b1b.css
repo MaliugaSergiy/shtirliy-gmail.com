@@ -2768,9 +2768,9 @@ position: relative;
 }
 
 .catalog-item--wide {
-    padding-top: 65%;
-    grid-column-end: span 3;
-
+    padding-top: 49%;
+    max-height: 590px;
+    grid-column-end: span 4;
 }
 
 @media(max-width:560px) {
@@ -2819,7 +2819,7 @@ position: relative;
 
 @media(max-width:840px) {
     .catalogBanner-bg {
-        background-position: right -75px center;
+        background-position: right 0 center;
     }
 }
 
@@ -3042,7 +3042,7 @@ position: relative;
   position: absolute;
   right: 16px;
   top: 16px;
-  font-size: 48px;
+  font-size: 32px;
   vertical-align: top;
   line-height: 1;
   z-index: 102;
