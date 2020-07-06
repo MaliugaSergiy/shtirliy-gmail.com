@@ -35,11 +35,13 @@
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(../assets/images/masks_new.png);
-    background-size: 32.8vw 40vw;
+    background:  url(../assets/images/Innesa_new/resized/mask_set.png);
+    background-size: 34vw 24vw;
     background-repeat: no-repeat;
-    background-position: right -3vw top -3vw;
-    transform: rotateY(180deg) ;
+    background-position: top left;
+    /* background-position: right -3vw top -3vw; */
+    transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
+    transform-origin: left top;
 }
 
 @media(max-width: 840px) {
@@ -47,9 +49,16 @@
         background-size: 162px 208px;
     }
 }
+@media(max-width: 1300px) {
+    .thanksPage-bg::after {
+        background-size: 37vw 27vw;
+    }
+}
 @media(max-width: 840px) {
     .thanksPage-bg::after {
-        background-size: 307px 375px;
+        background-size: 50vh 35vh;
+        transform: rotate(0deg);
+        background-position: top center;
     }
 }
 

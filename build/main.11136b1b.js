@@ -354,7 +354,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"./..\\assets\\images\\masks_new.png":[["masks_new.e96408b5.png","../assets/images/masks_new.png"],"../assets/images/masks_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/videoBanner.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"./..\\assets\\images\\Innesa_new\\resized\\mask_set.png":[["mask_set.3a3c9e01.png","../assets/images/Innesa_new/resized/mask_set.png"],"../assets/images/Innesa_new/resized/mask_set.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/videoBanner.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

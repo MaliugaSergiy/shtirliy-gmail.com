@@ -4126,12 +4126,15 @@ position: relative;
     content: "";
     position: absolute;
     left: 0;right: 0;top: 0;bottom: 0;
-    background:  url(/masks_new.e96408b5.png);
-    background-size: 32.8vw 40vw;
+    background:  url(/mask_set.3a3c9e01.png);
+    background-size: 34vw 24vw;
     background-repeat: no-repeat;
-    background-position: right -3vw top -3vw;
-    -webkit-transform: rotateY(180deg) ;
-            transform: rotateY(180deg) ;
+    background-position: top left;
+    /* background-position: right -3vw top -3vw; */
+    -webkit-transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
+            transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
 }
 
 @media(max-width: 840px) {
@@ -4139,9 +4142,17 @@ position: relative;
         background-size: 162px 208px;
     }
 }
+@media(max-width: 1300px) {
+    .thanksPage-bg::after {
+        background-size: 37vw 27vw;
+    }
+}
 @media(max-width: 840px) {
     .thanksPage-bg::after {
-        background-size: 307px 375px;
+        background-size: 50vh 35vh;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        background-position: top center;
     }
 }
 
