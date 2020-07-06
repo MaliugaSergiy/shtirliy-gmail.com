@@ -52,12 +52,18 @@
     background-position: right 430px bottom -70px;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1450px) {
     .firstScreen-bg::before {
-        background-position: right 380px bottom -70px;
+        background-position: right 350px bottom -70px;
     }
 }
 
+@media(max-width:1260px) {
+    .firstScreen-bg::before {
+        background-position: right 350px bottom -70px;
+        background-size: 400px 514px;
+    }
+}
 @media(max-width:1220px) {
     .firstScreen-bg::before {
         background-position: right 300px bottom -70px;
@@ -236,4 +242,13 @@
     .firstScreen-footer{
         font-size: 10px;
     }
+}
+
+.firstScreen-download {
+    text-decoration: underline;
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
 }

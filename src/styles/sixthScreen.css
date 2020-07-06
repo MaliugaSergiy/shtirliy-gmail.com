@@ -152,6 +152,7 @@ overflow: hidden;
 .sixthScreen-button {
     display: inline-block;
     align-self: start;
+    margin-bottom: 16px;
 }
 
 @media(max-width:840px) {

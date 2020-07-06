@@ -87,6 +87,9 @@ position: relative;
 .lastScreen-description a {
     color: inherit;
     text-decoration: underline;
+    color: #EC80B5;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .lastScreen-underDescription {

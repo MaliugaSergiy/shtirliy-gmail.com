@@ -40,7 +40,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     /* background-position: right -3vw top -3vw; */
-    transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
+    transform: rotate(-20deg) translateY(2vw) translateX(-12vw);
     transform-origin: left top;
 }
 

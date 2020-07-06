@@ -1221,12 +1221,18 @@ button {
     background-position: right 430px bottom -70px;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1450px) {
     .firstScreen-bg::before {
-        background-position: right 380px bottom -70px;
+        background-position: right 350px bottom -70px;
     }
 }
 
+@media(max-width:1260px) {
+    .firstScreen-bg::before {
+        background-position: right 350px bottom -70px;
+        background-size: 400px 514px;
+    }
+}
 @media(max-width:1220px) {
     .firstScreen-bg::before {
         background-position: right 300px bottom -70px;
@@ -1436,6 +1442,15 @@ button {
     .firstScreen-footer{
         font-size: 10px;
     }
+}
+
+.firstScreen-download {
+    text-decoration: underline;
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .secondScreen {
@@ -2104,6 +2119,7 @@ overflow: hidden;
     display: inline-block;
     -ms-flex-item-align: start;
         align-self: start;
+    margin-bottom: 16px;
 }
 
 @media(max-width:840px) {
@@ -2294,6 +2310,11 @@ overflow: hidden;
     opacity: 0.4;
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
+}
+.massMediaScreen-item img {
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .massMediaScreen-item:hover {
@@ -2488,6 +2509,9 @@ position: relative;
 .lastScreen-description a {
     color: inherit;
     text-decoration: underline;
+    color: #EC80B5;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .lastScreen-underDescription {
@@ -2941,10 +2965,14 @@ position: relative;
     margin-bottom: 48px;
 }
 
+@media(max-width: 980px) {
+    .catalogBanner-descr {
+        margin-bottom: 16px;
+    }
+}
 @media(max-width:720px) {
     .catalogBanner-descr {
         font-size: 16px;
-        margin-bottom: 24px;
     }
 }
 
@@ -2958,6 +2986,9 @@ position: relative;
     display: inline-block;
     -ms-flex-item-align: start;
         align-self: start;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 16px;
 }
 
 @media(max-width:680px) {
@@ -4131,8 +4162,8 @@ position: relative;
     background-repeat: no-repeat;
     background-position: top left;
     /* background-position: right -3vw top -3vw; */
-    -webkit-transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
-            transform: rotate(-20deg) translateY(8vw) translateX(-5vw);
+    -webkit-transform: rotate(-20deg) translateY(2vw) translateX(-12vw);
+            transform: rotate(-20deg) translateY(2vw) translateX(-12vw);
     -webkit-transform-origin: left top;
             transform-origin: left top;
 }

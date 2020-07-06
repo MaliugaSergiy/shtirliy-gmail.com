@@ -46,6 +46,10 @@
     opacity: 0.4;
     transition: 0.2s ease-out;
 }
+.massMediaScreen-item img {
+    width: auto;
+    object-fit: contain;
+}
 
 .massMediaScreen-item:hover {
     opacity: 1;
