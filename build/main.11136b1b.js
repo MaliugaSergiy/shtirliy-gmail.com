@@ -244,7 +244,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\girl_1_new.png":[["girl_1_new.dcd5d21e.png","../assets/images/girl_1_new.png"],"../assets/images/girl_1_new.png"],"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\Innesa_new\\resized\\banner_mask.png":[["banner_mask.10056192.png","../assets/images/Innesa_new/resized/banner_mask.png"],"../assets/images/Innesa_new/resized/banner_mask.png"],"./..\\assets\\images\\anti_1_new.png":[["anti_1_new.4a41d67d.png","../assets/images/anti_1_new.png"],"../assets/images/anti_1_new.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/secondScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -259,7 +259,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\fantomas_new.png":[["fantomas_new.188d685d.png","../assets/images/fantomas_new.png"],"../assets/images/fantomas_new.png"],"./..\\assets\\images\\texture.jpg":[["texture.8a8cf449.jpg","../assets/images/texture.jpg"],"../assets/images/texture.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fifthScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\Innesa_new\\banner_mask_2.png":[["banner_mask_2.f8d099dd.png","../assets/images/Innesa_new/banner_mask_2.png"],"../assets/images/Innesa_new/banner_mask_2.png"],"./..\\assets\\images\\texture.jpg":[["texture.8a8cf449.jpg","../assets/images/texture.jpg"],"../assets/images/texture.jpg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/fifthScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -269,7 +269,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\images\\masks_new.png":[["masks_new.e96408b5.png","../assets/images/masks_new.png"],"../assets/images/masks_new.png"],"./..\\assets\\images\\mask_mob.png":[["mask_mob.8bb915fb.png","../assets/images/mask_mob.png"],"../assets/images/mask_mob.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
+},{"./..\\assets\\images\\Innesa_new\\resized\\mask_set.png":[["mask_set.3a3c9e01.png","../assets/images/Innesa_new/resized/mask_set.png"],"../assets/images/Innesa_new/resized/mask_set.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/seventhScreen.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -427,7 +427,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60180" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63347" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

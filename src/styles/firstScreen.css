@@ -16,7 +16,7 @@
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
     background-color: coral;
-    background: url(../assets/images/girl_1_new.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
+    background: url(../assets/images/Innesa_new/resized/banner_mask.png), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);
     /* background-image: url(../assets/images/back_1.jpg); */
     background-repeat: no-repeat;
     background-size: contain;

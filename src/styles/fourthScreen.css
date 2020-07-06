@@ -14,36 +14,46 @@
 .fourthScreen-bg {
     position: absolute;
     left: 0;right: 0;top: 0; bottom: 0;
-    background-image: url(../assets/images/fantomas_new.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
+    background-image: url(../assets/images/Innesa_new/banner_mask_2.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
     background-repeat: no-repeat;
     /* background-size: 850px 704px, contain; */
-    background-size: 43.4vw 36vw, contain;
+    background-size: 34vw 34vw, contain;
     background-position: center bottom;
 }
 
 @media (max-width:1700px) {
     .fourthScreen-bg  {
-        background-size: 48.19vw 40vw, contain;
+        background-size: 38vw 38vw, contain;
     }
 }
 @media (max-width:1500px) {
     .fourthScreen-bg  {
-        background-size: 54.21vw 45vw, contain;
+        background-size: 44vw 44vw, contain;
+    }
+}
+@media (max-width:1380px) {
+    .fourthScreen-bg  {
+        background-size: 48vw 48vw, contain;
     }
 }
 @media (max-width:1250px) {
     .fourthScreen-bg  {
-        background-size: 60vw 50vw, contain;
+        background-size: 52vw 52vw, contain;
+    }
+}
+@media (max-width:1200px) {
+    .fourthScreen-bg  {
+        background-size: 49vw 49vw, contain;
     }
 }
 @media (max-width:1080px) {
     .fourthScreen-bg  {
-        background-size: 50vw 41.5vw, contain;
+        /* background-size: 50vw 41.5vw, contain; */
     }
 }
 @media (max-width:840px) {
     .fourthScreen-bg  {
-        background-size: 422px 350px, contain;
+        background-size: 350px 350px, contain;
     }
 }
 
