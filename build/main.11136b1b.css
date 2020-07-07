@@ -289,6 +289,7 @@ button {
     .header-logo {
         height: 20px;
         padding: 4px;
+        margin-bottom: 16px;
     }
 }
 
@@ -2137,6 +2138,19 @@ overflow: hidden;
         display: block;
     }
 }
+
+.sixthScreen-link button {
+    text-decoration: underline;
+    text-align: left;
+    display: inline-block;
+}
+
+@media(max-width:840px) {
+    .sixthScreen-link button{
+        text-align: center;
+        font-size: 16px;
+    }
+}
 .seventhScreen {
 
 }
@@ -2798,6 +2812,7 @@ position: relative;
     color: #1e1e1e;
     font-size: 14px;
     line-height: 1.2;
+    text-decoration: underline;
 }
 
 @media(max-width:840px) {

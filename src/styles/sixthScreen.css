@@ -168,3 +168,16 @@ overflow: hidden;
         display: block;
     }
 }
+
+.sixthScreen-link button {
+    text-decoration: underline;
+    text-align: left;
+    display: inline-block;
+}
+
+@media(max-width:840px) {
+    .sixthScreen-link button{
+        text-align: center;
+        font-size: 16px;
+    }
+}

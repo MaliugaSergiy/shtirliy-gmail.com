@@ -18,6 +18,7 @@
     color: #1e1e1e;
     font-size: 14px;
     line-height: 1.2;
+    text-decoration: underline;
 }
 
 @media(max-width:840px) {
