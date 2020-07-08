@@ -2121,6 +2121,9 @@ overflow: hidden;
     -ms-flex-item-align: start;
         align-self: start;
     margin-bottom: 16px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 @media(max-width:840px) {
