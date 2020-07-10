@@ -1,146 +1,160 @@
 .secondScreen {
-    height: 700px;
-    /* min-height: 100vh; */
-    color: #fff;
-   position: relative;
+  height: 700px;
+  /* min-height: 100vh; */
+  color: #fff;
+  position: relative;
 }
 
 @media (max-width: 1020px) {
-    .secondScreen {
-        height: 550px;
-    } 
- }
+  .secondScreen {
+    height: 550px;
+  }
+}
 @media (max-width: 940px) {
-    .secondScreen {
-        height: auto;
-    } 
- }
+  .secondScreen {
+    height: auto;
+  }
+}
 @media (max-width: 840px) {
-    .secondScreen {
-        padding-bottom: 28px;
-    } 
- }
+  .secondScreen {
+    padding-bottom: 28px;
+  }
+}
 
 .secondScreen-bg {
-    position: absolute;
-    left: 0;right: 0;top: 0; bottom: 0;
-    background: url(../assets/images/back_2_new.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 191px 540px, cover, cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../assets/images/back_2_new.png),
+    radial-gradient(
+      25.69% 61.83% at 50% 67.48%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(180deg, #7ed2e4 0%, #2395ad 100%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 191px 540px, cover, cover;
 }
 
 @media (max-width: 1020px) {
-    .secondScreen-bg  {
-        background-size: 152px 435px, cover, cover;
-
-    } 
- }
+  .secondScreen-bg {
+    background-size: 140px 400px, cover, cover;
+  }
+}
 @media (max-width: 840px) {
-    .secondScreen-bg  {
-        background: url(../assets/images/back_2_1_mob.png), radial-gradient(25.69% 61.83% at 50% 67.48%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #7ED2E4 0%, #2395AD 100%);;
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: contain, cover, cover;
-    } 
- }
+  .secondScreen-bg {
+    background: url(../assets/images/back_2_1_mob.png),
+      radial-gradient(
+        25.69% 61.83% at 50% 67.48%,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(180deg, #7ed2e4 0%, #2395ad 100%);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain, cover, cover;
+  }
+}
 
 .secondScreen-outer {
-    height: 100%;
-    position: relative;
-    color: #fff;
+  height: 100%;
+  position: relative;
+  color: #fff;
 }
 
-.secondScreen-inner{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
+.secondScreen-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
 }
 
-@media(max-width: 840px) {
-    .secondScreen-inner {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 840px) {
+  .secondScreen-inner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .secondScreen-column {
-    max-width: 370px;
+  max-width: 370px;
 }
 
-@media(max-width:940px) {
-    .secondScreen-column {
-        width: 290px;
-    }
-    .secondScreen-column:first-child {
-        margin-bottom: 42px;
-    }
+@media (max-width: 940px) {
+  .secondScreen-column {
+    width: 290px;
+  }
+  .secondScreen-column:first-child {
+    margin-bottom: 42px;
+  }
 }
-
-
 
 .secondScreen-columnTitle {
-    font-family: "RF Dewi";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 36px;
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 36px;
 }
 
 @media (max-width: 840px) {
-    .secondScreen-columnTitle {
-        font-size: 18px;
-        margin-bottom: 22px;
-    } 
- }
+  .secondScreen-columnTitle {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
 
-.secondScreen-columnDescrHolder {overflow: hidden;}
+.secondScreen-columnDescrHolder {
+  overflow: hidden;
+}
 
 .secondScreen-columnDescr {
-    margin: -8px;
+  margin: -8px;
 }
 
 @media (max-width: 840px) {
-    .secondScreen-columnDescr {
-       margin: -4px;
-    } 
- }
+  .secondScreen-columnDescr {
+    margin: -4px;
+  }
+}
 
 .secondScreen-columnDescrItem {
-   padding: 8px; 
-   font-family: "RF Dewi";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
+  padding: 8px;
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 840px) {
-   .secondScreen-columnDescrItem {
-       font-size: 12px;
-       padding: 4px;
-   } 
+  .secondScreen-columnDescrItem {
+    font-size: 12px;
+    padding: 4px;
+  }
 }
 
 .secondScreen-columnDescrItem::before {
-    content: "";
-    display: block;
-    margin-right: 24px;
-    min-width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
+  content: "";
+  display: block;
+  margin-right: 24px;
+  min-width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 @media (max-width: 840px) {
-    .secondScreen-columnDescrItem::before {
-        margin-right: 16px;
-    } 
- }
+  .secondScreen-columnDescrItem::before {
+    margin-right: 16px;
+  }
+}

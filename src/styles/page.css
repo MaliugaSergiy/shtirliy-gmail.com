@@ -27,17 +27,17 @@
   position: absolute;
   top: 48px;
   left: 110px;
-  right: 0;
+  right: 110px;
   width: auto;
-
 }
 
-@media (max-width:840px) {
+@media (max-width: 840px) {
   .page-header {
     position: relative;
     top: 0;
-    width: 100%;left: auto;right: auto;
-    
+    width: 100%;
+    left: auto;
+    right: auto;
   }
 }
 

@@ -1,196 +1,200 @@
 .fourthScreen {
-    /* height: 840px; */
-    /* min-height: 100vh; */
+  /* height: 840px; */
+  /* min-height: 100vh; */
 
-   position: relative;
+  position: relative;
 }
 
-@media (max-width:840px) {
-    .fourthScreen {
-        padding-bottom: 300px;
-    }
+@media (max-width: 840px) {
+  .fourthScreen {
+    padding-bottom: 300px;
+  }
 }
 
 .fourthScreen-bg {
-    position: absolute;
-    left: 0;right: 0;top: 0; bottom: 0;
-    background-image: url(../assets/images/Innesa_new/banner_mask_2.png), linear-gradient(180deg, #DFCBF4 0%, #C3ABE4 100%);;
-    background-repeat: no-repeat;
-    /* background-size: 850px 704px, contain; */
-    background-size: 34vw 34vw, contain;
-    background-position: center bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../assets/images/Innesa_new/banner_mask_2.png),
+    linear-gradient(180deg, #dfcbf4 0%, #c3abe4 100%);
+  background-repeat: no-repeat;
+  /* background-size: 850px 704px, contain; */
+  background-size: 32vw 32vw, contain;
+  background-position: center bottom;
 }
 
-@media (max-width:1700px) {
-    .fourthScreen-bg  {
-        background-size: 38vw 38vw, contain;
-    }
+@media (max-width: 1700px) {
+  .fourthScreen-bg {
+    background-size: 36vw 36vw, contain;
+  }
 }
-@media (max-width:1500px) {
-    .fourthScreen-bg  {
-        background-size: 44vw 44vw, contain;
-    }
+@media (max-width: 1500px) {
+  .fourthScreen-bg {
+    background-size: 42vw 42vw, contain;
+  }
 }
-@media (max-width:1380px) {
-    .fourthScreen-bg  {
-        background-size: 48vw 48vw, contain;
-    }
+@media (max-width: 1380px) {
+  .fourthScreen-bg {
+    background-size: 46vw 46vw, contain;
+  }
 }
-@media (max-width:1250px) {
-    .fourthScreen-bg  {
-        background-size: 52vw 52vw, contain;
-    }
+@media (max-width: 1250px) {
+  .fourthScreen-bg {
+    background-size: 50vw 50vw, contain;
+  }
 }
-@media (max-width:1200px) {
-    .fourthScreen-bg  {
-        background-size: 49vw 49vw, contain;
-    }
+@media (max-width: 1200px) {
+  .fourthScreen-bg {
+    background-size: 47vw 47vw, contain;
+  }
 }
-@media (max-width:1080px) {
-    .fourthScreen-bg  {
-        /* background-size: 50vw 41.5vw, contain; */
-    }
+@media (max-width: 1080px) {
+  .fourthScreen-bg {
+    /* background-size: 50vw 41.5vw, contain; */
+  }
 }
-@media (max-width:840px) {
-    .fourthScreen-bg  {
-        background-size: 350px 350px, contain;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-bg {
+    background-size: 350px 350px, contain;
+  }
 }
 
 .fourthScreen-outer {
-    height: 100%;
-    position: relative;
-    color: #1E1E1E;
+  height: 100%;
+  position: relative;
+  color: #1e1e1e;
 }
 
-.fourthScreen-inner{
-    display: flex;
-    /* height: 100%; */
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
+.fourthScreen-inner {
+  display: flex;
+  /* height: 100%; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
 }
 
-@media (max-width:1200px) {
-    .fourthScreen-inner {
-        margin-top: 0;
-    }
+@media (max-width: 1200px) {
+  .fourthScreen-inner {
+    margin-top: 0;
+  }
 }
 
-@media (max-width:840px) {
-    .fourthScreen-inner {
-        flex-direction: column;
-        text-align: center;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .fourthScreen-column {
-    max-width: 364px;
+  max-width: 364px;
 }
 
-@media (max-width:1080px) {
-    .fourthScreen-column  {
-        max-width: 350px;
-    }
+@media (max-width: 1080px) {
+  .fourthScreen-column {
+    max-width: 350px;
+  }
 }
-@media (max-width:980px) {
-    .fourthScreen-column  {
-        max-width: 300px;
-    }
+@media (max-width: 980px) {
+  .fourthScreen-column {
+    max-width: 300px;
+  }
 }
 
 .fourthScreen-columnTitle {
-    font-family: "RF Dewi";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 24px;
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
 }
 
-@media (max-width:840px) {
-    .fourthScreen-columnTitle {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-columnTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
 }
 
 .fourthScreen-columnDescriptions {
-    font-family: "RF Dewi";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 42px;
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 42px;
 }
 
-@media (max-width:840px) {
-    .fourthScreen-columnDescriptions {
-        font-size: 12px;
-        margin-bottom: 18px;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-columnDescriptions {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
 }
-
 
 .fourthScreen-columnSamples {
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
-.fourthScreen-samples{
-    margin: -8px;
-    display: flex;
+.fourthScreen-samples {
+  margin: -8px;
+  display: flex;
 }
 
-@media (max-width:840px) {
-    .fourthScreen-samples {
-        justify-content: center;
-        padding: 16px;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-samples {
+    justify-content: center;
+    padding: 16px;
+  }
 }
-
 
 .fourthScreen-sample {
-    padding: 8px;
-    position: relative;
-    color: #fff;
-    font-weight: 800;
-    font-size: 20px;
+  padding: 8px;
+  position: relative;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .fourthScreen-sample::before {
-    content: "";
-    display: block;
-    width: 168px;
-    height: 168px;
-    border-radius: 50%;
-    background-image: url("../assets/images/texture.jpg");
-    background-size: 168px 168px;
+  content: "";
+  display: block;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  background-image: url("../assets/images/texture.jpg");
+  background-size: 168px 168px;
 }
 
-@media(max-width:840px) {
-    .fourthScreen-sample::before {
-        width: 150px;
-        height: 150px;
-        background-size: 320px 320px;
-    }
+@media (max-width: 840px) {
+  .fourthScreen-sample::before {
+    width: 150px;
+    height: 150px;
+    background-size: 320px 320px;
+  }
 }
 
 .fourthScreen-sampleText {
-    position: absolute;
-    left: 0;right: 0;top: 0;bottom: 0;
-    line-height: 1.2;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media(max-width:1080px) {
-    .fourthScreen .section {
-        padding-bottom: 16px;
-    }
+@media (max-width: 1080px) {
+  .fourthScreen .section {
+    padding-bottom: 16px;
+  }
 }
