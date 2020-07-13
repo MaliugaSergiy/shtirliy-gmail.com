@@ -1,186 +1,188 @@
 .sixthScreen {
-position: relative;
-height: 670px;
-overflow: hidden;
+  position: relative;
+  height: 670px;
+  overflow: hidden;
 }
 
-@media(max-width:1080px) {
-    .sixthScreen {
-        height: 500px;
-    }
+@media (max-width: 1080px) {
+  .sixthScreen {
+    height: 500px;
+  }
 }
 
-
-@media(max-width:840px) {
-    .sixthScreen {
-        height: auto;
-        padding-bottom: 300px;
-    }
+@media (max-width: 840px) {
+  .sixthScreen {
+    height: auto;
+    padding-bottom: 300px;
+  }
 }
 
 .sixthScreen-bg {
-    position: absolute;
-    left: 0;right: 0;top: 0; bottom: 0;
-    background: url("../assets/images/Innesa_new/resized/mask_set.png"), linear-gradient(180deg, #FDB6DB 0%, #EC80B5 100%);; 
-    background-color: #FFA9B5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../assets/images/Innesa_new/resized/mask_set.png"),
+    linear-gradient(180deg, #fdb6db 0%, #ec80b5 100%);
+  background-color: #ffa9b5;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 820px 569px, cover;
+  background-position: center right 10%, center;
+}
+
+@media (max-width: 1400px) {
+  .sixthScreen-bg {
+    background-position: center right -10%, center;
+  }
+}
+@media (max-width: 1300px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 750px 520px, cover;
+  }
+}
+@media (max-width: 1200px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 700px 486px, cover;
+  }
+}
+@media (max-width: 1150px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 600px 416px, cover;
+  }
+}
+@media (max-width: 1050px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 500px 347px, cover;
+  }
+}
+@media (max-width: 970px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 450px 312px, cover;
+  }
+}
+@media (max-width: 920px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 400px 278px, cover;
+  }
+}
+@media (max-width: 870px) {
+  .sixthScreen-bg {
+    background-position: center right 0%, center;
+    background-size: 350px 243px, cover;
+  }
+}
+
+@media (max-width: 840px) {
+  .sixthScreen-bg {
+    /* background: url("../assets/images/Innesa_new/resized/masks_set_mob.png"), linear-gradient(180deg, #FFACB9 0%, #FB8194 100%);  */
+    background-color: #fb8194;
     background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 820px 569px, cover;
-    background-position: center right 10%, center;
-}
-
-@media(max-width:1400px) {
-    .sixthScreen-bg {
-        background-position: center right -10%, center;
-    }
-}
-@media(max-width:1300px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 750px 520px, cover;
-    }
-}
-@media(max-width:1200px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 700px 486px, cover;
-    }
-}
-@media(max-width:1150px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 600px 416px, cover;
-    }
-}
-@media(max-width:1050px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 500px 347px, cover;
-    }
-}
-@media(max-width:970px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 450px 312px, cover;
-    }
-}
-@media(max-width:920px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 400px 278px, cover;
-    }
-}
-@media(max-width:870px) {
-    .sixthScreen-bg {
-        background-position: center right 0%, center;
-        background-size: 350px 243px, cover;
-    }
-}
-
-@media(max-width:840px) {
-    .sixthScreen-bg {
-        /* background: url("../assets/images/Innesa_new/resized/masks_set_mob.png"), linear-gradient(180deg, #FFACB9 0%, #FB8194 100%);  */
-        background-color: #FB8194;
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        /* background-size: 320px 314px, cover; */
-        background-size: 450px 312px, cover;
-    }
+    background-position: bottom center;
+    /* background-size: 320px 314px, cover; */
+    background-size: 450px 312px, cover;
+  }
 }
 
 .sixthScreen-outer {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .sixthScreen-inner {
-    max-width: 460px;
-    display: flex;
-    flex-direction: column;
-    padding: 48px 0;
-    color: #fff;
-    height: 100%;
-    justify-content: center;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0;
+  color: #fff;
+  height: 100%;
+  justify-content: center;
 }
 
-@media(max-width:840px) {
-    .sixthScreen-inner {
-        margin: auto;
-    }
+@media (max-width: 840px) {
+  .sixthScreen-inner {
+    margin: auto;
+  }
 }
 
-.sixthScreen-title{
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
+.sixthScreen-title {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
-@media(max-width:840px) {
-    .sixthScreen-title {
-        text-align: center;
-    }
+@media (max-width: 840px) {
+  .sixthScreen-title {
+    text-align: center;
+  }
 }
-@media(max-width:520px) {
-    .sixthScreen-title {
-        font-size: 18px;
-    }
+@media (max-width: 520px) {
+  .sixthScreen-title {
+    font-size: 18px;
+  }
 }
 
 .sixthScreen-descr {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 
-@media(max-width:840px) {
-    .sixthScreen-descr {
-        text-align: center;
-    }
+@media (max-width: 840px) {
+  .sixthScreen-descr {
+    text-align: center;
+  }
 }
 
-@media(max-width:520px) {
-    .sixthScreen-descr {
-        font-size: 12px;
-    }
+@media (max-width: 520px) {
+  .sixthScreen-descr {
+    font-size: 12px;
+  }
 }
-
 
 .sixthScreen-button {
-    display: inline-block;
-    align-self: start;
-    margin-bottom: 16px;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
+  display: inline-block;
+  align-self: start;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
 }
 
-@media(max-width:840px) {
-    .sixthScreen-button {
-        align-self: center;
-    }
+@media (max-width: 840px) {
+  .sixthScreen-button {
+    align-self: center;
+  }
 }
 
-@media(max-width:420px) {
+/* @media(max-width:420px) {
     .sixthScreen-button {
         align-self: stretch;
         
         display: block;
     }
-}
+} */
 
 .sixthScreen-link button {
-    text-decoration: underline;
-    text-align: left;
-    display: inline-block;
+  text-decoration: underline;
+  text-align: left;
+  display: inline-block;
 }
 
-@media(max-width:840px) {
-    .sixthScreen-link button{
-        text-align: center;
-        font-size: 16px;
-    }
+@media (max-width: 840px) {
+  .sixthScreen-link button {
+    text-align: center;
+    font-size: 16px;
+  }
 }

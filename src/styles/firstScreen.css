@@ -25,14 +25,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right -170px bottom, center center;
-  background-size: 870px 870px, contain;
+  background-size: 45vw 45vw, contain;
 }
 
-/* @media (max-width: 1370px) {
+@media (max-width: 1370px) {
   .firstScreen-bg {
     background-size: 55vw 55vw, contain;
   }
-} */
+}
 
 @media (max-width: 1220px) {
   .firstScreen-bg {

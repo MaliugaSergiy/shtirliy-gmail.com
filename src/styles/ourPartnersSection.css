@@ -1,26 +1,22 @@
 .ourPartnersSection {
-
 }
 
 .ourPartnersSection-outer {
-
 }
 
 .ourPartnersSection-inner {
-
 }
 
 .ourPartnersSection-title {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
 }
-@media(max-width:840px) {
-    .ourPartnersSection-title   {
-        font-size: 24px;
-    }
+@media (max-width: 840px) {
+  .ourPartnersSection-title {
+    font-size: 24px;
+  }
 }
 .ourPartnersSection-list {
-    
 }
