@@ -2347,7 +2347,9 @@ var DEFAULT_PROPS = {
   }
 };
 
-var Modals = /*#__PURE__*/function () {
+var Modals =
+/*#__PURE__*/
+function () {
   function Modals(props) {
     var _this = this;
 
@@ -2462,7 +2464,7 @@ var Modals = /*#__PURE__*/function () {
         if (modal_id !== undefined) properties.id = modal_id;
         if (modal_title !== undefined) properties.title = modal_title;
         if (modal_additional_class !== undefined) properties.additionalClass = modal_additional_class;
-        return _objectSpread(_objectSpread({}, defaultProperties), properties);
+        return _objectSpread({}, defaultProperties, {}, properties);
       };
     });
 
@@ -2482,7 +2484,7 @@ var Modals = /*#__PURE__*/function () {
       _this.pauseAllVideos(modal);
     });
 
-    this._props = _objectSpread(_objectSpread({}, DEFAULT_PROPS), props);
+    this._props = _objectSpread({}, DEFAULT_PROPS, {}, props);
     var _this$_props = this._props,
         modalContentSelector = _this$_props.modalContentSelector,
         _defaultProperties = _this$_props.defaultProperties;
@@ -2788,7 +2790,7 @@ function getIdFromHash(element) {
 }
 
 function initSmoothScrollToAnchor(props) {
-  var _props = _objectSpread(_objectSpread({}, DEFAULT_PROPS), props);
+  var _props = _objectSpread({}, DEFAULT_PROPS, {}, props);
 
   var selector = _props.selector,
       hideNonActiveAnchors = _props.hideNonActiveAnchors,
@@ -2888,7 +2890,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var SertificatPreview = /*#__PURE__*/function () {
+var SertificatPreview =
+/*#__PURE__*/
+function () {
   function SertificatPreview(props) {
     var _this = this;
 
@@ -3079,7 +3083,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 // document.addEventListener('DOMContentLoaded', () => {
 //   new KeyboardUsingState({ listenerSelector: null, targetSelector: '.page', keyCodes: KEY_CODE_LIST, keyUsingClass: 'isKeyboardUsing' });
 // });
-var KeyboardUsingState = /*#__PURE__*/function () {
+var KeyboardUsingState =
+/*#__PURE__*/
+function () {
   function KeyboardUsingState(props) {
     var _this = this;
 
@@ -4113,7 +4119,7 @@ var ARROWS_KEY_CODE_LIST = [KEY_CODE_ARROW_LEFT, KEY_CODE_ARROW_RIGHT, KEY_CODE_
   });
   $(".videoBanner").fitVids();
 });
-},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","./indicate-touch-devices":"../scripts/indicate-touch-devices.js","./indicate-mobile-devices":"../scripts/indicate-mobile-devices.js","./indicate-mobile-and-tablet-devices":"../scripts/indicate-mobile-and-tablet-devices.js","./keyboard-using-state":"../scripts/keyboard-using-state.js","micromodal":"../../node_modules/micromodal/dist/micromodal.es.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"../../../../Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils":"../scripts/utils/index.js","./modals":"../scripts/modals.js","./set-input-state":"../scripts/set-input-state.js","./phone-mask":"../scripts/phone-mask.js","./smooth-scroll-to-anchor":"../scripts/smooth-scroll-to-anchor.js","./sertificatPreviev":"../scripts/sertificatPreviev.js","./indicate-touch-devices":"../scripts/indicate-touch-devices.js","./indicate-mobile-devices":"../scripts/indicate-mobile-devices.js","./indicate-mobile-and-tablet-devices":"../scripts/indicate-mobile-and-tablet-devices.js","./keyboard-using-state":"../scripts/keyboard-using-state.js","micromodal":"../../node_modules/micromodal/dist/micromodal.es.js","css-element-queries/src/ElementQueries":"../../node_modules/css-element-queries/src/ElementQueries.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -4141,7 +4147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57460" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60196" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -4172,9 +4178,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
+      } else {
+        window.location.reload();
       }
     }
 
@@ -4317,5 +4322,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../scripts/index.js"], null)
+},{}]},{},["C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../scripts/index.js"], null)
 //# sourceMappingURL=/scripts.3cddadf4.js.map
