@@ -33,9 +33,9 @@
                 <li class="headerMenu-item">
                   <a class="headerMenu-link" href="https://mixit.ru/about" target="_blank">О компании</a>
                 </li>
-                <li class="headerMenu-item">
+                <!-- <li class="headerMenu-item">
                   <a class="headerMenu-link" href="../assets/docs/price.xlsx" >Cкачать прайс-лист</a>
-                </li>
+                </li> -->
               </ul>
             </nav>
           </div>
@@ -80,6 +80,7 @@
                     <a href="#masks" class="button button--theme-dark" data-custom-open="testModal">Защитные маски</a>
                   </div>
                 </div>
+                <a href="tel:+7 925 601 36 40" class="firstScreen-phone">+7-925-601-36-40</a>
               </div>
             </div>
             <div class="firstScreen-footer">ДОСТАВКА ПО ВСЕЙ РОССИИ</div>
@@ -88,6 +89,26 @@
       </div>
       <div class="firstScreen-overlay"></div>
     </div>
+    <style>
+      .firstScreen-phone {
+        color: inherit;
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        max-width: 425px;
+        margin-top: 16px;
+        transition: 0.2s ease-out;
+      }
+      .firstScreen-phone:hover {
+        color: #1E1E1E;
+      }
+
+      @media(max-width: 1100px) {
+        .firstScreen-phone {
+          max-width: 100%;
+        }
+      }
+    </style>
     <div class="thanksPage">
       <div class="thanksPage-bg"></div>
       <div class="container container--fullHeight">
@@ -388,9 +409,9 @@
                             <!-- <div class="catalogBanner-button">
                               <button data-custom-open="sertificates" class="button button--bordered">Сертификаты качества</button> 
                             </div> -->
-                            <div class="catalogBanner-button">
+                            <!-- <div class="catalogBanner-button">
                               <a href="../assets/docs/price.xlsx" class="button button--bordered">Cкачать прайс-лист</a> 
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -628,9 +649,9 @@
             <div class="sixthScreen-button">
               <button class="button"  data-custom-open="orderMak">Заказать маски</button>
             </div>
-            <div class="sixthScreen-button">
+            <!-- <div class="sixthScreen-button">
               <a href="../assets/docs/price.xlsx"  class="button button--theme-dark" >Cкачать прайс-лист</a>
-            </div>
+            </div> -->
             <!-- <div class="sixthScreen-link">
               <button data-custom-open="sertificates" >Сертификаты качества</button> 
             </div> -->
